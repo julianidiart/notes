@@ -203,7 +203,39 @@ Tip 17: Eliminate Effects Between Unrelated Things
 
 ### Topic 11: Reversibility
 
+- Use principles like DRY, decoupling, and external configuration to reduce the impact of critical decisions.
+- Design systems so that components like databases can be swapped with minimal changes.
+- Maintain flexibility in architecture, deployment, and vendor integration to adapt to changing requirements.
+
 ```
-Tip 17: There Are No Final Decisions
--
+Tip 18: There Are No Final Decisions
+- Treat decisions as written in sand, not stone.
+- Be prepared for change and build flexibility into your projects.
 ```
+
+- Architecture best practices evolve rapidly, from big iron to serverless applications.
+
+```
+Tip 19: Forgo Following Fads
+- Avoid chasing every new trend.
+- Build systems that can adapt to changes and withstand evolving practices.
+```
+
+### Topic 12: Tracer Bullets
+
+- Prioritize critical and uncertain areas first to test overall system interactions early.
+
+```
+Tip 20: Use Tracer Bullets to Find the Target
+- Implement a basic, functional path through the system to validate integration and reduce risk.
+```
+
+- Advantages of Tracer Code
+  - Immediate Feedback: Operates in the same environment as the final system for real-time adjustment.
+  - User Engagement: Provides early, visible progress to users, fostering their involvement and feedback.
+  - Structured Development: Establishes a framework for adding new features incrementally.
+  - Integration Platform: Continuous integration allows for regular updates and testing, avoiding big-bang integration.
+  - Progress Measurement: Easier to track and demonstrate progress through small, manageable steps.
+  - Demo Readiness: Always have something functional to demonstrate to stakeholders.
+
+### Topic 13: Prototypes and Post-it Notes
