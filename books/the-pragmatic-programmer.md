@@ -200,3 +200,10 @@ Tip 17: Eliminate Effects Between Unrelated Things
 - Write shy code that doesn’t reveal unnecessary details or rely on other modules’ implementations.
 - Use local contexts or parameters instead of global variables (avoid _global data_).
 - Refactor to eliminate duplicate code structures.
+
+### Topic 11: Reversibility
+
+```
+Tip 17: There Are No Final Decisions
+-
+```
