@@ -249,3 +249,44 @@ Tip 21: Prototype to Learn
 ```
 
 - Clearly communicate that prototype code is disposable and incomplete (set the right expectations and avoid misinterpretation).
+
+### Topic 14: Domain Language
+
+```
+Tip 22: Program Close to the Problem Domain
+- Write code using the vocabulary of the application domain.
+```
+
+- Use Off-the-Shelf External Languages (prefer YAML, JSON, or CSV to save effort).
+- Use host language features where possible to create domain-specific functionality.
+- Implement simple functions without heavy metaprogramming to achieve domain language features.
+
+### Topic 13: Estimating
+
+```
+Tip 23: Estimate to Avoid Surprises
+- Develop estimation skills to anticipate feasibility and resource needs.
+```
+
+- Understand the required accuracy of your estimate.
+- Choose units that reflect the precision you want to convey:
+  - 1–15 days: Quote in days.
+  - 3–6 weeks: Quote in weeks.
+  - 8–20 weeks: Quote in months.
+  - 20+ weeks: Consider avoiding a direct estimate.
+- Where Do Estimates Come From?
+  - Ask Someone Experienced: Leverage past experiences from similar situations.
+  - Grasp the scope and context before estimating.
+  - Create a mental or mathematical model to understand the problem.
+  - Break the Model into Components.
+  - Assign Values to Parameters: Focus on parameters with the most significant impact.
+  - Hedge your answers with different scenarios.
+  - Record estimates and compare them with actual outcomes.
+- Provide optimistic, most likely, and pessimistic estimates.
+
+```
+Tip 24: Iterate the Schedule with the Code
+- Update your schedule based on progress and experience in each iteration.
+```
+
+- Responding to Estimate Requests: _“I’ll get back to you.”_.
