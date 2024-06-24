@@ -20,7 +20,7 @@ Tip 2: Think! About Your Work
 - Continuously critique and think about your work.
 ```
 
-## A Pragmatic Philosophy
+## Chapter 1: A Pragmatic Philosophy
 
 ### Topic 1: It's your Life
 
@@ -152,7 +152,7 @@ Tip 13: Build Documentation In, Don’t Bolt It On
 - Avoid redundant comments; focus on explaining design decisions and trade-offs.
 ```
 
-## A Pragmatic Approach
+## Chapter 2: A Pragmatic Approach
 
 ### Topic 8: The Essence of Good Design
 
@@ -290,3 +290,42 @@ Tip 24: Iterate the Schedule with the Code
 ```
 
 - Responding to Estimate Requests: _“I’ll get back to you.”_.
+
+## Chapter 3: The Basic Tools
+
+### Topic 16: The Power of Plain Text
+
+```
+Tip 25: Keep Knowledge in Plain Text
+- Store information in a format that is easily readable and editable by humans and machines.
+```
+
+- Plain text should be comprehensible to humans, not just printable characters.
+- Even with advanced technologies, the simplicity of plain text ensures continued relevance and usability.
+- Utilizing plain text for knowledge storage and manipulation ensures durability, flexibility, and compatibility with a wide range of tools and technologies.
+
+### Topic 17: Shell Games
+
+- Command shells allow extensive automation and customization.
+
+```
+Tip 26: Use the Power of Command Shells
+- Gain familiarity with the command shell to enhance productivity.
+```
+
+- Combine tools using pipes, launch applications, debug, browse, edit, and filter output.
+- Program the shell to build complex macro commands for repetitive tasks, increasing efficiency.
+- GUI interfaces are limited to the capabilities their designers intended, restricting automation and tool combination.
+
+### Topic 18: Power Editing
+
+```
+Tip 27: Achieve Editor Fluency
+- Aim to become fluent with your editors to enhance productivity and thought flow.
+```
+
+- Fluency reduces the cognitive load of editing mechanics, allowing your thoughts to flow directly into your code, improving overall programming efficiency.
+- Observe your editing habits and identify repetitive actions.
+- Repetition is key. Consciously use new features many times a day until they become instinctive.
+
+### Topic 19: Version Control
