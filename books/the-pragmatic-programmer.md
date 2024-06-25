@@ -329,3 +329,77 @@ Tip 27: Achieve Editor Fluency
 - Repetition is key. Consciously use new features many times a day until they become instinctive.
 
 ### Topic 19: Version Control
+
+```
+Tip 28: Always Use Version Control
+- Use VCS for all projects, regardless of size or duration.
+```
+
+- Benefits of using a version control includes:
+
+  - Undo and Redo
+  - Change Tracking
+  - Release Management
+  - Concurrent Work
+
+- Apply VCS to everything you type, including documentation, scripts, and configuration files.
+- Using version control systems effectively transforms project management, enhances collaboration, and provides a safety net for managing changes and recovering from mistakes.
+
+### Topic 20: Debugging
+
+- Embrace debugging as a technical challenge rather than a blame game, and adopt a systematic approach to locate and resolve bugs.
+
+```
+Tip 29: Fix the Problem, Not the Blame
+- Focus on solving the issue rather than assigning blame.
+```
+
+```
+Tip 30: Don’t Panic
+- Stay composed and systematically analyze the issue.
+```
+
+```
+Tip 31: Failing Test Before Fixing Code
+- Create a failing test to isolate the bug and inform the solution.
+```
+
+```
+Tip 32: Read the Damn Error Message
+- Carefully read error messages to identify the issue.
+```
+
+- Use a divide-and-conquer approach to narrow down the source of the problem.
+- Use tracing statements to log diagnostic messages and track program state over time.
+- Explain the problem to someone (or something) else to gain new insights.
+
+```
+Tip 33: “select” Isn’t Broken
+- Assume the issue lies within your code unless proven otherwise.
+```
+
+```
+Tip 34: Don’t Assume It—Prove It
+- Verify assumptions through testing and evidence.
+```
+
+### Topic 21: Text Manipulation
+
+```
+Tip 35: Learn a Text Manipulation Language
+- Mastering a text manipulation language can significantly enhance your productivity.
+- The ability to rapidly test and iterate on ideas is crucial for experimenting and refining concepts.
+```
+
+### Topic 22: Engineering Daybooks
+
+- Use daybooks as a place to store ideas that are not immediately relevant, helping you stay focused on current tasks without losing track of your thoughts.
+
+```
+Tip 36: Keep an Engineering Daybook
+- Use a physical notebook to jot down notes, ideas, and sketches related to your work.
+```
+
+- Writing by hand can engage your brain differently compared to typing, fostering creativity and better retention of information.
+
+## Chapter 4: Pragmatic Paranoia
