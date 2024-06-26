@@ -394,12 +394,14 @@ Tip 35: Learn a Text Manipulation Language
 ### Topic 22: Engineering Daybooks
 
 - Use daybooks as a place to store ideas that are not immediately relevant, helping you stay focused on current tasks without losing track of your thoughts.
-
-```
-Tip 36: Keep an Engineering Daybook
 - Use a physical notebook to jot down notes, ideas, and sketches related to your work.
-```
-
 - Writing by hand can engage your brain differently compared to typing, fostering creativity and better retention of information.
 
 ## Chapter 4: Pragmatic Paranoia
+
+```
+Tip 36: You Can’t Write Perfect Software
+-  Accept it. Embrace it. Celebrate it. Because perfect software doesn’t exist.
+```
+
+### Topic 23: Design by Contract
