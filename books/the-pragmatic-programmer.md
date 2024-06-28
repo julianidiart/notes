@@ -405,3 +405,70 @@ Tip 36: You Can’t Write Perfect Software
 ```
 
 ### Topic 23: Design by Contract
+
+- DBC is a method where software functions and methods have well-defined contracts that specify:
+  - Preconditions: What must be true for the routine to be called.
+  - Postconditions: What the routine guarantees after execution.
+  - Class Invariants: Conditions that must always hold true for a class, from the perspective of the caller.
+
+```
+Tip 37: Design with Contracts
+- Ensure that all routines meet their preconditions, postconditions, and class invariants.
+```
+
+- Assertions can partially implement DBC by enforcing logical conditions at runtime.
+- Semantic invariants are fundamental truths about a system that must always hold.
+
+### Topic 24: Dead Programs Tell No Lies
+
+- Adopt a defensive coding strategy, ensuring data integrity and proper version control.
+
+```
+Tip 38: Crash Early
+- Detect problems as soon as possible and crash early to avoid further damage.
+```
+
+- When an "impossible" event occurs, terminate the program to prevent further damage.
+- Embrace errors as opportunities to improve the robustness and reliability of your programs
+
+### Topic 25: Assertive Programming
+
+- Avoid assumptions such as "This application will never be used abroad, so why internationalize it?", "Count can’t be negative.", "Logging can’t fail.", etc, and ensure that we validate our expectations explicitly.
+
+```
+Tip 39: Use Assertions to Prevent the Impossible
+- They verify that certain conditions are met in our code, providing a safeguard against unexpected behaviors.
+```
+
+### Topic 26: How to Balance Resources
+
+```
+Tip 40: Finish What You Start
+- The function or object that allocates a resource should be responsible for deallocating it
+```
+
+```
+Tip 41: Act Locally
+- When in doubt, reduce the scope of resource usage.
+```
+
+- Build code that checks resources are freed appropriately.
+
+### Topic 27: Don’t Outrun Your Headlights
+
+- Check for feedback frequently to avoid making predictions about an uncertain future.
+
+```
+Tip 42: Take Small Steps—Always
+- Always take small, deliberate steps, checking for feedback and adjusting before proceeding.
+```
+
+- Avoid tasks that require "fortune-telling," such as estimating completion dates months in the future or guessing future tech availability.
+- Make code replaceable to handle changes effectively, enhancing cohesion, coupling, and DRY principles.
+
+```
+Tip 43: Avoid Fortune-Telling
+- Avoid making predictions about the future, as unexpected, high-impact events ("black swans") can dramatically alter the landscape.
+```
+
+## Chapter 5: Bend, or Break
