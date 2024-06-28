@@ -472,3 +472,36 @@ Tip 43: Avoid Fortune-Telling
 ```
 
 ## Chapter 5: Bend, or Break
+
+### Topic 28: Decoupling
+
+- Decoupling ensures flexibility, allowing individual components to change independently.
+
+```
+Tip 44: Decoupled Code Is Easier to Change
+- Code that is decoupled is easier to modify without causing issues in other parts of the system.
+```
+
+- Symptoms of coupling include wacky dependencies, propagation of simple changes through unrelated modules, developer fear of changing code, and mandatory all-hands meetings for changes.
+- Method chains (train wrecks) introduce implicit knowledge and make changes difficult.
+
+```
+Tip 45: Tell, Don’t Ask
+- Don’t make decisions based on an object's internal state and then update the object. Instead, delegate the responsibility to the object itself.
+```
+
+- The Law of Demeter (LoD) suggests limiting the scope of method calls to methods of the current object, its parameters, created objects, and global variables. Simplify this by avoiding chaining method calls with more than one dot.
+
+```
+Tip 46: Don’t Chain Method Calls
+- Avoid chaining method calls beyond one level of depth to minimize coupling and dependencies.
+```
+
+- Global data creates hidden dependencies, making code harder to maintain and test. Avoid using global variables and singletons; instead, encapsulate data within controlled interfaces.
+
+```
+Tip 47: Avoid Global Data
+- Avoid global data to reduce hidden dependencies and make the codebase more modular and testable.
+```
+
+- Misuse of subclassing introduces coupling through inherited state and behavior, making code changes risky.
