@@ -504,4 +504,41 @@ Tip 47: Avoid Global Data
 - Avoid global data to reduce hidden dependencies and make the codebase more modular and testable.
 ```
 
+```
+Tip 48: If It’s Important Enough to Be Global, Wrap It in an API
+- Always wrap resources behind code that you control.
+```
+
 - Misuse of subclassing introduces coupling through inherited state and behavior, making code changes risky.
+
+### Topic 29: Juggling the Real World
+
+- Applications must be responsive to a constantly changing environment, handling events effectively to remain functional and interactive.
+- Applications that respond to events are more interactive and resource-efficient.
+- Strategies to Handle Events:
+  - Finite State Machines (FSM): A specification of how to handle events with a set of states and transitions based on events.
+  - The Observer Pattern: Involves an observable source of events and multiple observers interested in those events.
+  - Publish/Subscribe (Pub/Sub): Generalizes the observer pattern by decoupling publishers and subscribers via channels.
+  - Reactive Programming and Streams: Treats events as collections of data, allowing manipulation, combination, and filtering.
+- Design code to be responsive to real-world events.
+
+### Topic 30: Transforming Programming
+
+- Focus on programs as transformations of input data to output, simplifying design, structure, error handling, and reducing coupling.
+
+```
+Tip 49: Programming Is About Code, But Programs Are About Data
+- Emphasize transforming data to achieve program goals.
+```
+
+- Start with the requirement and determine its inputs and outputs.
+- Break down the process into a series of transformation steps.
+
+```
+Tip 50: Don’t Hoard State; Pass It Around
+- Emphasize passing data through transformations rather than encapsulating it in objects.
+```
+
+- Use a wrapper to indicate valid or error states.
+- Handle errors inside transformations or defer function calls until previous steps succeed.
+- Viewing code as a series of transformations leads to cleaner, more maintainable, and less coupled designs.
