@@ -542,3 +542,104 @@ Tip 50: Don’t Hoard State; Pass It Around
 - Use a wrapper to indicate valid or error states.
 - Handle errors inside transformations or defer function calls until previous steps succeed.
 - Viewing code as a series of transformations leads to cleaner, more maintainable, and less coupled designs.
+
+### Topic 31: Inheritance Tax
+
+- Avoid using inheritance in object-oriented programming; consider alternatives like interfaces, delegation, and mixins.
+
+```
+Tip 51: Don’t Pay Inheritance Tax
+- Inheritance introduces unnecessary complexity and coupling; avoid it when possible.
+```
+
+- Interfaces and protocols, delegation, and mixins are powerful alternatives to inheritance, providing flexibility and reducing coupling.
+
+```
+Tip 52: Prefer Interfaces to Express Polymorphism
+- Interfaces provide polymorphism without the drawbacks of inheritance.
+```
+
+```
+Tip 53: Delegate to Services: Has-A Trumps Is-A
+- Delegate responsibilities to services to avoid tight coupling and maintain control over APIs.
+```
+
+```
+Tip 54: Use Mixins to Share Functionality
+- Mixins allow sharing of functionality without the complexity of inheritance.
+```
+
+- Avoid dragging unnecessary dependencies (the whole jungle) along with your design decisions.
+
+### Topic 32: Configuration
+
+- Externalize configuration values that may change after deployment or are environment-specific.
+
+```
+Tip 55: Parameterize Your App Using External Configuration
+- External configuration makes your code adaptable to different environments and requirements.
+```
+
+- Avoid making configuration data globally accessible; instead, wrap it in a thin API to decouple the code from the configuration details.
+- Dynamic configuration is crucial for highly available applications, enabling real-time updates without downtime.
+- Code that relies on hard-coded values or lacks external configuration (Dodo-Code) is inflexible and non-adaptable.
+
+## Chapter 6: Concurrency
+
+### Topic 33: Breaking Temporal Coupling
+
+- Avoiding temporal coupling increases flexibility and responsiveness.
+- Use activity diagrams to capture and analyze workflows, identifying potential concurrency.
+
+```
+Tip 56: Analyze Workflow to Improve Concurrency
+- Identify activities that can be performed in parallel to enhance efficiency.
+```
+
+- Concurrency should be exploited for activities that take time but not processing time (e.g., querying a database, accessing external services, waiting for user input).
+- Concurrency is a software mechanism; parallelism is a hardware concern.
+- Use multiple processors to handle independent tasks in parallel, reducing overall time.
+
+### Topic 34: Shared State Is Incorrect State
+
+- Shared state leads to inconsistencies and unexpected behavior in concurrent environments.
+- Shared state leads to race conditions where multiple entities access and modify the same resource.
+
+```
+Tip 57: Shared State Is Incorrect State
+- Avoid shared state to prevent inconsistencies and race conditions.
+```
+
+- Semaphores control access to shared resources by allowing only one process to access the resource at a time.
+- Centralize control by making resource access atomic.
+
+```
+Tip 58: Random Failures Are Often Concurrency Issues
+- Concurrency problems can cause unpredictable errors; manage them carefully.
+```
+
+### Topic 35: Actors and Processes
+
+```
+Tip 59: Use Actors For Concurrency Without Shared State
+- Actors handle concurrency without the complexities of shared state.
+- No central control or shared state.
+- Messages are one-way; actors communicate by sending messages to each other's mailboxes.
+- Actors process one message at a time, ensuring no shared state conflicts.
+```
+
+- Actors handle concurrency implicitly by processing messages independently.
+
+### Topic 26: Blackboards
+
+- A blackboard system facilitates collaboration and problem-solving by allowing independent agents to read and write information on a shared board.
+
+```
+Tip 60: Use Blackboards to Coordinate Workflow
+- Blackboard systems help coordinate workflows by allowing different agents to contribute and process shared information.
+- Detectives (agents) do not need to know about each other’s existence (They have different expertise and work independently).
+- Information can be posted in any form: text, images, physical evidence, etc.
+- The system evolves organically as contributions are made.
+```
+
+## Chapter 7: While You Are Coding
