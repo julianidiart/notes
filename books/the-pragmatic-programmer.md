@@ -630,7 +630,7 @@ Tip 59: Use Actors For Concurrency Without Shared State
 
 - Actors handle concurrency implicitly by processing messages independently.
 
-### Topic 26: Blackboards
+### Topic 36: Blackboards
 
 - A blackboard system facilitates collaboration and problem-solving by allowing independent agents to read and write information on a shared board.
 
@@ -643,3 +643,36 @@ Tip 60: Use Blackboards to Coordinate Workflow
 ```
 
 ## Chapter 7: While You Are Coding
+
+### Topic 37: Listen to Your Lizard Brain
+
+```
+Tip 61: Listen to Your Inner Lizard
+- Pay attention to your instincts, which can alert you to potential issues in your code.
+```
+
+- Prototyping is a useful technique to overcome the fear of the blank page and to explore ideas freely.
+- Externalize the problem by doodling, explaining it to a coworker, or using a rubber duck.
+- Look for patterns in unfamiliar code to understand the original author's decisions.
+- Analyze uneasy feelings about a design or requirement to prevent future problems.
+
+### Topic 38: Programming by Coincidence
+
+- Aim for deliberate and intentional programming to prevent false conclusions and unexpected failures.
+
+```
+Tip 62: Don’t Program by Coincidence
+- Be Aware: Understand and be conscious of your coding decisions.
+- Explain the Code: If you can’t explain your code to a junior programmer, you might be relying on coincidences.
+- Don’t Code in the Dark: Avoid using technologies or writing code you don’t fully understand.
+- Plan: Whether it’s in your head or on paper, have a plan.
+- Rely on Reliable Things: Only depend on well-documented and tested components.
+- Document Assumptions: Clearly state and test your assumptions.
+- Test Assumptions: Use assertions to verify assumptions in your code.
+- Prioritize Effort: Focus on important aspects and be ready to refactor.
+- Don’t Be a Slave to History: Don’t let existing code dictate future decisions; be prepared to make necessary changes.
+```
+
+- Understand and be conscious of your coding decisions.
+
+### Topic 39: Algorithm Speed
