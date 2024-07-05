@@ -676,3 +676,75 @@ Tip 62: Don’t Program by Coincidence
 - Understand and be conscious of your coding decisions.
 
 ### Topic 39: Algorithm Speed
+
+```
+Tip 63: Estimate the Order of Your Algorithms
+- Use Big-O notation to understand the growth of time or space requirements as input size increases.
+```
+
+```
+Tip 64: Test Your Estimates
+- Validate your theoretical estimates with practical tests.
+- Relationships are often not linear; some algorithms have significantly worse performance as input size increases.
+```
+
+- Common Big-O notations:
+  - O(1): Constant time
+  - O(log 𝑛): Logarithmic time (e.g.: Algorithms halving the input each iteration)
+  - O(𝑛): Linear time (e.g.: Most loops running from 1 to 𝑛)
+  - O(𝑛 log 𝑛): Log-linear time (e.g.: Algorithms partitioning input and processing each part recursively, like quicksort)
+  - O(𝑛^2): Quadratic time (e.g.: Most two nested loops)
+  - O(𝑛^3): Cubic time
+  - O(2^𝑛): Exponential time
+- Ensure an algorithm is a true bottleneck before optimizing.
+
+### Topic 40: Refactoring
+
+- Software development is more akin to gardening: organic, adaptive, and continuous.
+- Refactoring, as defined by Martin Fowler, is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior.
+  - Disciplined: It is a methodical process, not a chaotic rewrite.
+  - No change in external behavior: The functionality remains the same; only the internal structure is improved.
+- Refactor when you've learned something new, when requirements change, or when you notice code smells.
+- Delaying refactoring can lead to greater time investment later due to increased dependencies and code complexity.
+
+```
+Tip 65
+- Refactor Early, Refactor Often
+```
+
+- Refactoring should be slow, deliberate, and careful.
+- Ensure refactoring doesn’t introduce new bugs by running tests frequently.
+- Follow a disciplined approach to refactoring to maintain code quality and functionality.
+
+### Topic 41: Test to Code
+
+```
+Tip 66: Testing Is Not About Finding Bugs
+- The true benefit of testing isn't just in finding bugs but in the thought process it encourages.
+```
+
+```
+Tip 67: A Test Is the First User of Your Code
+- A test can serve as the first user of your code, providing immediate feedback and helping you catch issues early.
+```
+
+- TDD is a methodology where you write tests before writing the actual code. This practice ensures that you always have tests for your code and encourages a design that is easy to test.
+- Maintain a balance between writing tests and keeping an eye on the big picture.
+  - While TDD has many benefits, it's important not to become a slave to the process.
+
+```
+Tip 68: Build End-to-End, Not Top-Down or Bottom-Up
+- Traditional design methods like top-down and bottom-up are flawed because they assume you know all the requirements up front.
+- Building software incrementally allows you to learn and adapt as you go.
+```
+
+- Software components should be designed to be tested easily, similar to how hardware components are tested.
+- Unit testing should be viewed as testing against the contract of the code.
+- Ad hoc testing involves manually testing your code using various inputs and checking outputs.
+
+```
+Tip 70: Test Your Software, or Your Users Will
+- Adopting a culture of testing ensures that all tests pass consistently.
+```
+
+### Topic 42: Property-Based Testing
