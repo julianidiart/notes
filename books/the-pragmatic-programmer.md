@@ -748,3 +748,44 @@ Tip 70: Test Your Software, or Your Users Will
 ```
 
 ### Topic 42: Property-Based Testing
+
+```
+Tip 71: Use Property-Based Tests to Validate Your Assumptions
+- Use property-based testing to automate testing based on defined contracts and invariants to validate code behavior without shared preconceptions.
+```
+
+- Property-based testing frameworks generate a wide range of test data to ensure thorough validation.
+- Enhance unit testing with complementary unit testing by focusing on invariants and contracts, leading to better code design and fewer edge cases.
+
+### Topic 43: Stay Safe Out There
+
+- Analyze potential internal errors and external threats, considering all ways the system can be compromised.
+
+```
+Tip 72: Keep It Simple and Minimize Attack Surfaces
+- Reduce the number of access points where attackers can enter or extract data.
+```
+
+- Use the least amount of privilege necessary for the shortest time possible.
+- Default settings should prioritize security over convenience.
+- Never store sensitive data in plain text.
+
+```
+Tip 73: Apply Security Patches Quickly
+- Maintain Security Updates: Regularly apply security patches to all systems and devices.
+```
+
+- Rely on well-vetted, open-source libraries for encryption and other security measures instead of creating your own solutions.
+- Consider using third-party authentication providers to enhance security and reduce the burden on your development team.
+
+### Topic 42:
+
+- Write meaningful names that reflect the role they play in the code.
+- Names should clarify the code's functionality, making it easier to read and understand.
+- Follow the naming conventions and culture of the programming language or environment to avoid jarring inconsistencies.
+
+```
+Tip 74: Name Well; Rename When Needed
+```
+
+## Chapter 8: Before the Project
