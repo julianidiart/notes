@@ -1,4 +1,4 @@
-# The Pragmatic Programmer
+# The Pragmatic Programmer: 20th Anniversary Edition (2019)
 
 ## From the Preface to the First Edition
 
