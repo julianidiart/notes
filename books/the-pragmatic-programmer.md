@@ -419,7 +419,7 @@ Tip 37: Design with Contracts
 - Assertions can partially implement DBC by enforcing logical conditions at runtime.
 - Semantic invariants are fundamental truths about a system that must always hold.
 
-### Topic 24: Dead Programs Tell No Lies
+### Topic 24: Dead Programs Tell No Lies
 
 - Adopt a defensive coding strategy, ensuring data integrity and proper version control.
 
@@ -571,7 +571,7 @@ Tip 54: Use Mixins to Share Functionality
 
 - Avoid dragging unnecessary dependencies (the whole jungle) along with your design decisions.
 
-### Topic 32: Configuration
+### Topic 32: Configuration
 
 - Externalize configuration values that may change after deployment or are environment-specific.
 
@@ -618,7 +618,7 @@ Tip 58: Random Failures Are Often Concurrency Issues
 - Concurrency problems can cause unpredictable errors; manage them carefully.
 ```
 
-### Topic 35: Actors and Processes
+### Topic 35: Actors and Processes
 
 ```
 Tip 59: Use Actors For Concurrency Without Shared State
@@ -747,7 +747,7 @@ Tip 70: Test Your Software, or Your Users Will
 - Adopting a culture of testing ensures that all tests pass consistently.
 ```
 
-### Topic 42: Property-Based Testing
+### Topic 42: Property-Based Testing
 
 ```
 Tip 71: Use Property-Based Tests to Validate Your Assumptions
@@ -757,7 +757,7 @@ Tip 71: Use Property-Based Tests to Validate Your Assumptions
 - Property-based testing frameworks generate a wide range of test data to ensure thorough validation.
 - Enhance unit testing with complementary unit testing by focusing on invariants and contracts, leading to better code design and fewer edge cases.
 
-### Topic 43: Stay Safe Out There
+### Topic 43: Stay Safe Out There
 
 - Analyze potential internal errors and external threats, considering all ways the system can be compromised.
 
@@ -853,7 +853,7 @@ Tip 82: Don’t Go into the Code Alone
 
 - Focus on building code rather than egos, start small, criticize the code not the person, listen to others, and conduct frequent retrospectives.
 
-### Topic 48: The Essence of Agility
+### Topic 48: The Essence of Agility
 
 - Agility is about how you do things, not a specific set of practices.
 - There can't be a fixed agile process because agility involves constantly responding to change and feedback.
@@ -866,7 +866,7 @@ Tip 83: Agile Is Not a Noun; Agile Is How You Do Things
 
 ### Chapter 9: Pragmatic Projects
 
-### Topic 49: Pragmatic Teams
+### Topic 49: Pragmatic Teams
 
 ```
 Tip 84: Maintain Small, Stable Teams
