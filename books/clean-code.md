@@ -92,3 +92,100 @@
 ### Conclusion
 
 - Like art books, it offers insights into techniques and thought processes without promising mastery.
+
+## Chapter 2: Meaningful Names
+
+### Introduction
+
+- Good naming practices are essential for readability and maintainability.
+
+### Use Intention-Revealing Names
+
+- Names should reveal intent, making code easier to understand.
+- A name should indicate why it exists, what it does, and how it is used.
+- Example: Change `int d` to `int elapsedTimeInDays` for clarity.
+
+### Avoid Disinformation
+
+- Avoid names that can mislead or obscure the meaning.
+- Use consistent and precise naming to avoid confusion.
+- Example: Avoid using similar-looking names or abbreviations that can be mistaken.
+
+### Make Meaningful Distinctions
+
+- Names should differ in meaningful ways, not just by adding numbers or noise words.
+- Avoid non-informative names like `a1`, `a2`; use `source` and `destination` instead.
+- Example: Differentiate classes like `ProductInfo` and `ProductData` clearly.
+
+### Use Pronounceable Names
+
+- Pronounceable names facilitate discussion and improve collaboration.
+- Example: Change `genymdhms` to `generationTimestamp` for clarity.
+
+### Use Searchable Names
+
+- Names should be easy to locate in a codebase.
+- Avoid single-letter names or numeric constants that are hard to search.
+- Example: Use `WORK_DAYS_PER_WEEK` instead of `5`.
+
+### Avoid Encodings
+
+- Don’t use type or scope encodings in names; they add unnecessary complexity.
+- Modern IDEs and languages handle types and scopes better.
+- Example: Avoid Hungarian Notation like `m_dsc`; use `description` instead.
+
+### Avoid Mental Mapping
+
+- Names should not require mental translation to understand their meaning.
+- Example: Avoid single-letter variable names except for loop counters (`i`, `j`).
+
+### Class Names
+
+- Use noun or noun phrase names for classes.
+- Example: Use `Customer`, `WikiPage`, `Account`, and `AddressParser`.
+
+### Method Names
+
+- Use verb or verb phrase names for methods.
+- Follow JavaBean naming conventions for accessors and mutators (`get`, `set`, `is`).
+- Example: `postPayment`, `deletePage`, `save`.
+
+### Don’t Be Cute
+
+- Avoid clever or humorous names that are not self-explanatory.
+- Example: Use `deleteItems` instead of `HolyHandGrenade`.
+
+### Pick One Word per Concept
+
+- Use one consistent term for one concept across the codebase.
+- Example: Use either `fetch`, `retrieve`, or `get` consistently, not all three.
+
+### Avoid Puns
+
+- Avoid using the same word for different meanings.
+- Example: Use `insert` or `append` instead of overloading `add` for different actions.
+
+### Use Solution Domain Names
+
+- Use technical terms from computer science for clarity.
+- Example: `JobQueue`, `AccountVisitor`.
+
+### Use Problem Domain Names
+
+- Use domain-specific terms when there are no equivalent technical terms.
+- Example: Use names relevant to the problem domain for better understanding.
+
+### Add Meaningful Context
+
+- Provide context through well-named classes, functions, or namespaces.
+- Example: Use `Address` class instead of prefixing variable names like `addrFirstName`.
+
+### Don’t Add Gratuitous Context
+
+- Avoid unnecessary prefixes or context in names.
+- Example: Use `Address` instead of `GSDAccountAddress`.
+
+### Final Words
+
+- Good naming requires descriptive skills and a shared cultural background.
+- Renaming for clarity is beneficial and should not be feared.
