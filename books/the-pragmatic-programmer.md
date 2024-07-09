@@ -778,7 +778,7 @@ Tip 73: Apply Security Patches Quickly
 - Rely on well-vetted, open-source libraries for encryption and other security measures instead of creating your own solutions.
 - Consider using third-party authentication providers to enhance security and reduce the burden on your development team.
 
-### Topic 42:
+### Topic 44: Naming Things
 
 - Write meaningful names that reflect the role they play in the code.
 - Names should clarify the code's functionality, making it easier to read and understand.
@@ -789,3 +789,186 @@ Tip 74: Name Well; Rename When Needed
 ```
 
 ## Chapter 8: Before the Project
+
+### Topic 45: The Requirements Pit
+
+- Programmers help clients understand what they want by interpreting their needs and providing feedback, initiating an exploratory process.
+
+```
+Tip 75: No One Knows Exactly What They Want
+- Requirements rarely lie on the surface; they are buried under layers of assumptions and politics.
+```
+
+- Requirements gathering is an ongoing feedback loop where programmers help refine clients' needs through prototypes and mockups.
+
+```
+Tip 76: Programmers Help People Understand What They Want
+- The initial statement of need is an invitation to explore, not an absolute requirement.
+```
+
+```
+Tip 77: Requirements Are Learned in a Feedback Loop
+- Generate feedback to help clients refine their thinking and understand the consequences of their requirements.
+```
+
+- Use user stories and a project glossary to ensure clarity and consistency.
+- Keep requirements abstract and simple, focusing on the business need.
+
+```
+Tip 78: Work with a User to Think Like a User
+- Spend time in the client's environment to gain insights and build trust.
+```
+
+```
+Tip 79: Policy Is Metadata
+- Implement the general case with policy information as metadata, allowing for easy updates when policies change.
+```
+
+```
+Tip 80: Use a Project Glossary
+```
+
+### Topic 46: Solving Impossible Puzzles
+
+- Distinguish between absolute constraints and preconceived notions.
+- Enumerate all possible solutions without dismissing any initially.
+- If a problem seems insurmountable, take a break or work on something different.
+- Discuss the problem with someone else.
+- Provide your subconscious with plenty of raw material by reflecting on what works and what doesn’t.
+
+```
+Tip 81: Don’t Think Outside the Box — Find the Box
+- Identify the real constraints of a problem, as this helps in finding the true solution space.
+```
+
+### Topic 47: Working Together
+
+- Pair programming and mob programming are effective methods to achieve close collaboration.
+- Team communication structures influence software design, as per Conway's Law.
+
+```
+Tip 82: Don’t Go into the Code Alone
+- Collaborate with others to enhance problem-solving and code quality.
+```
+
+- Focus on building code rather than egos, start small, criticize the code not the person, listen to others, and conduct frequent retrospectives.
+
+### Topic 48: The Essence of Agility
+
+- Agility is about how you do things, not a specific set of practices.
+- There can't be a fixed agile process because agility involves constantly responding to change and feedback.
+- Agility relies on a continuous feedback loop: assess current state, make small meaningful changes, evaluate outcomes, and adjust as necessary.
+
+```
+Tip 83: Agile Is Not a Noun; Agile Is How You Do Things
+- Focus on adapting and responding to feedback rather than following a fixed plan.
+```
+
+### Chapter 9: Pragmatic Projects
+
+### Topic 49: Pragmatic Teams
+
+```
+Tip 84: Maintain Small, Stable Teams
+- A pragmatic team is small (under 10-12 members) and stable, with members rarely changing. Trust and dependency among team members are crucial.
+```
+
+- Quality should be a collective responsibility, with all team members actively ensuring no "broken windows" are left unfixed.
+- Teams must stay vigilant to changes in project scope, requirements, and environment to avoid gradually getting overwhelmed.
+
+```
+Tip 85: Schedule It to Make It Happen
+- Schedule time for maintenance, process improvement, new technology experiments, and skill development to foster continuous improvement.
+```
+
+- Avoid duplication of effort by maintaining frictionless communication and awareness within the team.
+- Implement features through a tracer bullet approach, ensuring all necessary skills are present within the team to handle different aspects of the project.
+- Automate repetitive tasks to ensure consistency and reliability in development and deployment.
+
+```
+Tip 86: Organize Fully Functional Teams
+```
+
+### Topic 50: Coconuts Don’t Cut It
+
+```
+Tip 87: Do What Works, Not What’s Fashionable
+- Adopt methods that fit your unique situation rather than blindly copying popular companies like Spotify or Netflix.
+```
+
+- Pilot new ideas, keep what works, and discard what doesn’t. Continuous adaptation is key.
+- No single methodology fits all; combine the best parts from various approaches to suit your needs.
+
+```
+Tip 88: Deliver When Users Need It
+- Aim for continuous delivery by progressively shortening your delivery cycle and establishing a solid infrastructure.
+```
+
+### Topic 51: Pragmatic Starter Kit
+
+- Make tasks like build, release, testing, and documentation automatic and repeatable to ensure consistency and avoid manual errors.
+
+```
+Tip 89: Use Version Control to Drive Builds, Tests, and Releases
+- Use version control to manage everything needed for your project, driving builds, tests, and releases automatically.
+```
+
+```
+Tip 90: Test Early, Test Often, Test Automatically
+- Test early, often, and automatically to catch bugs as soon as possible.
+```
+
+```
+Tip 91: Coding Ain’t Done ’Til All the Tests Run
+```
+
+```
+Tip 92: Use Saboteurs to Test Your Testing
+```
+
+```
+Tip 93: Test State Coverage, Not Code Coverage
+```
+
+```
+Tip 94: Find Bugs Once
+- Whenever a bug is found, add a test for it to ensure it doesn’t happen again.
+```
+
+### Topic 52: Delight Your Users
+
+- Focus on the business problems your users need solving, not just on delivering software.
+- Ask how success will be measured after project completion.
+- Ensure the entire team understands user expectations and make decisions that move towards those goals.
+
+```
+Tip 96: Delight Users, Don’t Just Deliver Code
+- As your domain knowledge grows, proactively suggest improvements that can further address user needs.
+```
+
+### Topic 53: Pride and Prejudice
+
+- Take pride in your work, but avoid becoming territorial. Treat others' code with respect.
+- Anonymity can lead to poor code quality and lack of accountability.
+- Code can be owned by a team rather than an individual, with practices like pair programming to maintain quality.
+- Your signature on code should signify high quality, solid, well-written, tested, and documented work.
+
+```
+Tip 97: Sign Your Work
+- Artisans of an earlier age were proud to sign their work. You should be, too.
+```
+
+## Chapter 10: Postface
+
+```
+Tip 98: First, Do No Harm
+- No one is perfect; everyone misses things now and then.
+```
+
+```
+Tip 99: Don’t Enable Scumbags
+```
+
+```
+Tip 100: It’s Your Life. Share it. Celebrate it. Build it. AND HAVE FUN!
+```
