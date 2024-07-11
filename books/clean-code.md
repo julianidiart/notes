@@ -189,3 +189,169 @@
 
 - Good naming requires descriptive skills and a shared cultural background.
 - Renaming for clarity is beneficial and should not be feared.
+
+## Chapter 3: Functions
+
+### Small
+
+- Functions should be small.
+- Functions should be even smaller than that.
+
+### Blocks and Indenting
+
+- Blocks within if, else, while, etc., should be one line long, ideally a function call.
+
+### Do One Thing
+
+- Functions should do one thing, do it well, and do it only.
+- A function should perform actions that are one level of abstraction below its name.
+
+#### Sections within Functions
+
+- Functions that truly do one thing cannot be divided into sections like declarations, initializations, and processing.
+
+### One Level of Abstraction per Function
+
+- Ensure all statements within a function are at the same level of abstraction.
+
+#### Reading Code from Top to Bottom: The Stepdown Rule
+
+- Functions should read like a narrative, with each function followed by those at the next level of abstraction.
+
+### Switch Statements
+
+- Bury switch statements in low-level classes, using them to create polymorphic objects.
+
+### Use Descriptive Names
+
+- Use names that clearly describe the purpose and behavior of functions and variables.
+- Names should not require additional context to understand their meaning.
+
+### Function Arguments
+
+- Zero is the ideal number of arguments, one is the second best, two is acceptable but harder, three should be avoided, and more than three requires special justification and should generally be avoided.
+- Arguments add complexity and require more mental processing.
+- More arguments increase the complexity of testing all combinations.
+
+#### Common Monadic Forms
+
+- Examples:
+  - Question: `boolean fileExists(String fileName)`
+  - Transformation: `InputStream fileOpen(String fileName)`
+  - Event: `void passwordAttemptFailedNtimes(int attempts)`
+
+#### Flag Arguments
+
+- Thi is and ugly practice. Passing a boolean indicates the function does more than one thing.
+- Example: Instead of `render(boolean isSuite)`, use `renderForSuite()` and `renderForSingleTest()`.
+
+#### Dyadic Functions
+
+- Use methods or classes to reduce the number of arguments.
+
+#### Triads
+
+- Example of Confusion: `assertEquals(message, expected, actual)` often leads to misinterpretation.
+
+#### Argument Objects
+
+- If a function needs more than two or three arguments, wrap related arguments into an object.
+- Example:
+
+```
+Circle makeCircle(double x, double y, double radius); // Complex
+Circle makeCircle(Point center, double radius); // Simplified
+```
+
+#### Argument Lists
+
+- Treat variable arguments as a single argument of type List.
+- Examples
+
+```
+void monad(Integer... args);
+void dyad(String name, Integer... args);
+void triad(String name, int count, Integer... args);
+```
+
+#### Verbs and Keywords
+
+- A function name combined with its argument should clearly convey the action.
+  - Example: `write(name)`
+- Encode argument names into the function name for clarity.
+  - Example: `assertExpectedEqualsActual(expected, actual)` instead of `assertEquals(expected, actual)`
+
+### Have No Side Effects
+
+- Consequences of Side Effects
+  - Temporal Coupling: Functions can only be called at specific times to avoid unintended consequences.
+  - Unexpected Behavior: Callers may not expect the function to perform additional actions beyond its stated purpose.
+- Ensure the name reflects all actions performed, though this might violate the "Do one thing" principle
+- Design functions to perform only their intended task, avoiding hidden state changes.
+
+#### Output Arguments
+
+- Use object-oriented principles to change the state of the owning object rather than using output arguments.
+  - Example:
+
+```
+public void appendFooter(StringBuffer report) // Ambiguous
+report.appendFooter(); // Clear and intuitive
+```
+
+### Command Query Separation
+
+- Functions should either do something (command) or answer something (query), but not both.
+  - Example:
+
+```
+public boolean set(String attribute, String value); // Confusing Function
+if (set("username", "unclebob"))... // Ambiguous Usage
+
+// Separate Functions
+if (attributeExists("username")) {
+  setAttribute("username", "unclebob");
+}
+```
+
+### Prefer Exceptions to Returning Error Codes
+
+- Using error codes can lead to command query separation violations.
+- Error handling with error codes leads to nested if statements.
+
+#### Extract Try/Catch Blocks
+
+- Separate the try/catch blocks into distinct functions for clarity.
+
+#### Error Handling Is One Thing
+
+- Functions should do one thing. If they handle errors, they should do only that.
+
+#### The Error.java Dependency Magnet
+
+- Error enums create dependencies, requiring recompilation and redeployment when modified.
+- New exceptions can be added without forcing recompilation or redeployment.
+
+### Don’t Repeat Yourself
+
+- Duplication bloats code and increases maintenance effort.
+- Use methods to reduce duplication, enhancing readability and maintainability.
+
+### Structured Programming
+
+- Every function and block should have one entry and one exit.
+  - Functions should have only one return statement.
+  - Avoid using break or continue in loops.
+  - Goto statements should be avoided.
+
+### How Do You Write Functions Like This?
+
+- First drafts often contain nested loops, long argument lists, arbitrary names, and duplicated code.
+  - Ensure every line of code is covered by tests.
+- Split out functions, rename variables, and eliminate duplication.
+- Continuously refine the code while keeping tests passing.
+
+### Conclusion
+
+- Write functions that are short, well-named, and nicely organized.
+- Ensure that functions fit cleanly into the language of the system to help tell its story effectively.
