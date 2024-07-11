@@ -355,3 +355,344 @@ if (attributeExists("username")) {
 
 - Write functions that are short, well-named, and nicely organized.
 - Ensure that functions fit cleanly into the language of the system to help tell its story effectively.
+
+## Chapter 4: Comments
+
+- Comments are not inherently good; they are a fallback for when code fails to express intent clearly.
+- Code should be self-explanatory, minimizing the need for comments.
+- Problems with comments:
+  - Comments can become outdated and inaccurate.
+  - Keeping comments updated with code changes is challenging.
+  - Only the code provides the ultimate truth about what it does.
+
+### Comments Do Not Make Up for Bad Code
+
+- Instead of commenting bad code, refactor it to be more understandable.
+
+### Explain Yourself in Code
+
+- Instead of comments, use meaningful function names.
+  - Example:
+
+```
+// Instead of this...
+// Check to see if the employee is eligible for full benefits
+if ((employee.flags & HOURLY_FLAG) && (employee.age > 65))
+
+// Do this..
+if (employee.isEligibleForFullBenefits())
+```
+
+### Good Comments
+
+#### Legal Comments
+
+- Necessary for copyright and authorship.
+  - Example:
+
+```
+// Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
+// Released under the terms of the GNU General Public License version 2 or later.
+```
+
+#### Informative Comments
+
+- Provide useful information not immediately clear from the code.
+  - Example:
+
+```
+// Returns an instance of the Responder being tested.
+protected abstract Responder responderInstance();
+```
+
+#### Explanation of Intent
+
+- Explain the reasoning behind a decision.
+  - Example:
+
+```
+return 1; // we are greater because we are the right type.
+```
+
+#### Clarification
+
+- Translate obscure arguments or return values into something readable.
+  - Example:
+
+```
+// a == a
+// a != b
+// ab == ab
+// a < b
+```
+
+#### Warning of Consequences
+
+- Warn other developers about certain consequences.
+- Example:
+
+```
+// SimpleDateFormat is not thread safe,
+// so we need to create each instance independently.
+SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z");
+```
+
+#### TODO Comments
+
+- Remind about future improvements or changes.
+  - Example:
+
+```
+// TODO-MdM these are not needed
+// We expect this to go away when we do the checkout model
+protected VersionInfo makeVersion() throws Exception {
+  return null;
+}
+```
+
+#### Amplification
+
+- Highlight the importance of something that might seem trivial.
+  - Example:
+
+```
+// the trim is real important. It removes the starting
+// spaces that could cause the item to be recognized
+// as another list.
+String listItemContent = match.group(3).trim();
+```
+
+#### Javadocs in Public APIs
+
+- Well-documented public APIs are crucial.
+  - Example:
+
+```
+/**
+ * Returns an immutable list of colors.
+ *
+ * @return a list of colors
+ */
+public List<Color> getColors() {
+  // ...
+}
+```
+
+### Bad Comments
+
+- Comments should be as carefully crafted as the code itself.
+
+#### Mumbling
+
+- The comment is vague and does not provide clear information.
+  - Example:
+
+```
+catch(IOException e) {
+  // No properties files means all defaults are loaded
+}
+```
+
+#### Redundant Comments
+
+- The comment merely restates what the code does, adding no value.
+  - Example:
+
+```
+// Utility method that returns when this.closed is true. Throws an exception if the timeout is reached.
+public synchronized void waitForClose(final long timeoutMillis) throws Exception {
+  if (!closed) {
+    wait(timeoutMillis);
+    if (!closed)
+      throw new Exception("MockResponseSender could not be closed");
+  }
+}
+```
+
+#### Misleading Comments
+
+- The comment incorrectly describes the behavior, leading to misunderstandings.
+  - Example:
+
+```
+// Utility method that returns when this.closed is true.
+public synchronized void waitForClose(final long timeoutMillis) throws Exception {
+  if (!closed) {
+    wait(timeoutMillis);
+    if (!closed)
+      throw new Exception("MockResponseSender could not be closed");
+  }
+}
+```
+
+#### Mandated Comments
+
+- Required comments often result in pointless, redundant descriptions.
+  - Example:
+
+```
+/**
+* @param title The title of the CD
+* @param author The author of the CD
+* @param tracks The number of tracks on the CD
+* @param durationInMinutes The duration of the CD in minutes
+*/
+public void addCD(String title, String author, int tracks, int durationInMinutes) {
+  CD cd = new CD();
+  cd.title = title;
+  cd.author = author;
+  cd.tracks = tracks;
+  cd.duration = durationInMinutes;
+  cdList.add(cd);
+}
+```
+
+#### Journal Comments
+
+- Modern source control systems make these unnecessary and they clutter the code.
+  - Example:
+
+```
+* Changes (from 11-Oct-2001)
+* --------------------------
+* 11-Oct-2001 : Re-organised the class and moved it to new package com.jrefinery.date (DG);
+* 05-Nov-2001 : Added a getDescription() method, and eliminated NotableDate class (DG);
+```
+
+#### Noise Comments
+
+- These comments state the obvious and add no meaningful information.
+  - Example:
+
+```
+/**
+* Default constructor.
+*/
+protected AnnualDateRule() { }
+```
+
+#### Scary Noise
+
+- Javadocs for private fields or non-public APIs are unnecessary and distracting.
+  - Example:
+
+```
+/** The name. */ private String name;
+/** The version. */ private String version;
+/** The licenceName. */ private String licenceName;
+```
+
+#### Don’t Use a Comment When You Can Use a Function or a Variable
+
+- Example:
+
+```
+// does the module from the global list <mod> depend on the subsystem we are part of?
+if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
+
+// Refactored to...
+ArrayList moduleDependees = smodule.getDependSubsystems();
+String ourSubSystem = subSysMod.getSubSystem();
+if (moduleDependees.contains(ourSubSystem))
+```
+
+#### Position Markers
+
+- These are rarely useful and generally add clutter.
+  - Example:
+
+```
+// Actions //////////////////////////////////
+```
+
+#### Closing Brace Comments
+
+- Long functions needing these comments should be refactored for clarity.
+- Example:
+
+```
+} // try
+catch (IOException e) { System.err.println("Error:" + e.getMessage());
+} //catch
+```
+
+#### Attributions and Bylines
+
+- Source control systems handle this information more effectively.
+  - Example:
+
+```
+/* Added by Rick */
+```
+
+#### Commented-Out Code
+
+- Leads to clutter and confusion. Modern source control negates the need for this.
+  - Example:
+
+```
+// InputStream resultsStream = formatter.getResultStream();
+// StreamReader reader = new StreamReader(resultsStream);
+```
+
+#### HTML Comments
+
+- Makes comments hard to read in the code editor.
+  - Example:
+
+```
+/**
+* Task to run fit tests.
+* <pre>
+* &lt;taskdef name=&quot;execute-fitnesse-tests&quot;
+* </pre>
+*/
+```
+
+#### Nonlocal Information
+
+- Local comments should not describe system-wide settings.
+  - Example:
+
+```
+/**
+* Port on which fitnesse would run. Defaults to <b>8082</b>.
+*/
+public void setFitnessePort(int fitnessePort) {
+  this.fitnessePort = fitnessePort;
+}
+```
+
+#### Too Much Information
+
+- Historical or irrelevant details should not be in comments.
+  - Example:
+
+```
+/*
+RFC 2045 - Multipurpose Internet Mail Extensions (MIME)
+Part One: Format of Internet Message Bodies
+section 6.8. Base64 Content-Transfer-Encoding
+*/
+```
+
+#### Inobvious Connection
+
+- The relationship between comment and code is unclear.
+  - Example:
+
+```
+/*
+* start with an array that is big enough to hold all the pixels
+* (plus filter bytes), and an extra 200 bytes for header info
+*/
+this.pngBytes = new byte[((this.width + 1) * this.height * 3) + 200];
+```
+
+#### Function Headers
+
+- Short, well-named functions usually don't need comments.
+
+#### Javadocs in Nonpublic Code
+
+- Javadocs are helpful for public APIs but unnecessary for internal code.
