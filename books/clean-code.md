@@ -899,3 +899,100 @@ public class LocalPort {
 ### Conclusion
 
 - Ensuring clean and robust error handling improves code readability and maintainability, keeping the main logic free from clutter.
+
+## Chapter 8: Boundaries
+
+### Using Third-Party Code
+
+- Tension exists between providers (who aim for broad applicability) and users (who need specific functionality).
+  - Solution: Encapsulate the third-party interface to control how it is used within your application.
+  - Example:
+
+```java
+// Direct Use
+Map sensors = new HashMap();
+Sensor s = (Sensor) sensors.get(sensorId);
+
+// Encapsulated Use
+public class Sensors {
+    private Map sensors = new HashMap();
+
+    public Sensor getById(String id) {
+        return (Sensor) sensors.get(id);
+    }
+}
+```
+
+### Exploring and Learning Boundaries
+
+- Write tests to explore and understand how third-party code works.
+
+### Using Code That Does Not Yet Exist
+
+- Create interfaces you wish existed to continue development without being blocked by undefined or incomplete components.
+
+### Clean Boundaries
+
+- Minimize the parts of your code that depend directly on third-party packages.
+- Use adapters to bridge between your application and the third-party code.
+
+## Chapter 9: Unit Tests
+
+### The Three Laws of TDD
+
+1. You may not write production code until you have written a failing unit test.
+2. You may not write more of a unit test than is sufficient to fail, and not compiling is failing.
+3. You may not write more production code than is sufficient to pass the currently failing test.
+
+### Keeping Tests Clean
+
+- Test Code should have as important as production code quality.
+- Tests should be easy to read and understand.
+- Tests should be simple to maintain and update.
+
+#### Tests Enable the -ilities
+
+- Tests serve as documentation, showing how the code is supposed to be used.
+
+### Clean Tests
+
+- Treat test code with the same respect as production code.
+- Build-Operate-Check Pattern: Structure tests clearly to setup (build), perform the action (operate), and verify the result (check).
+
+#### Domain-Specific Testing Language
+
+- Create domain-specific languages to express tests clearly and succinctly.
+- Use fluent interfaces to create readable tests.
+  - Example:
+
+```java
+@Test
+public void testOrderFluent() {
+    Order order = anOrder()
+        .with(anItem().named("Apple").costing(1.0))
+        .build();
+    assertTrue(order.contains("Apple"));
+}
+```
+
+#### A Dual Standard
+
+- Production Code: Performance, efficiency.
+- Test Code: Readability, simplicity.
+
+### One Assert per Test
+
+- Each test should assert one thing.
+
+### F.I.R.S.T.
+
+- Fast: Tests should run quickly.
+- Independent: Tests should not depend on each other.
+- Repeatable: Tests should produce the same results every time.
+- Self-Validating: Tests should have a clear pass/fail result.
+- Timely: Write tests at the right time, typically before writing the corresponding production code.
+
+### Conclusion
+
+- High-quality tests are crucial for maintaining and evolving a codebase.
+- Following TDD practices ensures that tests guide the development process and maintain code quality.
