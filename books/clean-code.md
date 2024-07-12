@@ -831,16 +831,71 @@ try {
 
 ### Write Your Try-Catch-Finally Statement First
 
+- Start with the try-catch-finally structure to define the scope and ensure the program remains in a consistent state.
+  - Example:
+
+```java
+public List<RecordedGrip> retrieveSection(String sectionName) {
+  try {
+    FileInputStream stream = new FileInputStream(sectionName);
+    stream.close();
+  } catch (FileNotFoundException e) {
+    throw new StorageException("retrieval error", e);
+  }
+  return new ArrayList<RecordedGrip>();
+}
+```
+
 ### Use Unchecked Exceptions
+
+- Checked exceptions can lead to extensive dependency chains and violate the Open/Closed Principle.
+  - Use unchecked exceptions to avoid such issues.
 
 ### Provide Context with Exceptions
 
+- Exceptions should provide enough context, including the source and nature of the error.
+  - Example:
+
+```java
+throw new StorageException("retrieval error", e);
+```
+
 ### Define Exception Classes in Terms of a Caller’s Needs
+
+- Wrap third-party APIs to return common exception types, reducing duplication and dependency on specific exceptions.
+  - Example:
+
+```java
+public class LocalPort {
+  private ACMEPort innerPort;
+
+  public LocalPort(int portNumber) {
+    innerPort = new ACMEPort(portNumber);
+  }
+
+  public void open() {
+    try {
+      innerPort.open();
+    } catch (DeviceResponseException | ATM1212UnlockedException | GMXError e) {
+      throw new PortDeviceFailure(e);
+    }
+  }
+}
+```
 
 ### Define the Normal Flow
 
+- Encapsulate special cases within objects to simplify the main code flow.
+
 ### Don’t Return Null
+
+- Returning null leads to numerous null checks, increasing the risk of NullPointerExceptions.
+  - Instead return special case objects or throw exceptions.
 
 ### Don’t Pass Null
 
+- Methods should not accept null arguments unless explicitly required.
+
 ### Conclusion
+
+- Ensuring clean and robust error handling improves code readability and maintainability, keeping the main logic free from clutter.
