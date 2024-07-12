@@ -696,3 +696,58 @@ this.pngBytes = new byte[((this.width + 1) * this.height * 3) + 200];
 #### Javadocs in Nonpublic Code
 
 - Javadocs are helpful for public APIs but unnecessary for internal code.
+
+## Chapter 5: Formatting
+
+### The Purpose of Formatting
+
+- Formatting enhance readability and maintainability of the code.
+
+### Vertical Formatting
+
+- Smaller files (200-500 lines) are preferred for better readability.
+
+#### The Newspaper Metaphor
+
+- Structure code like a newspaper article—headline at the top, increasing detail as you go down.
+
+#### Vertical Openness Between Concepts
+
+- Use blank lines to separate distinct concepts.
+
+#### Vertical Density
+
+- Lines of code that are closely related should be dense, without unnecessary blank lines.
+
+#### Vertical Distance
+
+- Related functions should be close to each other to maintain conceptual affinity.
+
+#### Vertical Ordering
+
+- Functions should be ordered such that caller functions are above the called functions, creating a top-down flow of reading.
+
+### Horizontal Formatting
+
+- Strive to keep lines within 80-120 characters for readability.
+
+#### Horizontal Openness and Density
+
+- Use horizontal spaces to highlight separation between different elements and keep related elements close.
+
+#### Horizontal Alignment
+
+- Align related statements for better visual structure.
+
+#### Indentation
+
+- Indentation should represent the hierarchy of scopes within the code, from classes to methods to blocks within methods.
+
+### Team Rules
+
+- A team should agree on a single set of formatting rules and apply them consistently.
+- Use code formatting tools to enforce these rules.
+
+### Uncle Bob’s Formatting Rules
+
+- Follow simple and consistent rules as illustrated in sample code.
