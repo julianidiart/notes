@@ -258,7 +258,7 @@
 - If a function needs more than two or three arguments, wrap related arguments into an object.
 - Example:
 
-```
+```java
 Circle makeCircle(double x, double y, double radius); // Complex
 Circle makeCircle(Point center, double radius); // Simplified
 ```
@@ -268,7 +268,7 @@ Circle makeCircle(Point center, double radius); // Simplified
 - Treat variable arguments as a single argument of type List.
 - Examples
 
-```
+```java
 void monad(Integer... args);
 void dyad(String name, Integer... args);
 void triad(String name, int count, Integer... args);
@@ -294,7 +294,7 @@ void triad(String name, int count, Integer... args);
 - Use object-oriented principles to change the state of the owning object rather than using output arguments.
   - Example:
 
-```
+```java
 public void appendFooter(StringBuffer report) // Ambiguous
 report.appendFooter(); // Clear and intuitive
 ```
@@ -304,7 +304,7 @@ report.appendFooter(); // Clear and intuitive
 - Functions should either do something (command) or answer something (query), but not both.
   - Example:
 
-```
+```java
 public boolean set(String attribute, String value); // Confusing Function
 if (set("username", "unclebob"))... // Ambiguous Usage
 
@@ -374,7 +374,7 @@ if (attributeExists("username")) {
 - Instead of comments, use meaningful function names.
   - Example:
 
-```
+```java
 // Instead of this...
 // Check to see if the employee is eligible for full benefits
 if ((employee.flags & HOURLY_FLAG) && (employee.age > 65))
@@ -390,7 +390,7 @@ if (employee.isEligibleForFullBenefits())
 - Necessary for copyright and authorship.
   - Example:
 
-```
+```java
 // Copyright (C) 2003,2004,2005 by Object Mentor, Inc. All rights reserved.
 // Released under the terms of the GNU General Public License version 2 or later.
 ```
@@ -400,7 +400,7 @@ if (employee.isEligibleForFullBenefits())
 - Provide useful information not immediately clear from the code.
   - Example:
 
-```
+```java
 // Returns an instance of the Responder being tested.
 protected abstract Responder responderInstance();
 ```
@@ -410,7 +410,7 @@ protected abstract Responder responderInstance();
 - Explain the reasoning behind a decision.
   - Example:
 
-```
+```java
 return 1; // we are greater because we are the right type.
 ```
 
@@ -419,7 +419,7 @@ return 1; // we are greater because we are the right type.
 - Translate obscure arguments or return values into something readable.
   - Example:
 
-```
+```java
 // a == a
 // a != b
 // ab == ab
@@ -431,7 +431,7 @@ return 1; // we are greater because we are the right type.
 - Warn other developers about certain consequences.
 - Example:
 
-```
+```java
 // SimpleDateFormat is not thread safe,
 // so we need to create each instance independently.
 SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z");
@@ -442,7 +442,7 @@ SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z");
 - Remind about future improvements or changes.
   - Example:
 
-```
+```java
 // TODO-MdM these are not needed
 // We expect this to go away when we do the checkout model
 protected VersionInfo makeVersion() throws Exception {
@@ -455,7 +455,7 @@ protected VersionInfo makeVersion() throws Exception {
 - Highlight the importance of something that might seem trivial.
   - Example:
 
-```
+```java
 // the trim is real important. It removes the starting
 // spaces that could cause the item to be recognized
 // as another list.
@@ -467,7 +467,7 @@ String listItemContent = match.group(3).trim();
 - Well-documented public APIs are crucial.
   - Example:
 
-```
+```java
 /**
  * Returns an immutable list of colors.
  *
@@ -487,7 +487,7 @@ public List<Color> getColors() {
 - The comment is vague and does not provide clear information.
   - Example:
 
-```
+```java
 catch(IOException e) {
   // No properties files means all defaults are loaded
 }
@@ -498,7 +498,7 @@ catch(IOException e) {
 - The comment merely restates what the code does, adding no value.
   - Example:
 
-```
+```java
 // Utility method that returns when this.closed is true. Throws an exception if the timeout is reached.
 public synchronized void waitForClose(final long timeoutMillis) throws Exception {
   if (!closed) {
@@ -514,7 +514,7 @@ public synchronized void waitForClose(final long timeoutMillis) throws Exception
 - The comment incorrectly describes the behavior, leading to misunderstandings.
   - Example:
 
-```
+```java
 // Utility method that returns when this.closed is true.
 public synchronized void waitForClose(final long timeoutMillis) throws Exception {
   if (!closed) {
@@ -530,7 +530,7 @@ public synchronized void waitForClose(final long timeoutMillis) throws Exception
 - Required comments often result in pointless, redundant descriptions.
   - Example:
 
-```
+```java
 /**
 * @param title The title of the CD
 * @param author The author of the CD
@@ -552,11 +552,13 @@ public void addCD(String title, String author, int tracks, int durationInMinutes
 - Modern source control systems make these unnecessary and they clutter the code.
   - Example:
 
-```
+```java
+/**
 * Changes (from 11-Oct-2001)
 * --------------------------
 * 11-Oct-2001 : Re-organised the class and moved it to new package com.jrefinery.date (DG);
 * 05-Nov-2001 : Added a getDescription() method, and eliminated NotableDate class (DG);
+*/
 ```
 
 #### Noise Comments
@@ -564,7 +566,7 @@ public void addCD(String title, String author, int tracks, int durationInMinutes
 - These comments state the obvious and add no meaningful information.
   - Example:
 
-```
+```java
 /**
 * Default constructor.
 */
@@ -576,7 +578,7 @@ protected AnnualDateRule() { }
 - Javadocs for private fields or non-public APIs are unnecessary and distracting.
   - Example:
 
-```
+```java
 /** The name. */ private String name;
 /** The version. */ private String version;
 /** The licenceName. */ private String licenceName;
@@ -586,7 +588,7 @@ protected AnnualDateRule() { }
 
 - Example:
 
-```
+```java
 // does the module from the global list <mod> depend on the subsystem we are part of?
 if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
 
@@ -601,7 +603,7 @@ if (moduleDependees.contains(ourSubSystem))
 - These are rarely useful and generally add clutter.
   - Example:
 
-```
+```java
 // Actions //////////////////////////////////
 ```
 
@@ -610,7 +612,7 @@ if (moduleDependees.contains(ourSubSystem))
 - Long functions needing these comments should be refactored for clarity.
 - Example:
 
-```
+```java
 } // try
 catch (IOException e) { System.err.println("Error:" + e.getMessage());
 } //catch
@@ -621,7 +623,7 @@ catch (IOException e) { System.err.println("Error:" + e.getMessage());
 - Source control systems handle this information more effectively.
   - Example:
 
-```
+```java
 /* Added by Rick */
 ```
 
@@ -630,7 +632,7 @@ catch (IOException e) { System.err.println("Error:" + e.getMessage());
 - Leads to clutter and confusion. Modern source control negates the need for this.
   - Example:
 
-```
+```java
 // InputStream resultsStream = formatter.getResultStream();
 // StreamReader reader = new StreamReader(resultsStream);
 ```
@@ -640,7 +642,7 @@ catch (IOException e) { System.err.println("Error:" + e.getMessage());
 - Makes comments hard to read in the code editor.
   - Example:
 
-```
+```java
 /**
 * Task to run fit tests.
 * <pre>
@@ -654,7 +656,7 @@ catch (IOException e) { System.err.println("Error:" + e.getMessage());
 - Local comments should not describe system-wide settings.
   - Example:
 
-```
+```java
 /**
 * Port on which fitnesse would run. Defaults to <b>8082</b>.
 */
@@ -668,7 +670,7 @@ public void setFitnessePort(int fitnessePort) {
 - Historical or irrelevant details should not be in comments.
   - Example:
 
-```
+```java
 /*
 RFC 2045 - Multipurpose Internet Mail Extensions (MIME)
 Part One: Format of Internet Message Bodies
@@ -681,7 +683,7 @@ section 6.8. Base64 Content-Transfer-Encoding
 - The relationship between comment and code is unclear.
   - Example:
 
-```
+```java
 /*
 * start with an array that is big enough to hold all the pixels
 * (plus filter bytes), and an extra 200 bytes for header info
@@ -792,4 +794,53 @@ this.pngBytes = new byte[((this.width + 1) * this.height * 3) + 200];
 
 ### Conclusion
 
-- Distinguish between objects and data structures to maintain clean, maintainable code, and stresses the importance of encapsulation and adhering to principles like the Law of Demeter
+- Distinguish between objects and data structures to maintain clean, maintainable code, and stresses the importance of encapsulation and adhering to principles like the Law of Demeter.
+
+## Chapter 7: Error Handling
+
+### Use Exceptions Rather Than Return Codes
+
+- Example:
+
+```java
+// Using return codes
+if (deletePage(page) == E_OK) {
+  if (registry.deleteReference(page.name) == E_OK) {
+    if (configKeys.deleteKey(page.name.makeKey()) == E_OK) {
+      logger.log("page deleted");
+    } else {
+      logger.log("configKey not deleted");
+    }
+  } else {
+    logger.log("deleteReference from registry failed");
+  }
+} else {
+  logger.log("delete failed");
+  return E_ERROR;
+}
+
+// Using exceptions
+try {
+  deletePage(page);
+  registry.deleteReference(page.name);
+  configKeys.deleteKey(page.name.makeKey());
+} catch (Exception e) {
+  logger.log(e.getMessage());
+}
+```
+
+### Write Your Try-Catch-Finally Statement First
+
+### Use Unchecked Exceptions
+
+### Provide Context with Exceptions
+
+### Define Exception Classes in Terms of a Caller’s Needs
+
+### Define the Normal Flow
+
+### Don’t Return Null
+
+### Don’t Pass Null
+
+### Conclusion
