@@ -996,3 +996,73 @@ public void testOrderFluent() {
 
 - High-quality tests are crucial for maintaining and evolving a codebase.
 - Following TDD practices ensures that tests guide the development process and maintain code quality.
+
+## Chapter 10: Classes
+
+### Class Organization
+
+#### Encapsulation
+
+- Keep data and methods that manipulate the data in the same class.
+
+### Classes Should Be Small!
+
+- Smaller classes are easier to understand, maintain, and extend.
+- Keep the number of methods and lines of code in a class low to ensure it remains focused.
+
+#### The Single Responsibility Principle
+
+- Each class should focus on a single responsibility or functionality.
+- Classes should have only one reason to change. Multiple responsibilities imply multiple reasons for change, which complicates maintenance.
+
+#### Cohesion
+
+- All methods and properties of a class should be related and work together to achieve a common goal.
+- Classes that do too many unrelated things or have methods that operate on a subset of the class properties.
+
+#### Maintaining Cohesion Results in Many Small Classes
+
+- Break down large classes into smaller, more cohesive ones.
+  - Example:
+
+```java
+public class Employee {
+    private String name;
+    private Date hireDate;
+
+    public Money calculatePay() {
+        // Pay calculation logic
+    }
+
+    public void save() {
+        // Save logic
+    }
+}
+// Decomposed into:
+public class Employee {
+    private String name;
+    private Date hireDate;
+    // Other properties
+}
+
+public class PayCalculator {
+    public Money calculatePay(Employee employee) {
+        // Pay calculation logic
+    }
+}
+
+public class EmployeeRepository {
+    public void save(Employee employee) {
+        // Save logic
+    }
+}
+```
+
+### Organizing for Change
+
+- Classes should be open for extension but closed for modification (Open/Closed Principle).
+
+#### Isolating from Change
+
+- Reduce dependencies between classes to make them more independent and flexible.
+- Use dependency injection to provide a class with its dependencies rather than having the class create them.
