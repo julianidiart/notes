@@ -751,3 +751,45 @@ this.pngBytes = new byte[((this.width + 1) * this.height * 3) + 200];
 ### Uncle Bob’s Formatting Rules
 
 - Follow simple and consistent rules as illustrated in sample code.
+
+## Chapter 6: Objects and Data Structures
+
+### Data Abstraction
+
+- Keep variables private to avoid external dependencies.
+- Avoid automatic use as they can expose internal implementation.
+- Use abstract interfaces to manipulate data without exposing implementation details.
+
+### Data/Object Anti-Symmetry
+
+- Procedural code (data structures) makes it easy to add functions but hard to add new data types.
+- OO code (objects) makes it easy to add new data types but hard to add new functions.
+
+### The Law of Demeter
+
+- A module should only know about its immediate collaborators, not the internal details of those collaborators.
+- Chaining method calls (e.g., `ctxt.getOptions().getScratchDir().getAbsolutePath()`) leads to "train wrecks" and violates the Law of Demeter.
+
+#### Train Wrecks
+
+- Split chains into individual calls to improve readability and adherence to the Law of Demeter.
+
+#### Hybrids
+
+- Ensure clear distinction between objects and data structures.
+
+#### Hiding Structure
+
+- Objects should hide their internal structures and only expose necessary functionalities.
+
+### Data Transfer Objects
+
+- A form of DTOs with private variables accessed through getters and setters, often seen as providing minimal benefit over public variables.
+
+#### Active Record
+
+- Separate business logic into distinct objects that use Active Records purely as data structures.
+
+### Conclusion
+
+- Distinguish between objects and data structures to maintain clean, maintainable code, and stresses the importance of encapsulation and adhering to principles like the Law of Demeter
