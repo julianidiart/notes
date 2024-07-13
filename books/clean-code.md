@@ -1066,3 +1066,90 @@ public class EmployeeRepository {
 
 - Reduce dependencies between classes to make them more independent and flexible.
 - Use dependency injection to provide a class with its dependencies rather than having the class create them.
+
+## Chapter 11: Systems
+
+### How Would You Build a City?
+
+- Compare building software systems to building cities—both require careful planning, architecture, and continuous improvement.
+- Systems evolve over time, requiring adaptability and ongoing maintenance.
+
+### Separate Constructing a System from Using It
+
+- Distinguish between constructing a system (building the infrastructure) and using the system (running and maintaining it).
+
+#### Separation of Main
+
+- Use a Main class or method to encapsulate the system's construction, allowing the rest of the system to remain focused on its functionality.
+- The main method should be minimal, delegating detailed setup and configuration to other classes.
+  - Example:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Application app = new Application();
+        app.run();
+    }
+}
+```
+
+#### Factories
+
+- Use factories to encapsulate the creation of objects, providing flexibility and isolation from the specifics of object creation.
+  - Example:
+
+```java
+public class CarFactory {
+    public Car createCar() {
+        Engine engine = new Engine();
+        Transmission transmission = new Transmission();
+        return new Car(engine, transmission);
+    }
+}
+```
+
+#### Dependency Injection
+
+- Use dependency injection to provide classes with their dependencies rather than creating them internally.
+  - Example:
+
+```java
+public class Service {
+    private Repository repository;
+
+    public Service(Repository repository) {
+        this.repository = repository;
+    }
+
+    // Methods using repository
+}
+```
+
+### Scaling Up
+
+- Break down systems into smaller, independently deployable components.
+- Consider using microservices architecture for large, complex systems to improve scalability and maintainability.
+
+### Test Drive the System Architecture
+
+- Build prototypes to validate architectural decisions before full-scale development.
+- Use feedback from prototypes to refine and improve the system architecture.
+
+### Optimize Decision Making
+
+- Make architectural decisions incrementally, allowing for adjustments based on new information and feedback.
+- Balance between over-engineering and under-engineering to create a robust yet flexible system.
+
+### Use Standards Wisely, When They Add Demonstrable Value
+
+- Adhere to industry standards when they provide clear benefits, but avoid using them blindly.
+- Customize standards to fit the specific needs and context of the system.
+
+### Systems Need Domain-Specific Languages
+
+- Create domain-specific languages to express complex domain logic clearly and succinctly.
+
+### Conclusion
+
+- Systems should be designed for continuous improvement and adaptability.
+- Maintain clear separation of concerns to ensure systems are maintainable, scalable, and flexible.
