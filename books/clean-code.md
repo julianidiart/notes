@@ -1196,3 +1196,143 @@ public class Service {
 
 - Emergent design relies on the continuous application of simple design principles.
 - Aim for simplicity and clarity in code to achieve a high-quality design.
+
+## Chapter 13: Concurrency
+
+### Why Concurrency?
+
+- Keep applications responsive by performing time-consuming tasks in the background.
+
+#### Myths and Misconceptions
+
+- Myth 1: Concurrency always improves performance.
+  - Reality: Poorly designed concurrency can degrade performance.
+- Myth 2: Concurrency is purely a technical issue.
+  - Reality: It involves both technical and design considerations.
+- Myth 3: Concurrency problems are rare and easy to fix.
+  - Reality: Concurrency issues are common and can be difficult to debug and resolve.
+
+### Challenges
+
+- Complexity: Concurrency introduces complexity in design and implementation.
+- Non-Determinism: Concurrency can lead to non-deterministic behavior, making bugs hard to reproduce and fix.
+- Deadlocks: Two or more threads waiting indefinitely for each other to release resources.
+- Race Conditions: Multiple threads accessing shared resources leading to inconsistent state or data corruption.
+
+#### Concurrency Defense Principles
+
+1. Single Responsibility Principle (SRP): Separate code handling concurrency from business logic.
+2. Limit the Scope of Data: Reduce the amount of shared data.
+3. Use Copies of Data: Prefer immutable objects and data copies to avoid synchronization issues.
+4. Threads Should Be as Independent as Possible: Minimize dependencies between threads to reduce complexity.
+
+### Know Your Library
+
+#### Thread-Safe Collections
+
+- Use thread-safe collections provided by libraries to avoid common concurrency issues.
+
+### Know Your Execution Models
+
+#### Producer-Consumer
+
+- Producers create tasks and consumers process them.
+
+#### Readers-Writers
+
+- Multiple readers can read data simultaneously, but writers require exclusive access.
+
+#### Dining Philosophers
+
+- Dining Philosophers: Multiple threads needing multiple resources, illustrating deadlock scenarios.
+
+### Beware Dependencies Between Synchronized Methods
+
+### Keep Synchronized Sections Small
+
+- Only synchronize the minimum necessary to reduce contention and improve performance.
+
+### Writing Correct Shut-Down Code Is Hard
+
+- Ensure resources are released and tasks are completed gracefully during shutdown.
+  - Example:
+
+```java
+public class App {
+    private static final ExecutorService executor = Executors.newFixedThreadPool(10);
+
+    public static void main(String[] args) {
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            try {
+                executor.shutdown();
+                if (!executor.awaitTermination(60, TimeUnit.SECONDS)) {
+                    executor.shutdownNow();
+                }
+            } catch (InterruptedException e) {
+                executor.shutdownNow();
+            }
+        }));
+        // Application logic
+    }
+}
+```
+
+### Testing Threaded Code
+
+- Write tests to specifically catch concurrency issues like race conditions and deadlocks.
+
+#### Treat Spurious Failures as Candidate Threading Issues
+
+- Investigate and address failures that seem random and infrequent seriously to ensure thread safety and reliability.
+
+#### Get Your Nonthreaded Code Working First
+
+- Ensure the single-threaded version of your code works correctly before introducing concurrency.
+
+#### Make Your Threaded Code Pluggable
+
+- Decouple design threaded code to be easily interchangeable and testable.
+
+#### Make Your Threaded Code Tunable
+
+- Design your threaded code so that key parameters (like the number of threads) can be adjusted easily.
+
+#### Run with More Threads Than Processors
+
+- Running more threads than the available processors can improve performance by keeping the CPU busy.
+
+#### Run on Different Platforms
+
+- Test your concurrent code on different hardware and operating systems.
+
+#### Instrument Your Code to Try and Force Failures
+
+- Add logging, counters, and other diagnostic tools to your code to monitor and detect concurrency issues.
+
+#### Hand-Coded
+
+- Write specific tests to simulate and detect concurrency issues.
+- Use sleep statements, mock objects, and other techniques to create race conditions and deadlocks intentionally.
+  - Example:
+
+```java
+@Test
+public void testRaceCondition() {
+    Thread t1 = new Thread(() -> sharedResource.increment());
+    Thread t2 = new Thread(() -> sharedResource.increment());
+    t1.start();
+    t2.start();
+    t1.join();
+    t2.join();
+    assertEquals(2, sharedResource.getValue());
+}
+```
+
+#### Automated
+
+- Use automated tools and frameworks to test concurrency.
+
+### Conclusion
+
+- Adhering to concurrency principles helps manage complexity and avoid common pitfalls.
+- Thoughtful design and thorough testing are crucial for reliable concurrent systems.
