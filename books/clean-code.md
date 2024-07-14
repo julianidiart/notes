@@ -1153,3 +1153,46 @@ public class Service {
 
 - Systems should be designed for continuous improvement and adaptability.
 - Maintain clear separation of concerns to ensure systems are maintainable, scalable, and flexible.
+
+## Chapter 12: Emergence
+
+### Getting Clean via Emergent Design
+
+- Kent Beck’s Four Rules of Simple Design:
+  1. Runs All the Tests: Ensure all tests pass to maintain functionality.
+  2. No Duplication: Eliminate duplicate code to simplify maintenance.
+  3. Expresses the Intent of the Programmer: Code should clearly convey its purpose and functionality.
+  4. Minimizes the Number of Classes and Methods: Keep the design simple by reducing unnecessary complexity.
+
+### Simple Design Rule 1: Runs All the Tests
+
+- Passing tests ensure that the code behaves as expected and prevents regressions.
+- Integrate and run tests frequently to detect issues early.
+
+### Simple Design Rules 2–4: Refactoring
+
+- Duplication increases the risk of inconsistencies and makes maintenance harder.
+- Regularly refactor code to remove duplication and improve structure.
+- Write code that clearly expresses its purpose.
+- Use meaningful names for variables, methods, and classes.
+- Each class and method should have a clear, single responsibility.
+
+### No Duplication
+
+- Identify duplication by regularly reviewing and refactoring the code.
+- Use techniques like extracting methods, classes, and interfaces to remove duplication.
+
+### Expressive
+
+- Ensure code is readable and understandable by others.
+- Code should reveal the intent behind the implementation.
+
+### Minimal Classes and Methods
+
+- Resist the temptation to add unnecessary classes and methods.
+- Focus on solving the current problem without adding speculative complexity.
+
+### Conclusion
+
+- Emergent design relies on the continuous application of simple design principles.
+- Aim for simplicity and clarity in code to achieve a high-quality design.
