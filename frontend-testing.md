@@ -249,3 +249,38 @@ test("...", () => {
 - Prueban el sistema completo desde el principio hasta el final.
 - Recrean condiciones reales de producción.
 - Son lentos e inestables, y se limitan a casos de uso básicos.
+
+## Cómo distribuir los tests
+
+- Los tests deben ser útiles, no solo escritos por compromiso o para alcanzar un porcentaje de cobertura.
+- Pensar en el "qué" antes que el "cómo".
+- Los tests deben parecerse lo máximo posible al entorno de producción, limitando el uso de test dobles y enfocándose en la funcionalidad.
+
+### Pirámide del testing
+
+- Minimizar la cantidad de tests inestables, imprecisos y lentos, y maximizar los tests estables, precisos y rápidos.
+
+- Base: Tests unitarios (más importantes y en mayor cantidad).
+- Siguiente nivel: Tests de integración.
+- Nivel superior: Tests funcionales.
+- Cima: Tests E2E .
+
+### Trofeo del testing
+
+- Los tests unitarios sociables (integración según Fowler) están más cerca en el trofeo.
+- Evitar el uso excesivo de test dobles y simular fielmente el comportamiento del usuario.
+
+- Base: Analizadores estáticos (herramientas que leen el código sin ejecutarlo y buscan errores comunes).
+- Siguiente nivel: Tests unitarios.
+- Siguiente nivel (más importante y mas cantidad): Test de integración.
+- Siguiente nivel: E2E.
+
+### El barco del testing
+
+- Combina la pirámide y el trofeo del testing.
+
+- Quilla: Analizadores estáticos (Eslint, Typescript).
+- Cubierta inferior: Tests unitarios.
+- Cubierta media: Tests de integración (testing-library).
+- Cubierta superior: Tests E2E (Cypress).
+- Complementarios: Pruebas de contratos, UI y accesibilidad.
