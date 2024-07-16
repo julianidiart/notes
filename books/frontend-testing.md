@@ -284,3 +284,299 @@ test("...", () => {
 - Cubierta media: Tests de integración (testing-library).
 - Cubierta superior: Tests E2E (Cypress).
 - Complementarios: Pruebas de contratos, UI y accesibilidad.
+
+## Ejemplos de frontend testing
+
+## Otros tipos de testing
+
+### E2E Testing
+
+- Pruebas de principio a fin que reproducen las condiciones reales de producción.
+- Lentas y frágiles debido a fallos de red y cambios en los selectores.
+- Herramientas:
+  - Cypress.io
+  - Selenium
+
+### Visual Regression Testing
+
+- Compara capturas de pantalla para detectar cambios en la apariencia de la aplicación.
+- Alta fragilidad debido a diferencias sutiles entre sistemas operativos y navegadores.
+- Herramientas:
+  - BackstopJS
+  - Chromatic
+
+### API Testing
+
+- Garantiza la compatibilidad entre cliente y servidor.
+- Herramientas:
+  - Postman
+
+### Contract Testing
+
+- Asegurar que los cambios en la API no rompan el contrato entre cliente y servidor.
+- Herramientas:
+  - Pact
+
+### Snapshot Testing
+
+- Técnica para comprobar que no se introducen cambios inesperados en la interfaz.
+
+### Property Based Testing
+
+- Prueba propiedades de funciones con entradas generadas automáticamente.
+- Herramientas:
+  - JSVerify
+
+### Performance Testing
+
+- Detecta problemas de rendimiento en aplicaciones web.
+- Herramientas:
+  - Lighthouse
+
+### Manual Testing
+
+- Pruebas realizadas manualmente, probando diferentes situaciones.
+
+## Testing doubles
+
+- Los testing doubles son objetos que sustituyen a los reales en un entorno de prueba, emulando sus características o comportándose de manera esperada.
+- Pueden ser útiles, es recomendable limitar su uso.
+
+### Dummy
+
+- Objetos que rellenan huecos para ejecutar el test, pero no se utilizan ni afectan la lógica del test.
+- Ejemplo:
+
+```javascript
+describe("validateUserEmail", () => {
+  it("should return true when the email is valid", async () => {
+    const dummyUsername = "dummy_username"; // <--- valor no importante
+    const validEmail = "valid@mail.com";
+    const user = new User(dummyUsername, validEmail);
+    const actual = validateUserEmail(user);
+    expect(actual).toEqual(true);
+  });
+
+  it("should return false when the email is not valid", async () => {
+    const dummyUsername = "dummy_username"; // <--- valor no importante
+    const invalidEmail = "invalid_email";
+    const user = new User(dummyUsername, invalidEmail);
+    const actual = validateUserEmail(user);
+    expect(actual).toEqual(false);
+  });
+});
+```
+
+### Stub
+
+- Dummies con un comportamiento predefinido.
+  - Ejemplo:
+
+```javascript
+describe('.buyItem(Item)', () => {
+  it('should contain an ok message when the payment is ok', async () => {
+    jest.spyOn(paymentService, 'pay').mockResolveValue({ errorCode: null });
+    const item = createItem(...);
+    const actual = await buyItem(item);
+    expect(actual.userMsg).toEqual('Payment was ok!');
+  });
+
+  it('should contain a user-friendly message when the card is expired', async () => {
+    jest.spyOn(paymentService, 'pay').mockResolveValue({ errorCode: '123' });
+    const item = createItem(...);
+    const actual = await buyItem(item);
+    expect(actual.userMsg).toEqual('The card has expired. Check the expiration date or use a different card.');
+  });
+});
+```
+
+### Spy
+
+- Stubs que almacenan información sobre cómo han sido utilizados.
+
+```javascript
+describe("displayNotification", () => {
+  test("should show a popup with the right text when the popup flag is true", () => {
+    const spy = jest.spyOn(notificationLibrary, "displayPopup");
+    const notification = { isPopup: true, text: "dummy_text_1" };
+    displayNotification(notification);
+    expect(spy).toHaveBeenCalledWith(notification.text);
+  });
+
+  test("should show an alert with the right text when the popup flag is false", () => {
+    const spy = jest.spyOn(notificationLibrary, "alert");
+    const notification = { isPopup: false, text: "dummy_text_2" };
+    displayNotification(notification);
+    expect(spy).toHaveBeenCalledWith(notification.text);
+  });
+});
+```
+
+### Fake
+
+- Objetos con implementación real pero no usable en producción.
+
+### Mock
+
+- Incluye comprobaciones preprogramadas sobre las interacciones esperadas.
+  - Ejemplo:
+
+```javascript
+const myMock = jest.fn().mockImplementation(() => {
+  return {
+    method: jest.fn().mockReturnValue(true),
+  };
+});
+
+const mockInstance = myMock();
+mockInstance.method();
+expect(mockInstance.method).toHaveBeenCalled();
+expect(mockInstance.method).toHaveReturnedWith(true);
+```
+
+## Buenas prácticas en Testing
+
+### SWA: Should, When, And
+
+1. Indicar el requisito que se está probando: Sirve como documentación sobre el comportamiento esperado del sistema.
+   - Ejemplo:
+
+```javascript
+test('should validate user email', () => { ... });
+```
+
+2. Indicar el estado inicial y el resultado esperado: Define el punto de partida y el resultado esperado del test.
+   - Ejemplo:
+
+```javascript
+test('should return true when email is valid', () => { ... });
+```
+
+3. Indicar claramente la unidad que se está probando: Ayuda a identificar qué pieza de código contiene el error cuando un test falla.
+   - Ejemplo:
+
+```javascript
+describe('.validateUserEmail(user)', () => { ... });
+```
+
+- Ejemplo completo:
+
+```javascript
+describe(".showPopup(data)", () => {
+  describe("when a message is passed", () => {
+    describe("and it has a title", () => {
+      test("should display the title", () => {});
+      test("should display the message", () => {});
+    });
+    describe("and it doesn't have a title", () => {
+      test("should hide the title", () => {});
+      test("should display the message", () => {});
+    });
+  });
+  describe("when no message is passed", () => {
+    describe("and it has a title", () => {
+      test("should display the title", () => {});
+      test("should hide the message", () => {});
+    });
+    describe("and it doesn't have a title", () => {
+      test("should throw an error", () => {});
+    });
+  });
+});
+```
+
+### Partes de un test (AAA)
+
+1. Arrange: Prepara el estado inicial del sistema.
+   - Ejemplo:
+
+```javascript
+const dummyUser = { isVip: false };
+```
+
+2. Act: Ejecuta el código que se va a probar.
+   - Ejemplo:
+
+```javascript
+const actual = hasFreeTickets(dummyUser);
+```
+
+3. Assert: Verifica que el resultado es el esperado.
+   - Ejemplo:
+
+```javascript
+expect(actual).toBe(false);
+```
+
+### Un test solo debería fallar por una razón
+
+- Dividir tests en unidades pequeñas.
+- Evita probar múltiples cosas en un solo test.
+- Ejemplo:
+
+```javascript
+describe(".getBook(bookID: string)", () => {
+  test("should return the right book", () => {
+    const actual = bookApi.getBook("fake_book_id");
+    expect(actual).toBe(expected);
+  });
+
+  test("should mark the book as taken", () => {
+    const actual = bookApi.getBook("fake_book_id");
+    expect(bookApi.isTaken("fake_book_id")).toBe(true);
+  });
+});
+```
+
+### No incluir lógica en el test
+
+- Evitar complejidad innecesaria
+- Ejemplo:
+
+```javascript
+describe("urlService.getAvatar(user)", () => {
+  test("should return a valid avatar url", () => {
+    const actual = urlService.getAvatar(user, "https://cdn.example.com/");
+    expect(actual).toEqual(
+      "https://cdn.example.com/photos/avatar/dummie_user_id"
+    );
+  });
+});
+```
+
+### No probar la implementación
+
+- Probar la funcionalidad esperada, no la implementación.
+- Ejemplo:
+
+```javascript
+describe("Calculator", () => {
+  describe(".add(a: number, b: number)", () => {
+    test("should add two numbers", () => {
+      const calculator = new Calculator();
+      const actual = calculator.add(1, 3);
+      expect(actual).toBe(4);
+    });
+  });
+});
+```
+
+### No probar métodos privados
+
+- Probar métodos públicos que utilizan métodos privados.
+- Refactorizar métodos privados complejos en unidades separadas.
+
+### Probar comportamiento en lugar de estado
+
+- Basado en la simulación de interacciones de usuarios.
+
+### Exportar Servicios
+
+- Agrupar y exportar funciones puras.
+- Facilita la prueba y sustitución por test doubles.
+
+### No confiar ciegamente en la cobertura
+
+- La cobertura es orientativa, no definitiva.
+- Escribir tests para todos los posibles casos de uso.
+- Probar con elementos de cada clase de equivalencia
