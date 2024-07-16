@@ -222,3 +222,30 @@ test("...", () => {
   // Se prueba A, y con ello todas sus dependencias expect(A).toDoSomething();
 });
 ```
+
+## Tipos de Tests
+
+### Small | Unidad
+
+- Rápidos de ejecutar.
+- Muy precisos: al fallar, se sabe exactamente dónde está el error.
+- Escriben los programadores para validar la lógica de bajo nivel.
+- Profundidad cero (sin dependencias).
+
+### Medium | Integración
+
+- Prueban la interacción de unidades independientes.
+- Verifican que las unidades colaboran correctamente.
+- Pueden duplicar pruebas de tests unitarios para asegurar sensibilidad y cobertura.
+
+### Medium | Funcional
+
+- Tests de integración de alto nivel.
+- Pueden introducir inestabilidad.
+- En frontend, prueban la interacción del cliente JavaScript con una API.
+
+### Large | End-to-End | System
+
+- Prueban el sistema completo desde el principio hasta el final.
+- Recrean condiciones reales de producción.
+- Son lentos e inestables, y se limitan a casos de uso básicos.
