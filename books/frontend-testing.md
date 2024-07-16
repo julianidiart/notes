@@ -6,18 +6,18 @@
 
 - Flujo manual de trabajo: Escribir código, probar manualmente en el navegador, y ajustar según los resultados.
 
-### ¿Qué es un test?
+### ¿Qué es un test?
 
 - Un proceso para obtener información sobre un sistema.
   - Ejemplo de test manual: abrir navegador, seleccionar producto, comprobar valores.
 
-### Test automáticos vs test no automáticos
+### Test automáticos vs test no automáticos
 
 - Si los tests automáticos son fiables y rápidos, ayudan a evitar errores críticos.
 
 ### La importancia de los tests
 
-#### Las excusas
+#### Las excusas
 
 - "No tengo tiempo"
   - Al principio, aprender a hacer tests puede ser costoso, pero a largo plazo ahorra tiempo y mejora la eficiencia.
