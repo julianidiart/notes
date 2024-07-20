@@ -99,3 +99,58 @@
 - Design actions based on their importance, not just semantics.
 - Primary actions should be obvious with high contrast, secondary actions should be clear but not prominent, and tertiary actions should be discoverable but unobtrusive.
 - For destructive actions, use secondary or tertiary button treatments unless it's the primary action in a confirmation step.
+
+## Layout and Spacing
+
+### Start with Too Much White Space
+
+- Begin by giving elements more room than needed and then reduce it.
+  - This approach helps ensure enough breathing room, making the design cleaner and less cramped.
+
+#### Dense UIs Have Their Place
+
+- While more space generally makes designs cleaner, some interfaces benefit from being more compact, like dashboards.
+- Deliberately decide when to use more or less white space based on the context.
+
+### Establish a spacing and sizing system
+
+- Avoid arbitrary values for spacing and sizing; use a predefined system to ensure consistency and efficiency.
+- Linear Scale Won’t Work: A fixed interval like “multiples of 4px” is insufficient as relative differences in spacing matter.
+  - Use a base value (e.g., 16px) and create a scale with progressively larger intervals.
+
+#### Using the System
+
+- A predefined system speeds up the design process and creates a subtle consistency.
+- Values should be spaced further apart as the size increases to maintain proportionality.
+
+### You don’t have to fill the whole screen
+
+- Avoid spreading elements just to fill space. Give each element only the space it needs.
+- Shrink the Canvas: Design on a smaller canvas to better handle small interfaces.
+
+#### Thinking in Columns
+
+- Split wide elements into columns to maintain balance without compromising usability.
+
+#### Don’t Force It
+
+- Don’t cram everything into a small area unnecessarily. Use the space as needed.
+
+### Grids Are Overrated
+
+- A 12-column grid is useful but not always ideal. Fixed widths often work better than fluid, percentage-based widths.
+- Don’t Shrink Elements Until Necessary: Use max-width properties instead of percentage-based sizing for more consistent results.
+
+### Relative Sizing Doesn’t Scale
+
+- Avoid using relative units like _em_ excessively. The proportional relationships between elements often don’t translate well across different screen sizes.
+- Larger elements should shrink faster than smaller ones on smaller screens.
+
+#### Relationships Within Elements
+
+- Allow properties of components to scale independently to maintain usability across different contexts.
+
+### Avoid ambiguous spacing
+
+- Ensure there is more space around groups of elements than within them to make relationships clear.
+- Ambiguous spacing makes interfaces harder to understand and look worse.
