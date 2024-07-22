@@ -154,3 +154,54 @@
 
 - Ensure there is more space around groups of elements than within them to make relationships clear.
 - Ambiguous spacing makes interfaces harder to understand and look worse.
+
+## Designing Text
+
+### Establish a Type Scale
+
+- Avoid using too many font sizes in an interface; it leads to inconsistencies and slows down the workflow.
+- Use a modular scale with ratios like 4:5 or 2:3 to define font sizes, but round off fractional values for consistency.
+- Hand-crafted scales are often more practical for interface design as they avoid subpixel rounding issues and give you total control over font sizes.
+  - Example scale: 12px, 14px, 16px, 20px, 24px, 32px, 48px.
+
+#### Avoid em Units:
+
+- Use px or rem units instead of em units to ensure font sizes remain consistent within the defined type scale.
+
+### Use Good Fonts:
+
+- Choose high-quality fonts that are legible and versatile.
+- Safe options include neutral sans-serif fonts like Helvetica or system font stacks.
+- Fonts with a variety of weights (at least five) are often more reliable.
+- Optimize fonts for legibility, especially for main UI text.
+- Use popular fonts as a guide and inspect well-designed sites for inspiration.
+
+### Keep Your Line Length in Check:
+
+- Ideal line length for readability is 45-75 characters per line.
+- Use em units to set paragraph widths within this range.
+- Adjust paragraph widths even within wider content areas to maintain readability.
+
+### Baseline, not center
+
+- Align mixed font sizes by their baseline rather than centering them to maintain visual balance.
+
+### Line-height is proportional
+
+- Line-height should be proportional to line length and font size.
+- Use taller line-height for narrow content and smaller text; shorter line-height for wider content and larger text.
+
+### Not every link needs a color
+
+- Emphasize links subtly in dense interfaces using font weight or a darker color instead of a distinct color.
+
+### Align with readability in mind
+
+- Left-align text for readability; center-align only short, independent blocks.
+- Right-align numbers in tables for easy comparison.
+- Justify text sparingly and enable hyphenation to avoid awkward gaps.
+
+### Use letter-spacing effectively
+
+- Adjust letter-spacing for headlines to create a more condensed look if needed.
+- Increase letter-spacing for all-caps text to improve legibility.
