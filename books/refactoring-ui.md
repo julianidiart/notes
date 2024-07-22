@@ -205,3 +205,51 @@
 
 - Adjust letter-spacing for headlines to create a more condensed look if needed.
 - Increase letter-spacing for all-caps text to improve legibility.
+
+## Working with Color
+
+### Ditch Hex for HSL
+
+- HSL (Hue, Saturation, Lightness) is more intuitive for human perception than hex or RGB.
+  - Hue represents a color's position on the color wheel.
+  - Saturation measures the color's vividness, and lightness measures how close it is to black or white.
+- HSB is different from HSL and is more common in design software, but HSL is better for web design.
+
+### You Need More Colors Than You Think
+
+- Simple color palette generators aren’t sufficient for real projects.
+- A comprehensive color palette includes:
+  - Greys: Essential for text, backgrounds, panels, and form controls. You need 8-10 shades.
+  - Primary Colors: Used for primary actions and active elements. You need 5-10 shades.
+  - Accent Colors: For highlights and semantic states (e.g., red for destructive actions, green for positive trends). Multiple shades are necessary.
+
+### Define Your Shades Up Front
+
+- Avoid generating shades on the fly. Define a fixed set of shades for consistency.
+- Choosing the Base Color: Pick a middle shade that would work well as a button background.
+- Finding the Edges: Choose the darkest and lightest shades based on their use cases.
+- Filling in the Gaps: Create intermediate shades to ensure a smooth gradient.
+- Greys follow the same process but without focusing on a base color.
+
+### Don’t Let Lightness Kill Your Saturation:
+
+- Increase saturation for lighter and darker shades to avoid washed-out colors.
+- Adjust perceived brightness by rotating the hue to maintain color intensity without changing lightness drastically.
+
+### Greys don’t have to be grey
+
+- True grey has no color, but in practice, greys are often tinted to appear warm or cool.
+- Saturate greys with blue for cool tones or with yellow/orange for warm tones.
+- Increase saturation for lighter and darker shades to maintain a consistent temperature.
+
+### Accessible Doesn’t Have to Mean Ugly
+
+- Follow WCAG guidelines for contrast ratios (4.5:1 for normal text, 3:1 for larger text).
+- Flipping the Contrast: Use dark text on light-colored backgrounds to maintain readability without overwhelming the user.
+- Rotating the Hue: Adjust the hue towards brighter colors to enhance contrast while keeping the text colorful.
+
+### Don’t Rely on Color Alone
+
+- Use color to support information but not as the sole means of communication.
+- Add icons or other visual indicators to supplement color coding for users with color blindness.
+- Use contrast effectively to distinguish elements when color differences aren’t sufficient.
