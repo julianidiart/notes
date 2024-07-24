@@ -290,10 +290,65 @@
 
 ## Working with Images
 
-### Use good photos
+### Use Good Photos
 
-### Text needs consistent contrast
+- If specific photos are needed, hire a professional photographer.
+- Use stock photos from resources like Unsplash for more generic needs.
+- Avoid placeholder images and smartphone photos as they rarely match the quality needed.
 
-### Everything has an intended size
+### Text Needs Consistent Contrast
+
+- Dynamic photos can make text hard to read due to varying light and dark areas.
+  - Add an Overlay: Use a semi-transparent overlay to balance contrast, making text more readable.
+  - Lower Image Contrast: Adjust the image’s contrast directly for more control over light and dark areas.
+  - Colorize the Image: Desaturate and apply a color overlay to the image, matching brand colors and improving text visibility.
+  - Add a Text Shadow: Use subtle text shadows to enhance readability without losing image dynamics.
+
+### Everything Has an Intended Size
+
+- Don’t Scale Up Icons: Large icons lose detail and appear chunky. Enclose small icons in a larger shape instead.
+- Don’t Scale Down Screenshots: Scaling down screenshots reduces readability. Use smaller screen sizes for screenshots or focus on partial screenshots.
+- Don’t Scale Down Icons Either: Simplify logos for favicons to ensure clarity at small sizes.
 
 ### Beware user-uploaded content
+
+- Control Shape and Size: Center user-uploaded images in fixed containers to maintain layout integrity.
+- Prevent Background Bleed: Use subtle inner box shadows or semi-transparent inner borders to avoid background color clashes.
+
+## Finishing Touches
+
+### Supercharge the Defaults
+
+- Replace bullet points with icons like checkmarks or arrows to add visual interest.
+- "Promote" quotes in testimonials by increasing size and changing color.
+- Style links with custom underlines or colors to make them stand out.
+- Customize form elements like checkboxes and radio buttons using brand colors to make them feel polished.
+
+### Add Color with Accent Borders
+
+- Use colorful accent borders to add visual interest to otherwise bland elements.
+- Examples include borders at the top of cards, highlighting active navigation items, or adding a colored line under headlines.
+
+### Decorate Your Backgrounds
+
+- Use different background colors or gradients to differentiate sections and add energy.
+- Add subtle patterns to break monotony without overwhelming the content.
+- Include geometric shapes or simple illustrations to specific areas to enhance visual appeal without disrupting readability.
+
+### Don’t Overlook Empty States
+
+- Design empty states as thoughtfully as filled ones since they are the user's first interaction with a feature.
+- Use images or illustrations to draw attention and provide a clear call-to-action.
+- Hide unnecessary UI elements in empty states to avoid confusion.
+
+### Use Fewer Borders
+
+- Instead of borders, use box shadows to subtly outline elements.
+- Different background colors can distinguish adjacent elements without needing borders.
+- Increase spacing between elements to create separation and reduce visual clutter.
+
+### Think Outside the Box
+
+- Dropdowns can be sectioned or multi-column with added text or icons.
+- Tables can combine related columns, use images, and introduce color for hierarchy and interest.
+- Radio buttons can be transformed into selectable cards for a more engaging UI.
