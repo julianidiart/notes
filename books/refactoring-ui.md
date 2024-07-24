@@ -253,3 +253,37 @@
 - Use color to support information but not as the sole means of communication.
 - Add icons or other visual indicators to supplement color coding for users with color blindness.
 - Use contrast effectively to distinguish elements when color differences aren’t sufficient.
+
+## Creating Depth
+
+### Emulate a light source
+
+- Light Comes from Above: Creating depth in design involves mimicking how light interacts with surfaces.
+  - For example, raised elements have lighter top edges and darker bottom edges, while inset elements have shadows on top and lighter bottom edges.
+- To make elements appear raised or inset, adjust their borders and shadows to reflect how light would hit them naturally.
+
+### Use Shadows to Convey Elevation
+
+- Smaller shadows with tight blur radii make elements feel slightly raised. Larger shadows with more blur make elements feel closer to the user.
+- Use small shadows for buttons, medium shadows for dropdowns, and large shadows for modal dialogs.
+- Change shadows dynamically to provide feedback during interactions, like making items appear to lift when clicked or dragged.
+
+#### Establishing an Elevation System
+
+- Define a set of shadows ranging from the smallest to the largest and use them consistently.
+
+### Shadows Can Have Two-Part Shadows
+
+- Larger, Softer Shadow: Simulates the shadow cast by direct light.
+- Tighter, Darker Shadow: Represents the shadow where ambient light is blocked.
+  - Adjust the second shadow to be more subtle as elevation increases.
+
+### Even Flat Design Can Have Depth
+
+- Lighter colors feel closer; darker colors feel further away.
+- Use short, offset shadows with no blur to add depth while maintaining a flat aesthetic.
+
+### Overlap Elements to Create Layers
+
+- Overlapping elements can create a sense of depth and layering in design.
+- Use invisible borders matching the background color to prevent clashing when overlapping images.
