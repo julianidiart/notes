@@ -352,3 +352,8 @@
 - Dropdowns can be sectioned or multi-column with added text or icons.
 - Tables can combine related columns, use images, and introduce color for hierarchy and interest.
 - Radio buttons can be transformed into selectable cards for a more engaging UI.
+
+## Leveling Up
+
+- Observe designs you admire and identify choices you wouldn't typically make.
+- Recreate designs you love from scratch without using developer tools.
