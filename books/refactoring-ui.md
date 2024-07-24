@@ -287,3 +287,13 @@
 
 - Overlapping elements can create a sense of depth and layering in design.
 - Use invisible borders matching the background color to prevent clashing when overlapping images.
+
+## Working with Images
+
+### Use good photos
+
+### Text needs consistent contrast
+
+### Everything has an intended size
+
+### Beware user-uploaded content
