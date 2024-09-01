@@ -1,6 +1,6 @@
-# Clean Agile (2019)
+# Clean Agile (2019)
 
-## Introduction to Agile
+## 1. Introduction to Agile
 
 ### History of Agile
 
@@ -28,11 +28,11 @@
 - Agile projects are divided into short, time-boxed iterations or sprints.
 - Each sprint includes planning, execution, and review stages, ensuring that feedback is constantly integrated.
 
-### Circle of Life
+### Circle of Life
 
 - Agile is a small discipline that helps small software teams manage small projects. Big projects are made from small projects.
 
-## The Reason for Agile
+## 2. The Reason for Agile
 
 ### Professionalism
 
@@ -51,3 +51,46 @@
 ### The Bill of Rights
 
 - Bill of Rights for customers and developers: Emphasizing transparency, mutual respect, and the right to high-quality work.
+
+## 3. Business Practices
+
+### Planning
+
+- Agile planning involves breaking down a project into smaller pieces and estimating those pieces.
+
+#### User Stories and Story Points
+
+- User stories are simple descriptions of a feature from the user's perspective.
+- They are written on index cards to keep them concise and flexible.
+
+#### Iteration Planning
+
+- Each iteration starts with an Iteration Planning Meeting, where the team estimates their capacity and selects stories to work on.
+- The goal is to focus on delivering complete stories, not just individual tasks.
+
+#### INVEST Stories
+
+- Good user stories should adhere to the INVEST criteria, meaning they are Independent, Negotiable, Valuable, Estimable, Small, and Testable.
+
+#### Story Estimation
+
+- Some techniques to estimate are Flying Fingers and Planning Poker.
+- If estimates vary widely among team members, further discussion is encouraged to reach a consensus.
+- Stories that are too unclear or large may be split or require further research.
+
+#### Iteration and Release
+
+- It's preferable to have a few stories fully done than many partially completed.
+- At the end of each iteration, teams present a demo to stakeholders, showcasing completed features and passing acceptance tests.
+- A rising or falling velocity can indicate issues like story point inflation or declining code quality.
+- Teams aim to release as often as possible, ideally after every change.
+
+### Acceptance Test
+
+- These are tests written from the user's perspective to validate that the implemented features meet the desired requirements.
+- Acceptance tests are a key component in defining what "done" means for a user story, and they are written before development begins to guide the implementation.
+
+### Whole Team
+
+- All members of the project team (developers, testers, business analysts, etc.) work together in close collaboration.
+- This reduces communication barriers, improves efficiency, and encourages a shared sense of responsibility for the project's success.
