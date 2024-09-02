@@ -120,3 +120,28 @@
 
 - Short, regular meetings where team members share their progress, plans, and any obstacles they face.
 - These meetings are designed to keep everyone on the same page and address issues quickly​.
+
+## 5. Technical Practices
+
+### Test-Driven Development
+
+- TDD emphasizes writing test cases before writing the corresponding production code.
+- Ensures that every feature is defined by its tests, providing a clear path from specification to implementation​.
+- The primary benefit of TDD is to give developers the courage to make changes without fear of breaking the system, as the tests act as a safety net​.
+- TDD follows a Red/Green/Refactor cycle: write a failing test (Red), write just enough code to pass the test (Green), and then refactor the code for improvement without changing its behavior (Refactor)​.
+
+### Refactoring
+
+- Refactoring involves improving the internal structure of the code without changing its external behavior. This practice is essential to keep the codebase clean, maintainable, and adaptable.
+- Regular refactoring helps prevent code rot and allows the code to evolve gracefully as new features are added or requirements change.
+
+### Simple Design
+
+- The principle of Simple Design focuses on creating the simplest possible solution that works. This involves avoiding unnecessary complexity and ensuring that the code is straightforward and easy to understand​.
+- Simple Design is guided by four rules: the code must pass all tests, reveal intent clearly, avoid duplication, and contain the fewest number of elements necessary to solve the problem.
+
+### Pair Programming
+
+- In Pair Programming, two developers work together at one workstation. One writes the code (the driver), while the other reviews each line as it's written (the navigator).
+- This collaboration helps improve code quality and spreads knowledge throughout the team​.
+- Pair Programming encourages constant code review, leading to fewer defects and better design. It also facilitates knowledge sharing, making the team more resilient to personnel changes.
