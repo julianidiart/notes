@@ -94,3 +94,29 @@
 
 - All members of the project team (developers, testers, business analysts, etc.) work together in close collaboration.
 - This reduces communication barriers, improves efficiency, and encourages a shared sense of responsibility for the project's success.
+
+## 4. Team Practices
+
+### Methapor
+
+- Using a common language and shared metaphors helps improve communication within the team
+
+### Sustainable Pace
+
+- Emphasizes the importance of working at a sustainable speed to avoid burnout and maintain long-term productivity.
+- Overworking can lead to mistakes and burnout, which are detrimental to both individuals and projects​.
+
+### Collective Ownership
+
+- The entire team shares ownership of the codebase, which encourages collaboration and reduces knowledge silos.
+- This approach helps in maintaining quality as all team members can contribute to and improve any part of the project​.
+
+### Continuous Integration
+
+- Encourages frequent integration of code changes to detect issues early and ensure a stable codebase.
+- Promotes automated testing and immediate feedback, which helps maintain the quality of the software being developed.
+
+### Standup Meetings
+
+- Short, regular meetings where team members share their progress, plans, and any obstacles they face.
+- These meetings are designed to keep everyone on the same page and address issues quickly​.
