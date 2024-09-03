@@ -187,3 +187,20 @@
 - Great tools should help achieve objectives, be easy to learn, become transparent in use, allow for adaptation, and be affordable.
 - For co-located Agile teams, simple physical tools like sticky notes and whiteboards are effective, but remote teams might require more sophisticated digital tools.
 - Complex Agile Lifecycle Management tools should support, not constrain, team processes. The tool should adapt to the team's needs, not the other way around.
+
+## 7. Craftsmanship (by Sandro Mancuso)
+
+### The Software Craftsmanship Manifesto
+
+- Programming is not just a job but a profession that involves pride in well-crafted software.
+- The Software Craftsmanship Manifesto builds on the Agile Manifesto, highlighting the importance of well-crafted software, continuous improvement, community, and productive partnerships.
+- Craftsmanship Principles:
+  - Well-Crafted Software: Emphasizes the importance of producing not just working software but software that is well-crafted, maintainable, and of high quality​(clean-agile).
+  - Continuous Value Addition: Focuses on steadily adding value through software development, ensuring that each iteration enhances the product's value​(clean-agile).
+  - Community of Professionals: Encourages developers to be part of a community that shares knowledge, best practices, and continually learns from each other​(clean-agile).
+  - Productive Partnerships: Stresses the importance of fostering productive relationships between customers and developers, beyond mere collaboration
+
+### Ideologies and Methodologies
+
+- Agile is seen as an ideology with a focus on business agility and customer satisfaction. In contrast, methodologies like Scrum and XP are tools or methods to achieve these goals.
+- Craftsmanship, unlike fixed methodologies, promotes a continuous search for better practices and adaptation to meet evolving goals and challenges.
