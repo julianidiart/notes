@@ -1,6 +1,6 @@
 # Escaping the Build Trap (2019)
 
-## Part 1: The Build Trap
+## Part I: The Build Trap
 
 - **Build Trap**: Organizations measure success by outputs (features delivered) rather than outcomes (customer value).
 - Focuses on shipping features rather than solving real problems for customers, leading to disruption and loss of market share.
@@ -39,3 +39,48 @@
   - **Unknown Knowns**: These refer to _intuitions_ or gut feelings based on past experiences. Although intuition can be valuable, it is also where _bias_ can thrive. Intuition must be tested and validated through experimentation before being used to drive decisions.
   - **Unknown Unknowns**: These are the factors or issues that you do not even know exist, making them impossible to ask questions about or plan for. They often emerge unexpectedly during _customer interactions_ or while analyzing unrelated data, revealing insights that could reshape your product or strategy.
 - Product managers must focus on identifying and exploring the _known unknowns_ while reducing the impact of _unknown unknowns_ through constant learning and iteration.
+
+## Part II: The Role of the Product Manager
+
+### Bad Product Manager Archetypes
+
+- **Mini-CEO Archetype**: Effective product managers rely on influence, not authority.
+- **Waiter Archetype**: Takes orders from stakeholders without understanding or questioning. Lacks strategic thinking and prioritization, leading to a feature-factory mindset.
+- **Former Project Manager Archetype**: Focuses on deadlines and deliverables rather than the “why” behind product decisions. Lacks understanding of customer problems and how to create business value.
+
+### A Great Product Manager
+
+- Understand business goals, user problems, and market needs.
+- Work collaboratively with teams, influence decision-making, and guide product vision.
+- Product managers should focus on identifying and validating customer problems before proposing solutions.
+- Effective product managers facilitate the team’s collective knowledge.
+- Successful product managers listen, learn, and use data to make decisions, not ego or intuition.
+
+### The Product Manager Career Path
+
+- **Associate Product Manager**:
+  - Entry role, often lacks formal training in product management.
+  - Must develop foundational skills in working with development teams and gathering customer insights.
+- **Product Manager**:
+  - Owns a feature or set of features.
+  - Balances short-term operational tasks with long-term strategic thinking.
+  - Works with UX and development to deliver solutions.
+- **Senior Product Manager**:
+  - Oversees more complex products or a broader scope.
+  - Balances strategic vision and operational responsibilities without direct reports.
+- **Director of Product**:
+  - Oversees a team of product managers.
+  - Responsible for product vision, operational efficiency, and strategic alignment within a product line or portfolio.
+- **VP of Product**:
+  - Connects company goals with product lines, accountable for the financial success of the product.
+  - Guides the overall product strategy and aligns teams toward business outcomes.
+- **Chief Product Officer (CPO)**:
+  - Oversees the entire product portfolio.
+  - Ensures strategic alignment across all product lines and communicates with the board on product decisions and financial impacts.
+
+### Organizing Your Teams
+
+- Organizing around technical components or features can lead to inefficient work and lack of alignment with goals.
+- Aligning teams with _value streams_ helps to focus on delivering outcomes and customer value.
+- Teams organized around strategic goals (e.g., retention, new users) rather than product features or components.
+- Product teams should be aligned with clear product vision and strategy to ensure successful execution.
