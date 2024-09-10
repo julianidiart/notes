@@ -50,7 +50,7 @@
 
 ### Chapter 7: A Great Product Manager
 
-- Understand business goals, user problems, and market needs.
+- Understand _business goals_, _user problems_, and _market needs_.
 - Work collaboratively with teams, influence decision-making, and guide product vision.
 - Product managers should focus on identifying and validating customer problems before proposing solutions.
 - Effective product managers facilitate the team’s collective knowledge.
@@ -84,3 +84,49 @@
 - Aligning teams with _value streams_ helps to focus on delivering outcomes and customer value.
 - Teams organized around strategic goals (e.g., retention, new users) rather than product features or components.
 - Product teams should be aligned with clear product vision and strategy to ensure successful execution.
+
+## Part III: Strategy
+
+### Chapter 10: What Is Strategy?
+
+- _Strategy_ is a framework for making decisions, not a detailed plan.
+- A _good strategy_ focuses on goals, vision, and higher-level objectives, enabling flexibility in achieving outcomes.
+- A _bad strategy_ is too rigid, feature-based, and often dictated without validating assumptions.
+- Effective strategy includes defining the “why” before the “what” and “how”.
+- Strategy shouldn't be treated as a fixed plan that stifles experimentation and adaptability.
+
+### Chapter 11: Strategic Gaps
+
+- Gaps that prevent companies from achieving strategic outcomes:
+  - **The Knowledge Gap**: Difference between what management knows and what they want to know.
+  - **The Alignment Gap**: Discrepancy between what teams do and what management expects.
+  - **The Effects Gap**: Difference between expected outcomes and actual results.
+- Communicate strategic intent (high-level goals) rather than detailed instructions and allow teams to figure out how to achieve outcomes.
+
+### Chapter 12: Creating a Good Strategic Framework
+
+- A _strategic framework_ links the company's vision to product portfolio and initiatives.
+- Strategy creation involves setting a vision (long-term goal) and strategic intents (focused, mid-term objectives).
+- Companies must avoid _yearly planning mode_, where goals and budgets are set once a year, limiting flexibility.
+- Fund product initiatives incrementally as they validate success, similar to VC funding.
+- Strategy Deployment
+  - Align strategy across the organization by setting goals for each level (executives, managers, teams).
+  - **Vision**: High-level, long-term goal.
+  - Specific mid-term outcomes aligned to the vision.
+  - **Product Initiatives**: Specific product-driven objectives that support the strategic intents.
+  - **Options**: Possible solutions or tactics explored to meet product initiatives.
+
+### Chapter 13: Company-Level Vision and Strategic Intents
+
+- The _company vision_ sets long-term direction, guiding the company’s efforts and giving meaning to product decisions.
+  - Vision should be clear, memorable, and actionable. It explains the why and how of the company’s goals.
+- The _strategic intents_ are outcome-focused goals that help achieve the vision.
+  - The strategic intents should be concise and few in number to avoid spreading resources thin.
+
+### Chapter 14: Product Vision and Portfolio
+
+- The _product vision_ communicates the problem the product solves and the value proposition for users.
+  - Should not focus on specific features but rather on the outcomes and capabilities the product enables.
+  - Aligns the team around solving specific user problems.
+- The _product portfolio_ is a collection of products that work together to support the company’s vision.
+  - The CPO oversees the product portfolio to ensure products work in harmony and align with business goals.
