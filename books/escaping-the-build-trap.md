@@ -130,3 +130,15 @@
   - Aligns the team around solving specific user problems.
 - The _product portfolio_ is a collection of products that work together to support the company’s vision.
   - The CPO oversees the product portfolio to ensure products work in harmony and align with business goals.
+
+## Product Management Process
+
+### The Product Kata
+
+### Understanding the Direction and Setting Success Metrics
+
+### Problem Exploration
+
+### Solution Exploration
+
+### Building and Optimizing Your Solution
