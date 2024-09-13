@@ -2,7 +2,7 @@
 
 ## Chapter 1: Scale From Zero to Millions of Users
 
-- The chapter breaks down the journey of scaling a system into manageable steps, starting with a simple single-server setup. As traffic grows, the system must evolve by introducing load balancers, separating web and data tiers, implementing database replication, and introducing caches. Horizontal scaling becomes essential once vertical scaling reaches its limits. The chapter also covers the importance of content delivery networks (CDNs) and caching, database sharding, and state management. At each level of scale, redundancy, availability, and performance optimization are considered.
+- Scaling a system into manageable steps starts with a simple single-server setup. As traffic grows, the system must evolve by introducing load balancers, separating web and data tiers, implementing database replication, and introducing caches. Horizontal scaling becomes essential once vertical scaling reaches its limits. The chapter also covers the importance of content delivery networks (CDNs) and caching, database sharding, and state management. At each level of scale, redundancy, availability, and performance optimization are considered.
 
 - **Single server setup**: Everything (web, cache, database) runs on a single server initially.
 
@@ -64,3 +64,41 @@
   > "A message queue is a durable component, stored in memory, that supports asynchronous communication."
 
   - Using a message queue decouples tasks like image processing, allowing the system to handle asynchronous processing without delaying user responses.
+
+## Chapter 2: Back-of-the-Envelope Estimation
+
+- _Back-of-the-envelope calculations_ are quick estimations, which are essential during system design interviews. These estimates help assess system capacity or performance based on general assumptions and approximations. Jeff Dean, a Google Senior Fellow, emphasizes that these calculations provide a sense of whether a design can meet given requirements.
+
+  > "Back-of-the-envelope calculations are estimates you create using a combination of thought experiments and common performance numbers to get a good feel for which designs will meet your requirements."
+
+  > "You need to have a good sense of scalability basics to effectively carry out back-of-the-envelope estimation."
+
+  > "Commonly asked back-of-the-envelope estimations: QPS, peak QPS, storage, cache, number of servers, etc."
+
+  > "Back-of-the-envelope estimation is all about the process. Solving the problem is more important than obtaining results."
+
+- **Power of Two**: Data is typically represented using _powers of two_. Understanding basic units, such as bytes, kilobytes, and gigabytes, is crucial when estimating data storage and transfer needs.
+
+  > "Although data volume can become enormous when dealing with distributed systems, calculation all boils down to the basics."
+
+- **Latency Numbers**: _Latency_ refers to the time delay in system operations. Typical latency values for operations like reading from memory or disk, performing network requests, and more. These numbers help approximate time-sensitive system requirements.
+
+  > "Latencies you should be familiar with: memory access is fast, but disk access is slow. Avoid disk seeks if possible."
+
+- **Availability Numbers**: This refers to _system uptime_, measured as a percentage (e.g., 99.9% uptime). System reliability is crucial, and service-level agreements (SLAs) with customers typically specify availability requirements.
+
+  > "Most services fall between 99% and 100% availability. The more nines, the better."
+
+- **Tips for Estimations**:
+
+  - **Rounding and Approximation**: Complex calculations should be simplified using rough approximations during interviews.
+
+  > "It is difficult to perform complicated math operations during the interview. Precision is not expected. Use round numbers and approximation to your advantage."
+
+  - **Assumptions**: Clearly state your assumptions when making estimates. These provide a framework for further calculations and justifications.
+
+  > "Write down your assumptions. It is a good idea to write down your assumptions to be referenced later."
+
+  - **Unit Labeling**: Always label units (e.g., KB, MB, GB) to avoid confusion.
+
+  > "Label your units. When you write down '5', does it mean 5 KB or 5 MB? You might confuse yourself with this."
