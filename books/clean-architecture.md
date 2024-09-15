@@ -68,8 +68,6 @@
   - If developers focus too much on behavior without considering architecture, the system may become **fragile** and difficult to maintain or evolve.
   - **Balance** is essential: a system needs to **work well** now (behavior) and be **adaptable** to future changes (structure).
 
-  > “The only way to go fast, is to go well.”
-
 - **Greater Value**:
 
   - Although both values are important, **structure** tends to hold more significance in the long term.
@@ -86,6 +84,8 @@
 
   - Good developers must **advocate** for structure, ensuring that the architecture doesn’t degrade over time.
   - Sacrificing architecture for short-term gains in behavior is a **common mistake**, but it compromises the system’s future adaptability and maintainability.
+
+> “The only way to go fast, is to go well.”
 
 ## Part II: Starting with the Bricks: Programming Paradigms
 
@@ -116,3 +116,45 @@
   - Each of these paradigms **removes certain capabilities** from programmers, enforcing discipline in how they structure and control the flow of a program.
   - The key takeaway is that paradigms focus more on **what not to do**, shaping how programmers write software by limiting unrestricted behaviors like direct jumps, mutable state, or unsafe function pointers.
   - The three programming paradigms **structured**, **OOP**, and **functional programming** likely form the **only three paradigms** of their kind, as no fundamentally new paradigms have emerged since their creation.
+
+### Chapter 4: Structured Programming
+
+- **Edsger W. Dijkstra**:
+
+  - Born in **Rotterdam in 1930**, he was the first programmer employed at the Mathematical Center of Amsterdam.
+  - Known for his early recognition of the **intellectual challenge** posed by programming and for **pioneering structured programming**.
+
+- **Proof and Falsifiability**:
+
+  - Dijkstra applied **mathematical proof** techniques to programming, recognizing that programming involves more details than humans can manage without assistance.
+  - His vision included constructing a **Euclidean hierarchy** of provable structures, allowing programs to be mathematically proven correct.
+  - Dijkstra found that **goto statements** hinder the recursive decomposition necessary for proving program correctness, leading to the development of **structured programming**.
+
+- **A Harmful Proclamation**:
+
+  - In 1968, Dijkstra published his famous letter, _"Go To Statement Considered Harmful"_, where he argued against the use of **goto** statements.
+  - His position sparked a decade-long debate, but **modern programming languages** have largely abandoned the goto statement as a result of this battle.
+  - **Modern languages** force structured programming by limiting **unrestricted transfer of control** (like goto), allowing programmers to maintain discipline in code flow.
+
+- **Functional Decomposition**:
+
+  - Structured programming allows for **functional decomposition**, where complex problems are broken down into **high-level functions**, which are then further decomposed into **lower-level** functions.
+  - By following **structured decomposition**, large systems can be broken into small, **provable units**, ensuring **clarity and maintainability**.
+
+- **No Formal Proofs**:
+
+  - Despite the initial hope for **formal mathematical proofs** of software correctness, the practical challenges led to a decline in this approach.
+  - **Programmers** found formal proofs too laborious and complex for everyday use, leading to a focus on **scientific methods** for validating software correctness.
+
+- **Science to the Rescue**:
+
+  - The **scientific method** provided a more pragmatic approach to software correctness, focusing on **falsifiability**.
+  - Software correctness, like scientific theories, is never proven beyond doubt but is deemed **correct enough** when sufficient tests fail to falsify it.
+
+- **Tests**:
+
+  - **Testing** demonstrates the presence of bugs, not their absence. Therefore, tests can show that a program is incorrect, but they cannot **prove it correct**.
+  - Structured programming encourages writing **provable functions** that can be tested and evaluated for correctness.
+  - If tests fail to prove a function incorrect, it is deemed **correct enough** for practical use.
+
+> “Dijkstra once said, “Testing shows the presence, not the absence, of bugs.” In other words, a program can be proven incorrect by a test, but it cannot be proven correct. All that tests can do, after sufficient testing effort, is allow us to deem a program to be correct enough for our purposes.”
