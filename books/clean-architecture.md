@@ -68,6 +68,8 @@
   - If developers focus too much on behavior without considering architecture, the system may become **fragile** and difficult to maintain or evolve.
   - **Balance** is essential: a system needs to **work well** now (behavior) and be **adaptable** to future changes (structure).
 
+  > “The only way to go fast, is to go well.”
+
 - **Greater Value**:
 
   - Although both values are important, **structure** tends to hold more significance in the long term.
@@ -84,3 +86,33 @@
 
   - Good developers must **advocate** for structure, ensuring that the architecture doesn’t degrade over time.
   - Sacrificing architecture for short-term gains in behavior is a **common mistake**, but it compromises the system’s future adaptability and maintainability.
+
+## Part II: Starting with the Bricks: Programming Paradigms
+
+### Chapter 3: Paradigm Overview
+
+- **Structured Programming**:
+
+  - Originated with **Edsger Wybe Dijkstra** in 1968.
+  - It involves **replacing unrestrained jumps** (_goto_ statements) with structured control flow mechanisms like **if/then/else** and **do/while/until** loops.
+  - This paradigm aims to **impose discipline** on **direct transfer of control**, promoting code clarity and reducing errors.
+
+- **Object-Oriented Programming (OOP)**:
+
+  - Developed by **Ole Johan Dahl** and **Kristen Nygaard** in 1966.
+  - Based on the idea of **moving local variables and functions** (from a function call stack frame in **ALGOL**) to a heap, leading to **classes** and **instance variables**.
+  - OOP introduces the concept of **polymorphism** through the **disciplined use of function pointers**, evolving into the creation of **methods** in classes.
+  - This paradigm disciplines **indirect transfer of control** through object methods.
+
+- **Functional Programming**:
+
+  - The earliest paradigm, developed by **Alonzo Church** in 1936 via **λ-calculus**.
+  - The **LISP** language, invented by **John McCarthy** in 1958, is based on λ-calculus and serves as a foundation for functional programming.
+  - **Immutability** is central to functional programming, emphasizing **no assignment statements** and restricted changes to the value of a variable.
+  - Functional programming imposes **discipline on variable assignments**, distinguishing it from imperative programming models.
+
+- **Food for Thought**:
+
+  - Each of these paradigms **removes certain capabilities** from programmers, enforcing discipline in how they structure and control the flow of a program.
+  - The key takeaway is that paradigms focus more on **what not to do**, shaping how programmers write software by limiting unrestricted behaviors like direct jumps, mutable state, or unsafe function pointers.
+  - The three programming paradigms **structured**, **OOP**, and **functional programming** likely form the **only three paradigms** of their kind, as no fundamentally new paradigms have emerged since their creation.
