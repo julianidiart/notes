@@ -167,27 +167,57 @@
   - **"A way to model the real world"**: This is vague and doesn’t clarify what OO truly represents.
   - Some claim that **encapsulation**, **inheritance**, and **polymorphism** are the key pillars of OO. Each is analyzed below:
 
-  - **Encapsulation**
+- **Encapsulation**
 
-    - OO languages enable easy and effective **encapsulation** of data and functions. This allows a clear boundary around a cohesive set of data and functions, with hidden data and selectively available functions.
-    - Example: A class with **private** data members and **public** member functions.
-    - **Encapsulation** is not unique to OO. In fact, **C** had perfect encapsulation:
-      - By forward-declaring data structures and functions in header files and implementing them in separate implementation files, users had no access to internal details.
-      - With **OO languages like C++**, perfect encapsulation was compromised due to the need to declare member variables in the class header.
+  - OO languages enable easy and effective **encapsulation** of data and functions. This allows a clear boundary around a cohesive set of data and functions, with hidden data and selectively available functions.
+  - Example: A class with **private** data members and **public** member functions.
+  - **Encapsulation** is not unique to OO. In fact, **C** had perfect encapsulation:
+    - By forward-declaring data structures and functions in header files and implementing them in separate implementation files, users had no access to internal details.
+    - With **OO languages like C++**, perfect encapsulation was compromised due to the need to declare member variables in the class header.
 
-  - **Inheritance**
+- **Inheritance**
 
-    - **Inheritance** in OO allows a class to derive properties and methods from another class.
-    - Example: In **C**, inheritance could be simulated using function pointers and manual redeclaration of variables within a larger scope.
-      - However, inheritance existed in some form even before OO was formally introduced, but OO languages made this mechanism much more convenient.
+  - **Inheritance** in OO allows a class to derive properties and methods from another class.
+  - Example: In **C**, inheritance could be simulated using function pointers and manual redeclaration of variables within a larger scope.
+    - However, inheritance existed in some form even before OO was formally introduced, but OO languages made this mechanism much more convenient.
 
-  - **Polymorphism**
+- **Polymorphism**
 
-    - **Polymorphism** refers to the ability to call the same method on different objects, allowing for behavior specific to each object.
-    - Pre-OO, C achieved polymorphism using function pointers and standardized function signatures (e.g., for IO operations like `open`, `close`, `read`, `write`).
-    - OO languages formalized polymorphism, allowing method calls to be dynamically dispatched based on the object's type.
-    - **Polymorphism** allows for the creation of _plugin architectures_, where new features or implementations can be introduced without changing the core code. This ability to decouple components is one of the most powerful features of OOP from an architectural perspective.
+  - **Polymorphism** refers to the ability to call the same method on different objects, allowing for behavior specific to each object.
+  - Pre-OO, C achieved polymorphism using function pointers and standardized function signatures (e.g., for IO operations like `open`, `close`, `read`, `write`).
+  - OO languages formalized polymorphism, allowing method calls to be dynamically dispatched based on the object's type.
+  - **Polymorphism** allows for the creation of _plugin architectures_, where new features or implementations can be introduced without changing the core code. This ability to decouple components is one of the most powerful features of OOP from an architectural perspective.
 
-  - **Dependency Inversion**
+- **Dependency Inversion**
 
-    - One of the most important benefits of OOP is _Dependency Inversion_, where high-level policy modules do not depend on low-level detail modules. Instead, both depend on abstractions. This inversion of control is key to creating flexible, maintainable architectures.
+  - One of the most important benefits of OOP is _Dependency Inversion_, where high-level policy modules do not depend on low-level detail modules. Instead, both depend on abstractions. This inversion of control is key to creating flexible, maintainable architectures.
+
+### Chapter 6: Functional Programming
+
+- **Functional Programming** is a paradigm based on **immutability** and avoiding side effects in functions.
+- It traces its roots back to **λ-calculus**, developed by **Alonzo Church** in the 1930s.
+- **John McCarthy** implemented the ideas of λ-calculus into the **LISP** programming language in 1958.
+
+- **Immutability**
+
+  - **Immutability** is central to functional programming.
+    - A functional program has **no variable assignment**, meaning values don’t change once they are set.
+    - This helps avoid **race conditions**, **concurrent update problems**, and **deadlocks**, making concurrent programming more straightforward.
+
+- **Segregation of Mutability**
+
+  - It is sometimes necessary to introduce **mutable state** in certain parts of a program.
+    - The solution is to **segregate** mutable and immutable components.
+    - **Transactional memory** can help manage mutable variables safely.
+    - For example, in **Clojure**, you can use **atoms** and a **compare-and-swap** mechanism to ensure safe updates:
+      ```clojure
+      (def counter (atom 0))
+      (swap! counter inc)
+      ```
+
+- **Event Sourcing**
+
+  - In **event sourcing**, instead of saving **state** (e.g., balances or statuses), we store a **log of events**.
+    - State is reconstructed by replaying the sequence of events.
+    - This minimizes mutable state and avoids **concurrent update issues**.
+    - While this approach seems resource-intensive, modern computing power makes it practical in many scenarios.
