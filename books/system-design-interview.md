@@ -102,3 +102,65 @@
   - **Unit Labeling**: Always label units (e.g., KB, MB, GB) to avoid confusion.
 
   > "Label your units. When you write down '5', does it mean 5 KB or 5 MB? You might confuse yourself with this."
+
+## Chapter 3: A Framework for System Design Interviews
+
+- The primary goal is not to design a perfect solution but to demonstrate how well candidates approach problems, ask clarifying questions, and handle feedback.
+- While technical proficiency is important, the interview assesses much more, such as collaboration, communication, and problem-solving under pressure. Red flags include over-engineering and rigidness in design.
+
+- **4 Steps Framework**
+
+  1. **Understand the Problem and Establish the Design Scope**
+
+  - Ask clarifying questions and ensuring that both the interviewer and candidate are aligned on the requirements
+
+    - What features are we going to build?
+    - How many users does the product serve?
+    - What are the expected scale and performance metrics?
+    - What are the non-functional requirements such as latency, reliability, and availability?
+
+  > In a system design interview, giving out an answer quickly without thinking gives you no bonus points. Answering without a thorough understanding of the requirements is a huge red flag.
+
+  > When you ask a question, the interviewer either answers your question directly or asks you to make your assumptions. If the latter happens, write down your assumptions on the whiteboard or paper.
+
+  2. **Propose a High-Level Design and Get Buy-In**
+
+  - Propose a high-level system architecture that covers major components like databases, caches, load balancers, and APIs.
+    - Break the system into logical parts, such as client-server interactions, data storage, caching, etc.
+    - Use diagrams to visualize components and their relationships.
+    - Communicate your assumptions and decision-making process.
+
+  > The problem is open-ended, and there is no perfect answer. The final design is less important compared to the work you put in the design process.
+
+  3. **Dive Deeper into Specific Components**
+
+  - Focus on specific areas for a deep dive. Common topics for discussion include system bottlenecks, database design, consistency models, scalability, and failure handling.
+    - Database architecture (sharding, replication)
+    - Caching strategies
+    - Load balancing
+    - Handling high availability and fault tolerance
+
+  > Let the interviewer know what you are thinking. Communicate with your interview.
+
+  4. **Wrap Up**
+
+  - Summarize design and address potential improvements.
+    - Bottleneck identification and performance improvements
+    - How the design can evolve with scale
+    - Error handling strategies
+    - Monitoring and operational considerations
+
+- **Dos**
+
+  - **Ask for clarification**: It is essential to clarify vague or ambiguous requirements.
+  - **Collaborate**: Treat the interviewer as a team member, sharing and iterating on ideas.
+  - **Think aloud**: Continuously share your thought process to provide clarity.
+  - **Discuss trade-offs**: Weighing pros and cons shows your ability to make informed decisions.
+  - **Get feedback**: Engage the interviewer frequently for validation.
+
+- **Dont's**
+
+  - **Avoid rushing**: Do not jump to a solution without thoroughly understanding the problem.
+  - **Avoid over-engineering**: Focus on practical, not overly complex, solutions.
+  - **Don’t be silent**: Engage continuously rather than thinking in isolation.
+  - **Don’t neglect to summarize**: Always wrap up your design with a summary and highlight improvements.
