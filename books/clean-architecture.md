@@ -262,3 +262,41 @@
   - **Separate modules** based on their responsibilities to different actors. Each module should only be responsible to **one actor**.
   - Keep code **localized** to avoid unintentional side effects on other parts of the system.
   - Use design patterns like **facades** to provide a unified interface without violating SRP.
+
+### Chapter 8: OCP - The Open-Closed Principle
+
+- **Definition of OCP**
+
+  - The Open-Closed Principle (OCP), coined in 1988 by **Bertrand Meyer**, states:
+    - "A software artifact should be **open for extension** but **closed for modification**."
+  - This means that software behavior should be **extendible** without modifying the existing codebase.
+
+- **Core Idea**
+
+  - The fundamental reason for studying software architecture is to minimize the impact of changes.
+  - If small extensions to requirements cause massive changes, the software’s architecture has failed.
+
+- **Application in Design**
+
+  - Many students of software design understand OCP as it relates to the design of **classes** and **modules**.
+    - However, OCP becomes even more critical at the level of **architectural components**.
+
+- **A Thought Experiment**
+
+  - Imagine a system displaying a **financial summary** on a web page where:
+    - Data is scrollable, and **negative numbers** are rendered in red.
+  - Stakeholders request that this information also be presented as a **printable report**:
+    - Paginated, with page headers/footers, and negative numbers shown with parentheses.
+  - Some new code will be required for this new format, but the goal is to minimize changes to existing code.
+  - A good architecture would reduce the code change to almost zero by applying principles like:
+    - **Single Responsibility Principle (SRP)**: Separate concerns like data formatting for web and print.
+    - **Dependency Inversion Principle (DIP)**: Organize dependencies to protect parts of the system from changes.
+
+- **Directional Control**
+
+  - **Dependencies** between components should flow in the **correct direction**.
+  - Example: A **FinancialDataGateway** interface inverts the dependency, allowing the `Interactor` component to be isolated from changes in the database.
+
+- **Information Hiding**:
+
+  - Protect controllers from unnecessary knowledge about interactors to prevent **transitive dependencies**.
