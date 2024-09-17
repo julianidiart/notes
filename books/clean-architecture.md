@@ -221,3 +221,44 @@
     - State is reconstructed by replaying the sequence of events.
     - This minimizes mutable state and avoids **concurrent update issues**.
     - While this approach seems resource-intensive, modern computing power makes it practical in many scenarios.
+
+## Part III: Design Principles
+
+### Chapter 7: SRP - The Single Responsibility Principle
+
+- **Definition of SRP**
+
+  - SRP states: _"A module should have one, and only one, reason to change."_
+  - A more precise version: **A module should be responsible to one actor**.
+    - **Actor** refers to a group of people or a stakeholder that would require a change in the system.
+
+- **Common Misunderstanding**
+
+  - SRP is often misunderstood as the principle that every module should do only one thing, which is not accurate.
+  - This confusion arises because of SRP's name, but it doesn't mean that every function or class should be responsible for just one task.
+
+- **Explanation**
+
+  - The idea of SRP is to prevent **coupling** different actors within the same module.
+  - Example: An **Employee** class with `calculatePay()`, `reportHours()`, and `save()` methods violates SRP.
+    - `calculatePay()` belongs to the accounting department (CFO).
+    - `reportHours()` belongs to HR (COO).
+    - `save()` relates to the database administrators (CTO).
+  - By combining these responsibilities, any change by one actor can unintentionally affect the needs of other actors.
+
+- **Symptoms of SRP Violation**
+
+  1. **Accidental Duplication**
+
+     - Duplication can occur when different actors want to modify the same module, leading to unintended consequences.
+     - Example: A shared function like `regularHours()` used by both `calculatePay()` and `reportHours()`. A change by one team might break functionality for the other.
+
+  2. **Merges**
+
+     - When code for different actors exists in the same module, it can cause merge conflicts during updates, complicating collaboration.
+
+- **Solutions**
+
+  - **Separate modules** based on their responsibilities to different actors. Each module should only be responsible to **one actor**.
+  - Keep code **localized** to avoid unintentional side effects on other parts of the system.
+  - Use design patterns like **facades** to provide a unified interface without violating SRP.
