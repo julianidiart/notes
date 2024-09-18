@@ -300,3 +300,30 @@
 - **Information Hiding**:
 
   - Protect controllers from unnecessary knowledge about interactors to prevent **transitive dependencies**.
+
+### Chapter 9: Liskov Substitution Principle (LSP)
+
+- **Liskov Substitution Principle (LSP)** was introduced by Barbara Liskov in 1988. It states:
+
+  - If `o1` is an object of type `S`, and `o2` is an object of type `T`, then for all programs `P` that use `T`, the behavior of `P` remains unchanged when `o1` is substituted for `o2`.
+  - This implies that **subtypes** must be substitutable for their **supertypes** without altering the behavior of the program.
+
+- **The Square/Rectangle Problem**
+
+- A famous violation of LSP involves **Square** and **Rectangle**:
+  - **Rectangle** has independently mutable width and height, while **Square** requires them to change together.
+  - If a program expects a **Rectangle**, substituting a **Square** causes the program to fail, violating LSP.
+  - Code example:
+    ```java
+    Rectangle r = ...;
+    r.setW(5);
+    r.setH(2);
+    assert(r.area() == 10);  // Fails if r is a Square
+    ```
+- To avoid such LSP violations, the program would require additional checks (e.g., an if statement) to identify whether it is dealing with a **Square**.
+
+- **LSP and Architecture**
+
+  - LSP evolved from a rule of **inheritance** into a broader principle that applies to **interfaces** and **implementations**.
+    - Applies in scenarios where there are users depending on well-defined **interfaces**.
+  - **Substitutability** ensures that different implementations of interfaces do not break the program’s behavior.
