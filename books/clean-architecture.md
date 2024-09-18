@@ -357,3 +357,42 @@
   - ISP goes beyond just source code dependencies; it also applies at the architectural level.
     - It is generally harmful to depend on modules containing more than what is necessary.
     - Example: If a system depends on a framework bound to a specific database, even if it doesn't use all of the database’s features, changes in the unused features can still affect the system.
+
+### Chapter 11: DIP - The Dependency Inversion Principle
+
+- **Dependency Inversion Principle (DIP)** states that high-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+  - In practical terms, source code dependencies should refer only to **abstract interfaces** or classes, not concrete implementations.
+  - The goal is to create systems that are **flexible**, reducing dependency on changing components.
+
+- **Stable Abstractions**
+
+  - **Abstractions** are generally more stable than **concretions**.
+    - Changes to an abstract interface often result in changes to all concrete classes that implement it.
+    - However, changes to a concrete implementation do not usually require changes to the interface.
+    - This means that **interfaces** are inherently **less volatile** and can act as a **stabilizing factor** in system design.
+
+- **Volatile Elements**
+
+  - DIP focuses on **avoiding dependencies on volatile concrete components** that are under active development and frequently change.
+    - Concrete implementations are subject to frequent modifications, which can ripple through the system if other components depend directly on them.
+    - Abstractions, however, provide **a layer of insulation**, allowing the system to remain more stable and flexible.
+
+- **Factories and Concrete Components**
+
+  - **Factories** are a common pattern used to adhere to DIP:
+    - They provide a way to instantiate objects without relying on concrete class dependencies.
+    - For example, an abstract **Factory** interface can define methods for creating objects, while the **concrete implementation** of that factory provides the specific instantiation logic.
+    - This way, the **high-level application** can depend on the abstract factory without knowing the details of the concrete classes.
+
+- **Concrete Component Example**
+
+  - A typical violation of DIP can be seen in systems where **high-level components** depend on concrete classes.
+    - An example could involve a **ServiceFactoryImpl** class that creates services. If the application relies directly on this implementation, it would break DIP.
+    - Instead, the application should depend on an **abstract ServiceFactory** interface, with the instantiation of the concrete **ServiceFactoryImpl** being handled by the factory.
+
+- **Application to System Design**
+
+  - DIP is not only about object instantiation but also about the **direction of dependencies** in system architecture.
+    - Systems that adhere to DIP are organized such that **dependencies point toward abstractions**, not concretions.
+    - This often results in a clear separation between **high-level policies** and **low-level details**.
