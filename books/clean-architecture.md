@@ -327,3 +327,33 @@
   - LSP evolved from a rule of **inheritance** into a broader principle that applies to **interfaces** and **implementations**.
     - Applies in scenarios where there are users depending on well-defined **interfaces**.
   - **Substitutability** ensures that different implementations of interfaces do not break the program’s behavior.
+
+### Chapter 10: ISP - The Interface Segregation Principle
+
+- **Interface Segregation Principle (ISP)** advises that **no client** should be forced to depend on interfaces they do not use.
+
+  - Clients should not be burdened with methods they don't need, as it can lead to unnecessary coupling.
+
+- **Avoiding Large Interfaces**
+
+  - Imagine a class **OPS** with multiple operations like **op1**, **op2**, and **op3**.
+    - **User1** only uses **op1**, **User2** uses **op2**, and **User3** uses **op3**.
+    - Even if **User1** does not care about **op2** or **op3**, they are still indirectly dependent on them if they rely on the entire **OPS** interface.
+    - Changes in **op2** or **op3** will force **User1** to recompile and redeploy, even if **op1** remains unchanged.
+  - This issue can be solved by **segregating operations into smaller interfaces**:
+    - **op1** goes into **U1Ops**, **op2** into **U2Ops**, and **op3** into **U3Ops**.
+    - Now, each user depends only on the operations they use, reducing unnecessary dependencies.
+
+- **Statically Typed vs. Dynamically Typed Languages**
+
+  - In **statically typed languages** (e.g., Java), programmers are forced to declare and import interfaces, creating **source code dependencies**.
+    - This leads to recompilation and redeployment whenever a change occurs in any part of the interface, even if the client is not using those changes.
+  - In **dynamically typed languages** (e.g., Ruby, Python), interfaces are inferred at runtime, leading to **fewer source code dependencies**.
+    - This results in more flexible and loosely coupled systems.
+    - However, this does not mean ISP is irrelevant in dynamic languages—it still serves as an important architectural consideration.
+
+- **ISP and Architecture**
+
+  - ISP goes beyond just source code dependencies; it also applies at the architectural level.
+    - It is generally harmful to depend on modules containing more than what is necessary.
+    - Example: If a system depends on a framework bound to a specific database, even if it doesn't use all of the database’s features, changes in the unused features can still affect the system.
