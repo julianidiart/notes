@@ -396,3 +396,36 @@
   - DIP is not only about object instantiation but also about the **direction of dependencies** in system architecture.
     - Systems that adhere to DIP are organized such that **dependencies point toward abstractions**, not concretions.
     - This often results in a clear separation between **high-level policies** and **low-level details**.
+
+## Part IV: Component Principles
+
+### Chapter 12: Components
+
+- **Components**: Fundamental units of **deployment** in software systems.
+
+  - Examples:
+    - In **Java**: Jar files
+    - In **Ruby**: Gem files
+    - In **.NET**: DLLs
+    - In **compiled languages**: Aggregations of binary files
+    - In **interpreted languages**: Aggregations of source files
+  - **Key Characteristic**: Components are independently deployable and, hence, **independently developable**.
+
+- **A Brief History of Components**
+
+  - Early development involved programmers controlling memory layout.
+  - **Origin statements**: Used to declare where the program would be loaded in memory.
+  - Programming once required explicit knowledge of memory addresses, which is largely obsolete today.
+
+- **Relocatability**
+
+  - Modern software components need to be **relocatable**, meaning they don't depend on being loaded at a specific memory address.
+  - **Relocatable Binaries**:
+    - In older systems, binaries had fixed addresses.
+    - Modern systems leverage relocatable binaries that can work at different memory addresses.
+
+- **Linkers**
+
+  - **Linkers** are tools that combine multiple components or files into a **single executable** or library.
+    - Can **aggregate** components (e.g., into a .war file or DLLs).
+    - Can **link** components either at **compile time** or **runtime** (e.g., dynamic linking).
