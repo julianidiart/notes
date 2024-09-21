@@ -429,3 +429,50 @@
   - **Linkers** are tools that combine multiple components or files into a **single executable** or library.
     - Can **aggregate** components (e.g., into a .war file or DLLs).
     - Can **link** components either at **compile time** or **runtime** (e.g., dynamic linking).
+
+### Chapter 13: Component Cohesion
+
+- Component cohesion determines **which classes belong in which components**.
+- There are three key principles of component cohesion:
+
+  - **REP**: _Reuse/Release Equivalence Principle_
+  - **CCP**: _Common Closure Principle_
+  - **CRP**: _Common Reuse Principle_
+
+- **The Reuse/Release Equivalence Principle (REP)**
+
+  - **Definition**: _The granule of reuse is the granule of release._
+  - **Purpose**: Ensures that components meant for reuse are tracked through a release process.
+  - **Key Points**:
+    - Components cannot be reused effectively unless they are managed through a **release process**.
+    - Components must share an **overarching purpose** and be **releasable together**.
+    - Developers should be informed about release schedules and changes.
+
+- **The Common Closure Principle (CCP)**
+
+  - **Definition**: _Gather into components those classes that change for the same reasons and at the same times._
+  - **Key Points**:
+    - Ensures **related changes** are confined to a single component to minimize the need for wide-scale changes.
+    - Changes to one component should not force changes to others, reducing the need for **revalidation** and **redeployment**.
+    - **Relation to OCP (Open/Closed Principle)**:
+      - CCP ensures that components remain closed to modification for expected changes but open for extension, aligning with the **Open/Closed Principle**.
+
+- **The Common Reuse Principle (CRP)**
+
+  - **Definition**: _Don’t force users of a component to depend on things they don’t need._
+  - **Key Points**:
+    - Classes that are often reused together should be placed in the same component.
+    - Ensures that **dependencies** are meaningful, avoiding the inclusion of classes not relevant to the component’s users.
+    - Avoids unnecessary **rebuilds and redeployments** caused by irrelevant changes in the used component.
+    - Aligns with **ISP (Interface Segregation Principle)**: Just as ISP advises not to depend on methods not used, CRP advises not to depend on classes not needed.
+
+- **The Tension Diagram for Component Cohesion**
+
+  - The three principles of cohesion can conflict:
+    - **REP** and **CCP** are **inclusive** principles that suggest making components larger.
+    - **CRP** is **exclusive**, aiming to make components smaller.
+  - **Tension Diagram**:
+    - Architects must balance these principles to suit **current project needs**, knowing that concerns will change over time.
+    - Example:
+      - Early in a project, **CCP** may take precedence over **REP**, as **developability** is prioritized over reuse.
+      - Over time, as other projects begin to reuse components, the project will shift to prioritize **REP** and **CRP**.
