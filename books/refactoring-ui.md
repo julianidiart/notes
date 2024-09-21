@@ -1,4 +1,4 @@
-# Refactoring UI (2018)
+# Refactoring UI by Adam Wathan & Steve Schoger (2018)
 
 ## Starting from Scratch
 

@@ -1,4 +1,4 @@
-# Escaping the Build Trap (2019)
+# Escaping the Build Trap by Melissa Perri (2019)
 
 ## Part I: The Build Trap
 

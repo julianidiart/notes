@@ -1,4 +1,4 @@
-# Clean Architecture (2018)
+# Clean Architecture by Robert C. Martin (2018)
 
 ## Part I: Introduction
 

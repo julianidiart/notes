@@ -1,4 +1,4 @@
-# Clean Code (2008)
+# Clean Code by Robert C. Martin (2008)
 
 ## Chapter 1: Clean Code
 

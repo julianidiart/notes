@@ -1,4 +1,4 @@
-# Clean Agile (2019)
+# Clean Agile by Robert C. Martin (2019)
 
 ## 1. Introduction to Agile
 

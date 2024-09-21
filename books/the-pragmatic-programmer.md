@@ -1,4 +1,4 @@
-# The Pragmatic Programmer: 20th Anniversary Edition (2019)
+# The Pragmatic Programmer: 20th Anniversary Edition by Andy Hunt & Dave Thomas (2019)
 
 ## From the Preface to the First Edition
 

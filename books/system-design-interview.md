@@ -1,4 +1,4 @@
-# System Design Interview (2020)
+# System Design Interview by Alex Xu (2020)
 
 ## Chapter 1: Scale From Zero to Millions of Users
 

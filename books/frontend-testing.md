@@ -1,4 +1,4 @@
-# Frontend Testing (2021)
+# Frontend Testing by Iago Lastra (2021)
 
 ## Introducción
 
