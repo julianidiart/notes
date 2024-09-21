@@ -1,4 +1,4 @@
-# Fundamentals of Frontend Architecture from [Maxi Ferreira](https://frontendatscale.com/) (2024)
+# Fundamentals of Frontend Architecture by [Maxi Ferreira](https://frontendatscale.com/) (2024)
 
 ## Foundations
 
