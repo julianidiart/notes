@@ -516,3 +516,46 @@
     - Frequent changes in one part of the system should not cause widespread impact across other components.
   - For example, cosmetic changes to a **GUI** should not affect **business rules** or **high-level policies**.
   - Over time, as a project grows, **ADP** is applied to eliminate dependency cycles, ensuring the system remains manageable.
+
+## Part V: Architecture
+
+### Chapter 15: What Is Architecture?
+
+- **Architecture** refers to the shape of a system, its structure, and the relationships between its components.
+- It involves _decisions_ about the **division** of a system into **components**, the arrangement of those components, and how they interact.
+- **Architecture's purpose**: To facilitate the **development**, **deployment**, **operation**, and **maintenance** of a software system.
+
+- **Role of the Architect**
+
+  - A **software architect** is still a **programmer** and should continue engaging in programming tasks to understand the consequences of architectural decisions.
+  - Good architects guide their team towards a design that maximizes **productivity** and **maintainability** while leaving many **decisions** open for as long as possible.
+
+- **Key Objectives of Architecture:**
+
+  1. **Development**:
+
+  - Architecture supports **team development**, ensuring that teams work independently without causing conflicts.
+  - Components should be well-partitioned and isolated to facilitate **independent development** by different teams.
+
+  2. **Deployment**:
+
+  - A good architecture ensures **immediate deployability** after build processes, without needing numerous configurations or manual interventions.
+
+  3. **Operation**:
+
+  - Architecture must support the _system's operational requirements_, like handling specific throughput or response times.
+  - The architecture should be flexible enough to support transitions, such as moving from a monolith to a microservices architecture, depending on operational needs.
+
+  4. **Maintenance**:
+
+  - A good architecture makes systems easy to maintain, with changes requiring minimal effort and risk.
+
+- **Strategy of Keeping Options Open**
+
+  - Architects aim to leave decisions about frameworks, databases, and other details **open for as long as possible**.
+  - The longer decisions are deferred, the more **flexibility** the architecture provides to adapt to evolving requirements and environments.
+
+- **Device Independence and Flexibility**
+
+  - Architecture should support **device independence**, meaning the system should not be tightly coupled to specific hardware or device types.
+  - This allows the system to evolve, shift platforms, or adapt to new technologies without major refactoring.
