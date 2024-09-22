@@ -1,4 +1,4 @@
-# Who Needs an Architect? by Martin Fowler (2003)
+# [Who Needs an Architect? by Martin Fowler (2003)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
 - There is no single, clear definition of software **architecture**. It is often described as the system’s _organization of significant components_, but this can vary based on the developers' consensus.
 
