@@ -476,3 +476,43 @@
     - Example:
       - Early in a project, **CCP** may take precedence over **REP**, as **developability** is prioritized over reuse.
       - Over time, as other projects begin to reuse components, the project will shift to prioritize **REP** and **CRP**.
+
+### Chapter 14: Component Coupling
+
+- The goal is to maintain a balance between **flexibility** and **stability** to ensure ease of development and system evolution.
+- **Component coupling** deals with relationships between components and the impact of these relationships on system design, maintenance, and buildability.
+
+- **The Acyclic Dependencies Principle (ADP)**
+
+  - **ADP** states that **no cycles** should exist in the **component dependency graph**.
+    - Cycles create dependency-related issues, making systems hard to understand and modify.
+    - Example: _"The morning after syndrome"_ refers to how changes by one team member can break others' work when there is a dependency cycle.
+  - **Dependency cycles** cause severe issues during integration, especially in large projects.
+    - Solution: Partition the system into **releasable components**, where each developer or team owns a component.
+
+- **The Stable Dependencies Principle (SDP)**
+
+  - **SDP** states that components should **depend in the direction of stability**.
+    - Stable components are hard to change because they have many dependents, while unstable components are easy to change but should have fewer dependents.
+    - **Stability** refers to how resistant a component is to change, not its frequency of change.
+    - Components that are expected to change should not be depended on by components that are difficult to change.
+  - Measuring **stability** involves counting the number of **incoming** and **outgoing dependencies**.
+    - Formula: **I** (instability) = **outgoing dependencies / (incoming + outgoing dependencies)**.
+      - If **I = 0**, the component is very stable (no outgoing dependencies); if **I = 1**, the component is very unstable.
+
+- **The Stable Abstractions Principle (SAP)**
+
+  - **SAP** states that **stable components** should also be **abstract**.
+    - This ensures that the component's **stability** does not prevent it from being extended.
+    - Components that are **unstable** should be **concrete**, allowing easy modification.
+    - **Abstract components** (interfaces, abstract classes) are more stable because they can be extended without modification.
+  - **SAP** and **SDP** together form a key relationship for managing **dependencies** in software systems.
+    - This principle resembles **DIP** (Dependency Inversion Principle), applied to components instead of classes.
+
+- **Managing Dependency Structures**
+
+  - **Component dependency graphs** are used to map the **buildability** and **maintainability** of the application.
+  - The structure of these dependency graphs should be designed to **localize volatility**.
+    - Frequent changes in one part of the system should not cause widespread impact across other components.
+  - For example, cosmetic changes to a **GUI** should not affect **business rules** or **high-level policies**.
+  - Over time, as a project grows, **ADP** is applied to eliminate dependency cycles, ensuring the system remains manageable.
