@@ -699,3 +699,37 @@
   - **Services** represent the most strongly decoupled form of boundary crossing.
     - Components interacting through services are typically located on different machines, with interactions occurring over a network.
     - This separation offers the most independence, though it introduces latency and other distributed system challenges.
+
+### Chapter 19: Policy and Level
+
+- **Software as Policy**
+
+  - **Software systems** are statements of **policy**.
+    - A **policy** is a set of rules or principles that define how inputs are transformed into outputs.
+    - The role of architecture is to organize and **separate policies** into components based on their likelihood and reasons for change.
+
+- **Levels of Policy**
+
+  - Different parts of a system represent policies at **different levels**:
+    - **Low-level policies** manage **input/output** operations.
+    - **High-level policies** handle **business rules** and core logic.
+  - Policies that change for the same reasons belong at the same level and should be grouped together.
+    - Those that change for different reasons should be separated.
+
+- **Architecture and Dependencies**
+
+  - The **art of architecture** involves creating a **directed acyclic graph (DAG)** of components.
+    - The nodes in the graph represent **components** containing policies at the same level.
+    - The edges represent **dependencies** between components, connecting higher-level policies to lower-level ones.
+    - Dependencies should always point from lower-level policies to higher-level policies, ensuring stability and clear separation.
+
+- **Understanding Levels**
+
+  - **Level** can be defined as the **distance from the inputs and outputs**.
+    - The farther a policy is from both inputs and outputs, the higher its level.
+    - **Input/output management** is typically at the lowest level of the system, while core business logic sits at higher levels.
+
+- **Proper Dependency Direction**
+
+  - It's essential to ensure **source code dependencies** flow in the right direction, **from low-level components to high-level components**.
+  - Incorrect dependency management results in an architecture where high-level policies depend on low-level input/output policies, reducing flexibility and maintainability.
