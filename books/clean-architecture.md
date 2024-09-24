@@ -663,3 +663,39 @@
 
   - Components that are not related to the core business logic can be treated as _plugins_.
   - A plugin architecture separates concerns, making the system more adaptable.
+
+### Chapter 18: Boundary Anatomy
+
+- **Boundary Crossing**
+
+  - **Boundary crossing** refers to the interaction between components across different boundaries in a system.
+    - At runtime, this is typically a **function call** from one side of the boundary to the other, accompanied by data exchange.
+    - The critical element is **managing source code dependencies**, as changes in one source code module can trigger changes in others.
+  - The goal is to create **firewalls** against the propagation of these changes, keeping components insulated and minimizing the ripple effects of modifications.
+
+- **The Dreaded Monolith**
+
+  - **Monoliths** are systems where boundaries exist conceptually but are not physically represented in the deployment structure.
+
+    - All components are bundled into a **single executable file** (e.g., a Java jar, .NET executable, or a statically linked C/C++ program).
+    - Despite the lack of physical separation, a well-structured monolith can still maintain **source-level decoupling**, allowing independent development and assembly of components.
+
+  - **Dynamic polymorphism** is often used to manage internal dependencies in monoliths.
+    - Without object-oriented techniques like dynamic polymorphism, separating and decoupling components can become risky, as it may require extensive use of pointers or other unsafe techniques.
+
+- **Deployment Components**
+
+  - **Deployment components** are physically separable boundaries, such as dynamically linked libraries (DLLs), Java jar files, or Ruby gems.
+    - These components are deployed in binary form and gathered together during deployment (e.g., into a WAR file).
+    - **Deployment-level decoupling** occurs when these components are independently compiled, deployable, and can interact dynamically at runtime.
+
+- **Threads and Local Processes**
+
+  - Components can communicate via **threads** or **local processes** within the same system.
+    - Thread-level communication is fast but often tightly coupled, while processes offer more explicit boundary crossing, often using mechanisms like sockets.
+
+- **Services**
+
+  - **Services** represent the most strongly decoupled form of boundary crossing.
+    - Components interacting through services are typically located on different machines, with interactions occurring over a network.
+    - This separation offers the most independence, though it introduces latency and other distributed system challenges.
