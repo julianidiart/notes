@@ -772,3 +772,97 @@
   - **Response Models**: Output data that use cases generate after processing.
     - These models are **simple** and should not be tied to any particular **framework** (e.g., HTTP, HTML).
     - They are **pure data structures**, focusing solely on the information needed for the use case.
+
+### Chapter 21: Screaming Architecture
+
+- **The Theme of an Architecture**
+
+  - The **architecture** of a system should make its purpose clear from the top-level structure.
+    - Example: The blueprints of a house or library immediately indicate their function—architecture should do the same for software.
+  - When looking at the **top-level directories and source files** in your system, it should be evident what kind of system it is.
+    - Does it scream **Health Care System**, **Accounting System**, or does it scream **Rails**, **Spring**, or **ASP**?
+
+- **Frameworks Are Tools, Not the Architecture**
+
+  - **Frameworks** should be viewed as tools, not as the foundation of the system's architecture.
+    - Frameworks should be chosen and used to serve the **use cases** of the system, not dictate its architecture.
+  - If the architecture of your system is dominated by a framework, your architecture will be constrained by the decisions of the framework creators.
+
+- **Architecture Should Support Use Cases**
+
+  - A good architecture is centered on **use cases**, which define how the system functions.
+    - The system's structure should reflect its primary use cases, with components organized around these functionalities.
+    - The architectural structure should expose the system's behavior clearly.
+
+- **The Purpose of Architecture**
+
+  - **Architecture** is meant to support **development** and **maintenance** by deferring details like frameworks, databases, or user interfaces until later.
+  - **Decisions about frameworks, databases, and other specifics** should be deferred as long as possible to maintain architectural flexibility.
+  - Architects focus on **the high-level structure** that supports the core use cases, ensuring that the system can grow and adapt without being overly tied to specific technologies early on.
+
+- **Testable Architectures**
+
+  - A well-designed architecture should be **testable**.
+    - Architecture should allow for testing without requiring the instantiation of frameworks, databases, or UIs.
+    - The **business rules** and logic of the system should be isolated enough to be tested independently of the environment they run in.
+
+### Chapter 22: The Clean Architecture
+
+- **Clean Architecture** integrates several architectural ideas aimed at **separation of concerns** by organizing systems into **layers** and **boundaries**.
+- The goal is to keep **business rules** independent from **frameworks, UI, databases**, and other external components.
+
+- **Examples of similar architectures:**
+
+  - **Hexagonal Architecture (Ports and Adapters)** by Alistair Cockburn.
+  - **DCI (Data, Context, and Interaction)** by James Coplien and Trygve Reenskaug.
+  - **BCE (Boundary, Control, Entity)** by Ivar Jacobson.
+
+- **Characteristics of Clean Architecture:**
+
+  1. **Framework Independence**:
+
+  - The system should not be tightly coupled to any specific framework. This allows frameworks to be used as **tools**, not to dictate the system’s structure.
+
+  2. **Testability**:
+
+  - Business rules can be tested without the need for external elements like the UI, database, or web server.
+
+  3. **UI Independence**:
+
+  - The user interface should be replaceable without requiring changes to business rules or other parts of the system. For example, a web UI could be swapped with a console UI without affecting the core logic.
+
+  4. **Database Independence**:
+
+  - The business rules should be decoupled from the database, allowing the flexibility to switch databases (e.g., Oracle to MongoDB) without impacting business logic.
+
+  5. **Independence from External Agencies**:
+
+  - Business rules should not depend on interfaces to the external world (e.g., APIs or network services).
+
+- **The Dependency Rule**
+
+  - **The Dependency Rule** is the core principle that dictates **how the dependencies between the layers must flow**:
+    - **Source code dependencies must always point inward**, towards higher-level policies.
+    - Inner layers should not be aware of outer layers. In particular, code in inner layers must not mention or reference entities in outer layers, such as frameworks or user interfaces.
+
+- **Clean Architecture Layers:**
+
+  1. **Entities**:
+
+  - Contain **Critical Business Rules** that are enterprise-wide. Entities can be objects or data structures that encapsulate the most general business rules.
+  - These are the **most stable** and **least likely to change** when external elements evolve.
+
+  2. **Use Cases**:
+
+  - Implement **application-specific business rules** that orchestrate the interaction between entities and achieve the goals of the use case.
+  - The use case layer is isolated from external systems like databases or user interfaces, ensuring its flexibility and maintainability.
+
+  3. **Interface Adapters**:
+
+  - **Interface adapters** convert data from the use case and entities to the format required by external systems (e.g., UI, database, or external APIs).
+  - These adapters isolate the **use cases** and **entities** from external systems, ensuring that they remain unaffected by changes in the UI or databases.
+
+  4. **Frameworks and Drivers**:
+
+  - The outermost layer, containing **frameworks** and **tools** (e.g., web frameworks, databases, and devices).
+  - These components are interchangeable without affecting the core business logic.
