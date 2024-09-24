@@ -733,3 +733,42 @@
 
   - It's essential to ensure **source code dependencies** flow in the right direction, **from low-level components to high-level components**.
   - Incorrect dependency management results in an architecture where high-level policies depend on low-level input/output policies, reducing flexibility and maintainability.
+
+### Chapter 20: Business Rules
+
+- **What Are Business Rules?**
+
+  - **Business Rules**: Procedures or guidelines that either **make** or **save money** for a business.
+    - These rules **would exist** even if the process was executed manually, without software.
+    - Example: A bank charging interest on loans is a business rule. Whether a clerk or a computer calculates the interest is irrelevant.
+
+- **Critical Business Rules**
+
+  - **Critical Business Rules**: Business rules that are **vital** to the core operation of the business.
+    - These rules are **inextricably linked** to the business and would remain in place even without automation.
+    - Example: For a loan, critical rules might involve calculating the interest rate, determining payment schedules, or managing the loan balance.
+
+- **Critical Business Data**
+
+  - **Critical Business Data** is the data required to support critical business rules.
+    - This data exists **independently** of the system and automation.
+    - For example, in a loan system, critical business data would include the **loan balance**, **interest rate**, and **payment schedule**.
+
+- **Entities**
+
+  - **Entities** are software objects that embody a set of critical business rules and operate on **Critical Business Data**.
+  - Entities either contain the critical business data or have easy access to it.
+  - **Entity Interface** consists of functions that implement the critical business rules.
+
+- **Use Cases**
+
+  - **Use Cases**: Specific to automated systems, these rules define **how and when** critical business rules are invoked.
+    - They describe how an automated system should behave, including the **input**, **output**, and **processing steps**.
+    - Use cases typically control the flow of **entities** and define the sequence of interactions between **entities** and the system.
+
+- **Request and Response Models**
+
+  - **Request Models**: Input data that use cases expect to receive.
+  - **Response Models**: Output data that use cases generate after processing.
+    - These models are **simple** and should not be tied to any particular **framework** (e.g., HTTP, HTML).
+    - They are **pure data structures**, focusing solely on the information needed for the use case.
