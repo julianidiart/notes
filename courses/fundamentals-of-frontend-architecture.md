@@ -1,6 +1,6 @@
 # Fundamentals of Frontend Architecture by [Maxi Ferreira](https://frontendatscale.com/) (2024)
 
-## Foundations
+## 1. Foundations
 
 ### What is Software Architecture?
 
@@ -127,3 +127,25 @@
 - **Mentorship**
 
   - Architects help grow the team’s knowledge by sharing insights and encouraging best practices around architecture and design.
+
+## 2. Understanding
+
+### The C4 Model
+
+- The **C4 Model** is a set of diagrams that represent software architecture at different levels of detail, from system context to individual code structures.
+
+  - Simon Brown developed the C4 Model, and his work and resources are referenced throughout the course for deeper understanding.
+
+- **C4 Model Levels**
+
+  1. **System context diagram (Level 1)**: The highest level, showing the software system and its interaction with users and external systems, useful for non-technical stakeholders.
+
+  2. **Container diagram (Level 2)**: Zooms into a system to show applications, APIs, and databases, still accessible to non-technical audiences but with more technical detail.
+
+  3. **Component diagram (Level 3)**: Focuses on the key components within a container, more useful for developers and architects; frequent updates may be necessary.
+
+  4. **Code diagram (Level 4)**: Represents detailed code-level structures like class diagrams or entity relationships; more useful for developers during implementation.
+
+- **Documentation**
+
+  - The higher levels (system context and container diagrams) are useful for documentation, while lower-level diagrams (component and code) need frequent updates due to changing code.
