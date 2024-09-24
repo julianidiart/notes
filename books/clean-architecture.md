@@ -632,3 +632,34 @@
 
   - Different **modes of decoupling** (layers, use cases, deployments) allow for flexibility in both development and operation.
   - Ensure that components remain **independent**, even when making decisions about deployment modes, shared libraries, or distributed services.
+
+### Chapter 17: Boundaries - Drawing Lines
+
+- **Software Architecture** is the art of drawing _boundaries_.
+  - These boundaries separate different software elements and control how they interact.
+  - Early boundaries help defer decisions and protect the core business logic.
+- **Primary Objective of an Architect**: Minimize human resources needed to build and maintain systems.
+  - **Coupling**, especially to premature decisions, can drain resources.
+  - Premature decisions include non-business critical choices (e.g., frameworks, databases, web servers).
+- **A Good Architecture**
+  - Defers technical decisions that do not affect business logic.
+  - Allows those decisions to be made later without major consequences.
+- Boundaries should be drawn where there is an **axis of change**.
+- Different components should change for different reasons at different rates.
+- **Example**:
+  - GUIs change at different rates than business rules, so boundaries should exist between them.
+  - Business rules should be separate from frameworks like dependency injection tools.
+- The **Single Responsibility Principle** helps identify where boundaries should be drawn.
+
+- **Boundary Drawing Process**
+
+  - Partition the system into components.
+  - **Core business rules** are separated from other non-core functions (e.g., plugins).
+  - Components are organized such that dependencies point towards the core business, adhering to:
+    - The **Dependency Inversion Principle (DIP)**.
+    - The **Stable Abstractions Principle (SAP)**.
+
+- **Plugin Architecture**
+
+  - Components that are not related to the core business logic can be treated as _plugins_.
+  - A plugin architecture separates concerns, making the system more adaptable.
