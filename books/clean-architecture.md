@@ -911,3 +911,38 @@
 
   - The **Humble Object pattern** also applies to service interfaces.
     - Input and output between services should be handled by simple data structures, minimizing the complexity of the logic crossing service boundaries.
+
+### Chapter 24: Partial Boundaries
+
+- **Full-fledged architectural boundaries**
+
+  - Expensive to implement and maintain.
+  - Require reciprocal polymorphic **Boundary interfaces**, **Input and Output data structures**, and dependency management to keep components independently compilable and deployable.
+  - Involves significant setup and ongoing maintenance.
+
+- **Partial boundary**
+
+  - Introduced when a full boundary is considered too costly but there may be a need for it later.
+  - Allows holding a place for a boundary while avoiding full implementation.
+
+- **YAGNI**
+
+  - “You Aren’t Going to Need It” is often cited in Agile development to avoid premature optimization, but architects may opt for a partial boundary as a compromise between cost and future flexibility.
+
+- **Skip the last step**:
+
+  - Involves setting up the components as if a full boundary is in place but keeping them in the same component.
+  - Saves on administration costs, such as **version tracking** and **release management**.
+  - Still requires significant design and coding effort to maintain the boundary.
+
+- **One-dimensional boundaries**
+
+  - A simpler approach than a full boundary, based on the **Strategy pattern**.
+  - **ServiceBoundary interface** isolates the **Client** from **ServiceImpl** classes.
+  - Risks include backchannel dependencies that can erode the separation, making maintenance harder.
+
+- **Facade pattern**
+
+  - Simplifies boundary implementation further by eliminating **dependency inversion**.
+  - The **Facade class** defines services as methods, directing calls to classes the **Client** isn’t supposed to access.
+  - The **Client** maintains a transitive dependency on the service classes, creating risks in static languages, such as **recompilation** requirements when changes are made to the source code.
