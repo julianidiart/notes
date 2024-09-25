@@ -866,3 +866,48 @@
 
   - The outermost layer, containing **frameworks** and **tools** (e.g., web frameworks, databases, and devices).
   - These components are interchangeable without affecting the core business logic.
+
+### Chapter 23: Presenters and Humble Objects
+
+- **Presenters** are a key concept in Clean Architecture, acting as a form of the **Humble Object Pattern**.
+
+  - Their role is to format data into a **View Model** for display.
+  - The **View** merely moves this formatted data onto the screen, with no processing logic.
+
+- **The Humble Object Pattern**
+
+  - Designed to separate hard-to-test behaviors from easy-to-test ones.
+    - **Humble objects** contain difficult-to-test logic, stripped down to the barest essentials.
+    - The **testable object** contains behaviors that are easy to test, split from the humble object.
+
+- **Presenters and Views**
+
+  - **View**: The humble object; it moves data into the GUI but avoids any logic processing.
+    - Kept as simple as possible to ensure its role is strictly for visual data representation.
+  - **Presenter**: A testable object that accepts application data and formats it for the view.
+    - Prepares **View Models** with strings, booleans, and formatted data.
+      - Example: A date is passed to the presenter, which formats it and stores it in the View Model as a string.
+    - Handles any necessary UI formatting (e.g., setting flags for grayed-out buttons).
+    - Prepares and stores everything the view needs, ensuring the view has no additional processing responsibilities.
+
+- **Testing and Architecture**
+
+  - **Testability** is a core aspect of good architecture.
+    - The separation between testable and non-testable parts, as seen in the Presenter/View division, helps in defining architectural boundaries.
+    - Use of the **Humble Object pattern** at architectural boundaries significantly increases system testability.
+
+- **Database Gateways**
+
+  - **Gateways** exist between use case interactors and databases.
+    - These are polymorphic interfaces with methods for CRUD operations.
+    - SQL or database-specific logic is handled in the database layer, ensuring interactors remain testable.
+
+- **Data Mappers**
+
+  - **Object Relational Mappers (ORMs)** should be placed in the database layer.
+    - They map data between relational databases and data structures, but do not belong to use cases or entities.
+
+- **Service Listeners**
+
+  - The **Humble Object pattern** also applies to service interfaces.
+    - Input and output between services should be handled by simple data structures, minimizing the complexity of the logic crossing service boundaries.
