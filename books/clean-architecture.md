@@ -946,3 +946,30 @@
   - Simplifies boundary implementation further by eliminating **dependency inversion**.
   - The **Facade class** defines services as methods, directing calls to classes the **Client** isn’t supposed to access.
   - The **Client** maintains a transitive dependency on the service classes, creating risks in static languages, such as **recompilation** requirements when changes are made to the source code.
+
+### Chapter 25: Layers and Boundaries
+
+- Layers and boundaries define the **structure** of a software system by segmenting the system into components with specific responsibilities.
+- For many systems, the architecture is seen as comprising three primary layers:
+
+  - **UI (User Interface)**
+  - **Business Rules**
+  - **Database**
+
+- **Clean Architecture and Boundaries**
+
+  - In **Clean Architecture**, boundaries between components enforce **separation of concerns**.
+    - This decoupling ensures that changes in one layer (e.g., the UI) do not impact other layers (e.g., the business rules).
+    - Each layer should be **self-contained**, with clearly defined **interfaces** to communicate with other layers.
+
+- **Crossing the Streams**
+
+  - Communication between layers is typically achieved via **data transfer objects** or **API calls**.
+    - However, care must be taken to prevent **cross-layer dependencies** from forming.
+    - Example: In the Wumpus game, the game rules layer should never depend directly on how the UI layer renders output.
+
+- **Splitting the Streams**
+
+- Over time, a system might evolve to have more than just the basic three layers.
+  - Additional layers may be introduced to handle things like **authentication**, **logging**, or **caching**.
+  - As the number of layers grows, it's crucial to maintain **boundaries** and ensure that **dependencies** point in one direction (from high-level policies down to lower-level details).
