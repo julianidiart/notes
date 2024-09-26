@@ -182,3 +182,19 @@
 - Architectural drivers translate into specific requirements that define the architecture’s success and influence its design.
 - Different architectural drivers result in different architectures for the same application, as seen in prior discussions of frontend architecture.
 - These decisions, shaped by the drivers, fall toward the strategic, hard-to-change side of the spectrum and impact long-term system outcomes.
+
+### Architectural Requirements
+
+- **Architectural requirements** are the success criteria for the architecture, ensuring it meets the needs of the business, users, and team.
+
+- **Architectural discovery**
+
+  - Architects must engage stakeholders, including developers, PMs, and users, to discover key architectural requirements.
+
+- **Tools for architects**
+
+  - Books like _Design It_ and structured activities help architects uncover and prioritize architectural requirements throughout the project lifecycle.
+
+- **Template for requirements**
+
+  - A structured document, like the one Maxi provides, organizes requirements by categories like business goals, constraints, and quality attributes.
