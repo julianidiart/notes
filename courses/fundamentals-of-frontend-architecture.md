@@ -149,3 +149,36 @@
 - **Documentation**
 
   - The higher levels (system context and container diagrams) are useful for documentation, while lower-level diagrams (component and code) need frequent updates due to changing code.
+
+### Architectural Drivers
+
+- **Architectural drivers** are the influencers that shape architecture, determining the requirements and guiding architectural decisions.
+
+- **Business goals**
+
+  - The most critical drivers, including revenue growth, cost reduction, and improving efficiency, serve as the main reasons for building the system.
+
+- **Quality attributes**
+
+  - Performance, scalability, maintainability, and other "ilities" determine the non-functional qualities the architecture must support.
+
+- **Constraints**
+
+  - Non-negotiable factors, such as budget, deadlines (business constraints) or specific technologies (technical constraints), limit architectural choices.
+
+- **Functional requirements**
+
+  - These define what the system can do, such as search functionality or shopping carts, with a focus on the architecturally significant ones.
+
+- **Team experience**
+
+  - The knowledge and skills of the team, including the architect's breadth of expertise, influence the architectural decisions made.
+
+- **Technology trends**
+
+  - Staying aware of new trends while favoring stable, reliable technologies helps architects evaluate trade-offs in their decisions.
+  - While stability is preferred, architects must stay informed about emerging trends to assess potential trade-offs.
+
+- Architectural drivers translate into specific requirements that define the architecture’s success and influence its design.
+- Different architectural drivers result in different architectures for the same application, as seen in prior discussions of frontend architecture.
+- These decisions, shaped by the drivers, fall toward the strategic, hard-to-change side of the spectrum and impact long-term system outcomes.
