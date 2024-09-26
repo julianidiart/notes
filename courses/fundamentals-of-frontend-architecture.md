@@ -198,3 +198,37 @@
 - **Template for requirements**
 
   - A structured document, like the one Maxi provides, organizes requirements by categories like business goals, constraints, and quality attributes.
+
+### Architectural Decisions
+
+- **Architectural decisions** define the system's structure, are hard to change, and have long-term implications, making them central to the architecture.
+
+- **Early decisions**
+
+  - In the initial stages of a project, most decisions are architectural since there is little code to inform design decisions.
+
+- **Framework choice**
+
+  - Selecting a frontend framework (e.g., Next.js) can be an architectural decision since it dictates the project's structure.
+
+- **Version control**
+
+  - Decisions about using a monorepo or multiple repos impact how the codebase is organized and deployed.
+
+- **External vendors**
+
+  - Choosing third-party services, like _Pusher_ for real-time functionality, may be necessary if the project has external dependencies.
+
+- **Last Responsible Moment**
+
+  - Avoid making all decisions too early. Make decisions when there is enough information to act, reducing the risk of "analysis paralysis."
+
+- **ADRs (Architectural Decision Records)**
+
+  - A structured way to document architectural decisions, focusing on the reasoning ("why") rather than just the decision itself.
+
+- **Positive and negative consequences**
+
+  - Documenting both helps provide a balanced view of the decision, making it easier for future teams to understand its impact.
+
+- Keeping a record of architectural decisions ensures that future questions about why decisions were made can be answered with clarity.
