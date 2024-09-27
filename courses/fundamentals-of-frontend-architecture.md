@@ -253,3 +253,43 @@
 
   - Concrete implementations like UI views or widgets in modern frameworks like React, Svelte, or Vue.
   - Components are typically seen directly in code, representing specific UI or visual elements.
+
+### Domain Modeling
+
+- **Domain modeling** is a flexible tool for identifying and organizing the key entities and their attributes within a system, aligning the data model with the UI.
+
+- **Entities and attributes**
+
+  - Entities like restaurants, customers, and food items are identified by analyzing functional requirements and UI specifications.
+
+- **UI-driven modeling**
+
+  - Domain modeling helps match the data model to the needs of the user interface, reducing unnecessary complexity.
+
+- **Naming consistency**
+
+  - Early domain modeling ensures that entities are consistently named, avoiding confusion (e.g., using "restaurant" uniformly rather than mixing terms like "store" or "shop").
+
+- **Longevity of entities**
+
+  - Entities like "restaurant" or "customer" are core to the domain and often remain constant, even if the codebase or features change.
+
+- **Aligning with data**
+
+  - Domain models should be designed for the UI, not just based on the API or database structure, making them more useful for frontend developers.
+
+- **Complexity management**
+
+  - Domain modeling encapsulates data transformation logic, allowing easier handling of complex data structures from the API.
+
+- **Collaboration tool**
+
+  - Domain modeling facilitates discussions about responsibilities, like which entity should handle operations such as adding items to a cart.
+
+- **Cheaper early decisions**
+
+  - Engaging in domain modeling discussions early allows for easier adjustments before the code is implemented, avoiding costly changes later.
+
+- **Visual representation**
+
+  - Domain modeling can be captured as simple lists or more visually as class diagrams or entity relationship diagrams.
