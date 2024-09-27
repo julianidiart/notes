@@ -1107,3 +1107,55 @@
   - **Hardware is a Detail**: Treat hardware like any other external dependency. Keep the **hardware details** hidden from the application code by using **abstraction layers**.
   - **Operating System is a Detail**: Use an **Operating System Abstraction Layer (OSAL)** to isolate software from the operating system. This makes it easier to migrate software between operating systems.
   - **Substitutability**: **Programming to interfaces** increases the substitutability of components, making testing and maintenance easier.
+
+### Chapter 30: The Database Is a Detail
+
+- **Database as a Non-Entity**
+
+  - From an architectural standpoint, a database is a low-level **detail** rather than an architectural element.
+  - It's similar to how a **doorknob** relates to the overall architecture of a house; it's functional but not central to the design.
+
+- **Distinction Between Data Model and Database**
+
+  - The **data model** (structure of data in the application) is crucial to the system's architecture.
+  - The **database** itself is just a utility for accessing that data, and from an architectural point of view, it is irrelevant.
+
+- **Relational Databases**
+
+  - Defined by **Edgar Codd** in 1970, relational databases became the dominant data storage model by the 1980s due to their elegance and robustness.
+  - Despite their popularity, relational databases are still just **technologies**—details rather than architecturally significant elements.
+
+- **Architectural Isolation from Database**
+
+  - Data arrangements like **rows and tables** are irrelevant to the architecture.
+  - **Use cases** and **business rules** should not know about the structure of the database. This knowledge should be confined to **low-level utility functions**.
+
+- **Error of Passing Database Structures**
+
+  - Many systems erroneously pass database rows and tables as objects throughout the system, creating tight coupling between business rules, use cases, and sometimes the UI.
+  - This practice is an **architectural error** and should be avoided.
+
+- **Prevalence of Databases**
+
+  - Database systems dominate the software landscape because of the long history of **disk-based data storage**.
+  - **Disks** were the mainstay of storage for five decades, and many generations of programmers were trained to store data on disks.
+
+- **The Problem with Disks**
+
+  - While disk technology evolved from large, slow systems to terabyte storage, they remained **slow** compared to other storage mechanisms.
+
+- **What if There Were No Disks?**
+
+  - When data storage moves to **RAM**, tables and SQL will become irrelevant.
+  - Programmers will organize data into structures like **linked lists**, **trees**, and **hash tables**, using **pointers** or **references**.
+  - This is already done in practice: data is read from files or databases into **RAM**, where it’s restructured into more useful formats.
+
+- **Details**
+
+  - The database is just a **mechanism** to move data between **disk** and **RAM**.
+  - The format of data on disk is inconsequential from an architectural viewpoint.
+
+- **Performance Concerns**
+
+  - Performance in data storage is important but can be encapsulated in **low-level mechanisms**, separate from **business rules**.
+  - Thus, performance is a concern, but it does not dictate the **overall system architecture**.
