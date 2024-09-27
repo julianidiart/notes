@@ -1070,3 +1070,40 @@
 
   - **Testing APIs** with superpowers (e.g., bypassing security or resource constraints) could be a security risk if deployed in production.
   - To mitigate this risk, the Testing API should be placed in a **separate, deployable component**, ensuring it is not included in the production environment.
+
+### Chapter 29: Clean Embedded Architecture
+
+- **Embedded Systems** face unique challenges compared to other types of software due to hardware limitations and real-time constraints.
+
+- **Firmware and Hardware Evolution**
+
+  - **Doug Schmidt's Insight**: While software doesn’t wear out, **firmware and hardware become obsolete**, necessitating software updates.
+  - Embedded software often becomes tightly coupled with the hardware, creating **dependencies** that shorten its lifespan.
+
+- **Layers in Embedded Systems**
+
+  - **Layering** helps isolate **hardware** from **software**. Layers prevent hardware dependencies from seeping into the system, making it easier to maintain when hardware changes.
+  - Common architecture involves **three layers**:
+    1. **Hardware Layer**: The lowest level, containing physical hardware.
+    2. **Abstraction Layer**: Hides hardware specifics from upper layers.
+    3. **Application Layer**: Contains high-level business logic.
+
+- **Target-Hardware Bottleneck**
+
+  - If testing can only occur on target hardware, **development is slowed**.
+  - A **clean embedded architecture** can eliminate this bottleneck by making software testable off-target through the use of **Hardware Abstraction Layers (HALs)** and **Operating System Abstraction Layers (OSALs)**.
+
+- **Program to Interfaces**
+
+  - Encourages **programming to interfaces** rather than concrete implementations, which allows for substitutability.
+  - A **HAL** decouples the application from hardware specifics, making it easier to swap out hardware without rewriting large portions of code.
+
+- **Testability**
+
+  - A clean embedded system is one where the software is **testable independently** of the hardware. This reduces the dependency on the target hardware during testing, mitigating the **target-hardware bottleneck**.
+
+- Principles to Apply:
+
+  - **Hardware is a Detail**: Treat hardware like any other external dependency. Keep the **hardware details** hidden from the application code by using **abstraction layers**.
+  - **Operating System is a Detail**: Use an **Operating System Abstraction Layer (OSAL)** to isolate software from the operating system. This makes it easier to migrate software between operating systems.
+  - **Substitutability**: **Programming to interfaces** increases the substitutability of components, making testing and maintenance easier.
