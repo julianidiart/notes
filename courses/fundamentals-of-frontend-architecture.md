@@ -232,3 +232,24 @@
   - Documenting both helps provide a balanced view of the decision, making it easier for future teams to understand its impact.
 
 - Keeping a record of architectural decisions ensures that future questions about why decisions were made can be answered with clarity.
+
+## 3. Designing
+
+### Entities, Modules, and Components
+
+- **Entities**
+
+  - Represent domain concepts (e.g., restaurant, customer) with attributes like name and address.
+  - Entities exist conceptually and don’t directly translate into code without representation as models, classes, or services.
+  - Entities have **attributes** (e.g., a restaurant has a name) and **operations** (e.g., adding an item to a shopping cart).
+
+- **Modules**
+
+  - The building blocks of an application, organizing it into parts (e.g., restaurant module, customer module).
+  - While modules may correspond to entities, there’s no strict rule for a 1:1 mapping.
+  - Modules are abstract but may be represented as folders, routes, or pages in a codebase.
+
+- **Components**
+
+  - Concrete implementations like UI views or widgets in modern frameworks like React, Svelte, or Vue.
+  - Components are typically seen directly in code, representing specific UI or visual elements.
