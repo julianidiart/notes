@@ -973,3 +973,30 @@
 - Over time, a system might evolve to have more than just the basic three layers.
   - Additional layers may be introduced to handle things like **authentication**, **logging**, or **caching**.
   - As the number of layers grows, it's crucial to maintain **boundaries** and ensure that **dependencies** point in one direction (from high-level policies down to lower-level details).
+
+### Chapter 26: The Main Component
+
+- Every system has at least one component responsible for creating, coordinating, and overseeing others.
+
+  - This component is referred to as **Main**.
+
+- **The Ultimate Detail**
+
+  - **Main** is the system's ultimate detail and lowest-level policy.
+  - It serves as the **initial entry point** into the system, typically dependent only on the operating system.
+  - Responsibilities:
+    - Create all factories, strategies, and other global facilities.
+    - Hand over control to higher-level abstract portions of the system.
+
+- **Dependency Injection**
+
+  - Dependencies should be injected into **Main** by a **Dependency Injection framework**.
+  - After injection, **Main** distributes dependencies without further use of the framework.
+  - **Main** is considered the **dirtiest component** in the system since it handles low-level tasks like setup and bootstrapping.
+
+- **Main as a Plugin**
+
+  - **Main** should be treated like a plugin that handles initial conditions, external resource gathering, and then passes control to the system's higher-level logic.
+  - This approach allows flexibility:
+    - Different **Main** components for different environments (e.g., Dev, Test, Production).
+    - Possible configurations based on jurisdiction, customer, or country.
