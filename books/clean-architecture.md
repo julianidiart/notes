@@ -1000,3 +1000,40 @@
   - This approach allows flexibility:
     - Different **Main** components for different environments (e.g., Dev, Test, Production).
     - Possible configurations based on jurisdiction, customer, or country.
+
+# Chapter 27: Services: Great and Small
+
+- **Service-oriented architectures** (SOA) and **micro-service architectures** have gained popularity for reasons including:
+
+  - **Perceived decoupling**: Services seem to be strongly decoupled from each other. However, this is not always the case.
+  - **Independence of development and deployment**: Services appear to allow for independent development and deployment, but this is only partially true.
+
+- **Service Architecture**
+
+  - Using services does not inherently define the **architecture** of a system.
+  - True architecture involves boundaries that separate **high-level policy** from **low-level details** and follow the **Dependency Rule**.
+  - Services that merely divide application behaviors do not always follow architectural principles. They may function as expensive function calls without architectural significance.
+
+- **Architecturally Significant Services**
+
+  - Not all services need to be architecturally significant. Services separating functionality across processes and platforms can be beneficial, but that alone doesn’t define a system’s architecture.
+  - The architecture is determined by which function calls cross architectural boundaries, adhering to the **Dependency Rule**.
+
+- **The Decoupling Fallacy**
+
+  - Many believe that **microservices** guarantee decoupling and independence, but often services become tightly coupled. This happens due to the necessity of coordinating development and deployment, undermining the original purpose of service orientation.
+
+- **Cross-Cutting Concerns**
+
+  - New features that affect multiple parts of a system can lead to tight coupling across services. For example, adding a new feature may require simultaneous changes across many services, reducing their independent development/deployment.
+
+- **Objects to the Rescue**
+
+  - In a **component-based architecture**, the **SOLID design principles** can guide the creation of classes that handle new features through **polymorphism**. This can decouple the new functionality from existing components.
+  - For instance, a new feature can be implemented by adding a new class that extends the original class without modifying the existing ones.
+
+- **Component-Based Services**
+
+  - Services can be designed using **component-based architectures** and **SOLID principles**, allowing new components to be added without altering existing ones.
+  - In this approach, new features can be added by deploying new components, such as adding new JAR files to a system, adhering to the **Open-Closed Principle**.
+  - The **Dependency Rule** ensures that the components within the services maintain proper boundaries, allowing for easier extension and maintenance.
