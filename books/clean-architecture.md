@@ -1001,7 +1001,7 @@
     - Different **Main** components for different environments (e.g., Dev, Test, Production).
     - Possible configurations based on jurisdiction, customer, or country.
 
-# Chapter 27: Services: Great and Small
+### Chapter 27: Services: Great and Small
 
 - **Service-oriented architectures** (SOA) and **micro-service architectures** have gained popularity for reasons including:
 
@@ -1037,3 +1037,36 @@
   - Services can be designed using **component-based architectures** and **SOLID principles**, allowing new components to be added without altering existing ones.
   - In this approach, new features can be added by deploying new components, such as adding new JAR files to a system, adhering to the **Open-Closed Principle**.
   - The **Dependency Rule** ensures that the components within the services maintain proper boundaries, allowing for easier extension and maintenance.
+
+### Chapter 28: The Test Boundary
+
+- **Tests as System Components**
+
+  - Tests are a part of the system architecture like any other component.
+  - Tests are structured according to the **Dependency Rule**: tests depend inward on the code being tested.
+  - From an architectural point of view, all tests—**unit tests**, **integration tests**, **acceptance tests**, and others—are treated similarly.
+  - Tests are usually **independently deployable** and are generally deployed in test systems, not production systems.
+  - Tests are the **most isolated component**; no user depends on them, and their role is to support development.
+
+- **Design for Testability**
+
+  - Proper integration of tests into the system's design prevents the **Fragile Tests Problem**, where minor changes in the system require extensive updates to tests.
+  - Tests that are strongly coupled with the system make the system rigid and harder to change.
+    - For example, tests that use the **GUI** to verify business rules can break with any changes to the GUI.
+    - The solution is to design **testing APIs** to bypass volatile system components like GUIs.
+
+- **Testing API**
+
+  - A **Testing API** allows tests to verify business rules without interacting with volatile components like GUIs.
+  - The Testing API should enable tests to bypass security constraints, skip expensive resources like databases, and force the system into specific testable states.
+  - This API should **decouple** the tests from the application structure, allowing independent evolution of the application and the tests.
+
+- **Structural Coupling**
+
+  - Structural coupling between tests and application code (e.g., one test class per production class) makes both tests and the production code fragile.
+  - A **Testing API** helps hide the application’s structure from tests, reducing coupling and promoting flexibility.
+
+- **Security Concerns**
+
+  - **Testing APIs** with superpowers (e.g., bypassing security or resource constraints) could be a security risk if deployed in production.
+  - To mitigate this risk, the Testing API should be placed in a **separate, deployable component**, ensuring it is not included in the production environment.
