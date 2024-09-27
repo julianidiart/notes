@@ -1159,3 +1159,39 @@
 
   - Performance in data storage is important but can be encapsulated in **low-level mechanisms**, separate from **business rules**.
   - Thus, performance is a concern, but it does not dictate the **overall system architecture**.
+
+### Chapter 31: The Web Is a Detail
+
+- **The Web's Impact**
+
+  - In the 1990s, developers saw the web as a transformative technology, but in reality, it was just another oscillation in how systems handle computing power.
+  - Historically, **computing power** has oscillated between being centralized (on servers) and distributed (on terminals).
+
+- **The Endless Pendulum**
+
+  - This oscillation didn’t start with the web:
+    - Mainframes with **green-screen terminals** were much like modern browsers.
+    - Minicomputers and **client-server** architectures followed.
+  - The cycle repeated itself even after the web's introduction. Initially, all computing power was centralized in **server farms**, while **browsers** were simple and “dumb.”
+    - Then **applets** and **dynamic content** moved computation back to the browser (like **JavaScript** with **Web 2.0**).
+    - Lately, **Node.js** brought **JavaScript** back to the server, continuing the oscillation.
+
+- **The Web as a Detail**
+
+  - The web didn't fundamentally change computing but was simply part of this long-term trend.
+  - Architecturally speaking, the web is just another **I/O device**, comparable to devices from the 1960s when applications were made **device-independent**.
+
+- **The GUI Parallel**
+
+  - **GUIs** (Graphical User Interfaces) are also details, and since the **web is a GUI**, it should also be considered a **detail** from an architectural standpoint.
+  - The **business logic** and **core functionality** of an application should be **decoupled** from the web, ensuring that changes to the web layer (like a marketing-driven redesign) don't affect the core.
+
+- **Handling the Web in Architecture**
+
+  - Developers must decouple **business rules** from the **UI** (including the web). This ensures flexibility and prevents UI trends or marketing pressures from affecting core application logic.
+  - An anecdote about **Company Q** illustrates this: after transitioning its personal finance software to a browser-like interface (due to marketing pressures), it eventually reverted to a traditional **desktop GUI** because of customer dissatisfaction.
+
+- **The Upshot**
+
+  - Like the **database**, the **web** is just a **detail** that should be isolated from the core business logic by architectural **boundaries**.
+  - This separation allows the core system to be resilient to trends or changes in how the user interface is delivered.
