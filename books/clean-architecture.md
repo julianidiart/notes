@@ -1195,3 +1195,40 @@
 
   - Like the **database**, the **web** is just a **detail** that should be isolated from the core business logic by architectural **boundaries**.
   - This separation allows the core system to be resilient to trends or changes in how the user interface is delivered.
+
+### Chapter 32: Frameworks Are Details
+
+- **Frameworks Are Tools, Not Architectures**
+
+  - Frameworks are **powerful** and **useful** but should not dictate your architecture.
+  - They are merely tools to help with certain problems, not foundational structures for the system.
+
+- **Framework Authors**
+
+  - Frameworks are often developed by authors solving **their** problems, not necessarily **yours**.
+  - While these frameworks may solve overlapping problems, they are not tailor-made for your specific needs.
+  - Be aware that while framework authors want adoption, they cannot anticipate your system’s unique requirements.
+
+- **Asymmetric Marriage**
+
+  - When adopting a framework, the **commitment** is mostly one-sided.
+  - You invest heavily in the framework, often coupling your system tightly to it.
+  - The framework author takes no responsibility for your system's success or failure.
+
+- **The Risks**
+
+  - Tight coupling to frameworks can lead to problems, especially if the framework evolves or becomes obsolete.
+  - It can also be difficult to **break away** from a framework once your system is tightly integrated with it.
+  - Following the framework's documentation usually means wrapping your architecture around the framework, which can be problematic.
+
+- **The Solution**
+
+  - Protect your architecture by keeping **frameworks at arm’s length**.
+  - Keep your business rules and **use cases** independent from the framework.
+  - This separation ensures that the framework does not dominate the system and allows for flexibility.
+
+- **Testable Architectures**
+
+  - A well-structured system should allow you to **unit test** your **use cases** without needing the framework.
+  - Tests should not require the **web server** or **database** to be active.
+  - The core entities should be **plain objects** independent of any framework components.
