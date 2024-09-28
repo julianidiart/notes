@@ -1232,3 +1232,53 @@
   - A well-structured system should allow you to **unit test** your **use cases** without needing the framework.
   - Tests should not require the **web server** or **database** to be active.
   - The core entities should be **plain objects** independent of any framework components.
+
+### Chapter 34: The Missing Chapter
+
+- **Designing with Clean Architecture**
+
+  - Clean architecture principles help build software with clear **boundaries**, **controlled dependencies**, and **well-defined responsibilities**.
+    - However, careful consideration is required during **implementation** to avoid common pitfalls.
+
+- **Package by Layer**
+
+  - A traditional approach where code is divided into **horizontal layers**:
+    - Layers include **web**, **business logic**, and **persistence**.
+    - In **strict layered architecture**, dependencies only flow downward (higher layers depend on lower layers).
+  - Common in Java, where layers are implemented as **packages**.
+
+- **Package by Feature**
+
+  - Instead of layers, this approach groups code by **features** or functionalities.
+  - Each feature includes everything needed for that function, from UI to business logic and database access.
+  - This structure aligns better with **business needs** but can sometimes result in **duplicate logic**.
+
+- **Ports and Adapters (Hexagonal Architecture)**
+
+  - An alternative to layered architecture, this approach decouples **business logic** from **infrastructure**.
+  - Code is organized into **domain** (inside) and **infrastructure** (outside).
+  - Infrastructure depends on the domain, not vice versa.
+  - While this structure is powerful, there’s a risk of **crossing boundaries** if not enforced properly.
+
+- **Package by Component**
+
+  - Packages are based on **architectural components** (e.g., UI, business logic, data access).
+  - This offers a **modular structure** that aligns well with **clean architecture principles**.
+  - It allows components to be developed and deployed independently.
+
+- **The Devil is in the Details**
+
+  - Even with a good architectural design, the **implementation details** can undermine its effectiveness.
+  - Developers need to think about how to **map the design** into code, **organize the code**, and enforce **decoupling** at runtime and compile-time.
+  - **Compiler enforcement** of architecture can help maintain separation of concerns.
+
+- **Organization vs. Encapsulation**
+
+  - It’s important to organize code in a way that supports **encapsulation**.
+  - Improper organization can lead to **leaks** across boundaries, even if the high-level design seems correct.
+  - Attention must be paid to access control, dependency management, and keeping **business logic** separate from technical details.
+
+- **The Missing Advice**
+  - To succeed in clean architecture implementation, developers must carefully balance **design intent** and **pragmatic coding**.
+  - Factors like **team size**, **skill level**, and **project complexity** should guide the final implementation strategy.
+  - Clean architecture is about keeping options open and **decoupling systems** to ensure long-term flexibility and maintainability.
