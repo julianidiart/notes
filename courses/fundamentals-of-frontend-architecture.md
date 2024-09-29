@@ -364,3 +364,38 @@
 - **Tools for diagramming**
 
   - Maxi recommends using simple, low-effort tools like Mermaid, Scaledraw, or TLdraw for creating these diagrams quickly and efficiently.
+
+### The Design Document
+
+- **Design documents** outline solutions in detail and invite feedback from stakeholders and team members, improving the final architecture.
+
+- **Two levels of design docs**
+
+  - **High-level** design documents focus on overall architecture.
+  - **Low-level** design docs detail specific feature implementation.
+
+- **Standard structure**
+
+  - The typical structure includes an _overview_, _context_, _goals_, _high-level design_, _alternatives considered_, _detailed design_ (for low-level docs), _timeline_, _risks_, and an _appendix_.
+
+- **High-level design docs**
+
+  - These describe the system architecture, often using container diagrams and system context diagrams, and discuss overall decisions like technology stacks.
+
+- **Low-level design docs**
+
+  - These focus on implementation, often including pseudocode, mock data types, and diagrams related to specific features.
+
+- **Alternatives section**
+
+  - It's important to document why certain frameworks or technologies were _not chosen_, providing clarity on the decision-making process.
+
+- **Timeline and estimation**
+
+  - While challenging to predict accurately, timelines should include the _best estimate_ for how long a project or feature will take to implement.
+
+- **Risks and open questions**
+
+  - This section highlights potential _risks_ and _uncertainties_ that need to be addressed during implementation.
+
+- A concise design doc is more likely to be read and understood, increasing its effectiveness for gathering feedback.
