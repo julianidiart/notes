@@ -332,3 +332,35 @@
 
   - Once modules are identified, the next step is dealing with shared functionality and dependencies during the implementation phase.
   - After identifying modules, they can be divided among developers for individual implementation, with communication between dependent modules being addressed later.
+
+### Useful Diagrams
+
+- **Diagrams** are essential for clarifying thoughts and communicating with the team during the design phase of software development.
+
+  1. **Flowcharts**
+
+  - Used to represent logic and workflows, flowcharts help break down complex conditions and scenarios, aiding in implementation.
+
+  2. **State diagrams**
+
+  - Especially useful when working with state management systems, state diagrams visually depict different states and transitions between them.
+
+  3. **Class diagrams**
+
+  - These diagrams show entities and their attributes, operations, and relationships, and are helpful even outside object-oriented programming (e.g., for representing models or types).
+
+  4. **Sequence diagrams**
+
+  - These are useful for illustrating the sequence of operations, particularly for asynchronous processes involving multiple actors or services.
+
+- **Short-lived nature**
+
+  - These diagrams are not meant for long-term documentation but serve as tools to quickly brainstorm, visualize, and iterate on design ideas.
+
+- **Communication aid**
+
+  - Diagrams act as a starting point for discussions with the team, helping identify potential issues or edge cases before implementation.
+
+- **Tools for diagramming**
+
+  - Maxi recommends using simple, low-effort tools like Mermaid, Scaledraw, or TLdraw for creating these diagrams quickly and efficiently.
