@@ -293,3 +293,42 @@
 - **Visual representation**
 
   - Domain modeling can be captured as simple lists or more visually as class diagrams or entity relationship diagrams.
+
+### Breaking Things Down
+
+- **Level 3 of the C4 Model**
+
+  - At this level, modules are identified as the internal building blocks of the application, based on the application's top-level concerns.
+
+- **'Modules' instead of 'Components'**
+
+  - Instead of using _"components"_ (which may confuse frontend developers), Maxi refers to the building blocks as modules to represent larger concerns.
+
+- **Starting with routes**
+
+  - By examining potential routes in the app (e.g., home, search, restaurant), developers can identify the key modules needed.
+
+- **Module-entity relationship**
+
+  - Not all modules correspond directly to entities—some are based on actions or features, like search, which is a module but not an entity.
+
+- **Submodules and complexity**
+
+  - Certain areas of the app, such as menu items, have enough complexity to become standalone modules, even if they are part of a larger route (e.g., restaurant).
+
+- **Non-route modules**
+
+  - Some modules, such as shopping carts, don’t have their own route but exist across multiple pages, still requiring modular implementation.
+
+- **Shared functionality and code**
+
+  - There will be overlap between modules, especially when modules depend on one another (e.g., menu items depend on restaurants).
+
+- **Focus on identifying modules**
+
+  - The primary goal is to identify and organize modules based on their functionality and role within the application.
+
+- **Implementation phase**
+
+  - Once modules are identified, the next step is dealing with shared functionality and dependencies during the implementation phase.
+  - After identifying modules, they can be divided among developers for individual implementation, with communication between dependent modules being addressed later.
