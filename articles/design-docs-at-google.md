@@ -3,6 +3,8 @@
 - **Design docs** are informal documents used to define software designs before coding begins.
 - They emphasize high-level implementation strategy and key design decisions, focusing on _trade-offs_.
 
+> “As software engineers our job is not to produce code per se, but rather to solve problems.”
+
 - **Functions of Design Docs**
 
   - **Early Issue Identification**: Detect design problems when changes are still easy to make.
