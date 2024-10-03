@@ -1,4 +1,4 @@
-# Get your work recognized: write a brag document
+# [Get your work recognized: write a brag document by Julia Evans (2019)](https://jvns.ca/blog/brag-documents/)
 
 - Good work won't _automatically_ lead to recognition and rewards.
 - _Visibility_ and _memory_ play significant roles in how accomplishments are perceived.
