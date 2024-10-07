@@ -399,3 +399,21 @@
   - This section highlights potential _risks_ and _uncertainties_ that need to be addressed during implementation.
 
 - A concise design doc is more likely to be read and understood, increasing its effectiveness for gathering feedback.
+
+## 4. Implementing
+
+### Implementing Modules
+
+- **Modules and routes**
+
+  - While modules often correspond to routes, they don’t always map 1:1, making it important to separate them from the routing system.
+
+- **Separate modules folder**
+
+  - A dedicated modules folder ensures that all modules are _organized_ and _accessible_, without being mixed into the routing system.
+  - Some modules, like the shopping cart, don’t have routes, so organizing them outside the routing folder avoids confusion.
+  - Modules like menu items may not have top-level routes, but they still need to be treated as standalone modules, avoiding unnecessary nesting.
+  - Keeping modules in a dedicated structure helps improve _navigation_ and _consistency_, making it easy to find where each piece of functionality is implemented.
+  - The _app_ (Next.js) folder should only handle routing and entry points to modules, with the logic of each module being implemented separately.
+  - By separating routing and modules, developers can quickly locate and modify components or features within their respective modules.
+  - Hierarchy within modules: Each module can have its own internal structure, such as features and components, maintaining a clear hierarchy of functionality.
