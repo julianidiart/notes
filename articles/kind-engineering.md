@@ -140,3 +140,45 @@
 
   - Celebrate failure as an opportunity for growth.
   - Encourage risk-taking and experimentation to promote innovation.
+
+## 4. Feedback/Criticism
+
+### In General For Both
+
+- Start by _asking_ for feedback rather than immediately giving it. It creates balance and ensures you're not perceived as overly critical.
+- _Criticism_ should focus on _actions_ or _work_, not the individual.
+- Both praise and criticism should be _detailed_. Specific feedback shows genuine attention and helps with improvement.
+- When giving critical feedback, if possible, _offer a solution_ or next steps to improve the situation.
+
+- **In Summary:**
+
+  - Be the first to ask for feedback.
+  - Avoid personal attacks; focus on actions.
+  - Specificity is key to meaningful feedback.
+  - Offer solutions alongside criticism.
+
+### Receiving
+
+- Know how you _prefer_ to receive feedback (e.g., in writing, in private, face-to-face) and _communicate_ that with others.
+- Acknowledge that giving feedback, especially criticism, is hard. _Listen_ attentively, express _thanks_, and _respect_ the feedback even if you disagree.
+- _Take time_ to process feedback before responding. This helps avoid defensiveness.
+- If feedback is unclear or lacking detail, ask for _examples_ or more _explanation_.
+
+- **In Summary:**
+
+  - Know and communicate your feedback preferences.
+  - Listen, understand, and thank the person.
+  - Take time to process feedback before reacting.
+  - Ask for clarification when necessary.
+
+### Giving
+
+- Focus on the _recipient's emotional state, not your own_. Feedback should be delivered with empathy and understanding of how it may affect the other person.
+- Demonstrate _expertise_ and _humility_ when giving feedback. Show that your feedback is trustworthy and comes from a place of good intent.
+- Clearly _explain the reasoning_ behind your feedback. Show the steps you took to arrive at your conclusions, allowing the recipient to follow your thought process.
+
+- **In Summary:**
+
+  - Keep in mind the listener's emotions, not your own.
+  - Build credibility through expertise and humility.
+  - Clearly outline the reasoning behind your feedback.
