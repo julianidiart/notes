@@ -16,7 +16,7 @@
   - Senior engineers make _technical decisions_ with _company-wide context_ in mind, beyond their immediate team's interests.
   - Staff engineers avoid local optimization (solving problems only for one team) and focus on solutions that benefit the whole organization.
 
-  > "Good decisions need context. The local maximum, the best decision for a single group, might not be anything like the best decision when you take a broader view."
+  > "Good decisions need context. Experienced engineers know that the answer to most technology choices is “it depends.” Knowing the pros and cons of a particular technology isn’t enough—you need to know the local details too. What are you trying to do? How much time, money, and patience do you have? What’s your risk tolerance? What does the business need? That’s the context of the decision."
 
 - **Why Do We Need Engineers Who Lead Projects Across Multiple Teams?**
 
@@ -71,10 +71,14 @@
 
 - **What’s Your Scope?**
 
+  > "If anything can be your problem, then it’s easy for everything to become your problem."
+
   - **Scope** defines the domain a staff engineer is responsible for, with the expectation of influencing both short- and long-term technical goals.
   - _Too broad_ a scope can _dilute impact_, while _too narrow_ a scope _risks missed opportunities_ and _overengineering_.
 
 - **What Shape Is Your Role?**
+
+  > "The work that’s most important will often be the work that nobody else sees."
 
   - Staff engineers may work deeply in one area or broadly across multiple teams, depending on their _style_ and the _organization's needs_.
   - Engineers need to _balance_ technical skills with product, project, and people management responsibilities as they grow in seniority.
