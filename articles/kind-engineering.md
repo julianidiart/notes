@@ -32,34 +32,62 @@
 - **Honesty** fosters _trust_ and creates space for _constructive criticism_.
 - Honesty is foundational in _connecting_ with people and _helping_ them effectively.
 
-- **Being At Work**
+### Being At Work
 
-  - Bring your _full, rounded self_ to work. Share interests and hobbies as part of who you are.
-  - _Understanding_ your colleagues’ personal stories can help you identify when they need support or feedback.
-  - Being _open_ about your life humanizes you and helps build trust, though boundaries should be maintained.
+- Bring your _full, rounded self_ to work. Share interests and hobbies as part of who you are.
+- _Understanding_ your colleagues’ personal stories can help you identify when they need support or feedback.
+- Being _open_ about your life humanizes you and helps build trust, though boundaries should be maintained.
 
 - **Building Trust**
 
   - _Radical Candor_ emphasizes the need for both _honesty_ (to make feedback useful) and _empathy_ (to ensure feedback is constructive and caring). Without honesty, feedback isn’t helpful; without empathy, it isn’t supportive.
 
-  - **In Summary:**
+- **In Summary:**
 
-    - Be more than _“just professional”_ and bring your rounded self to work.
-    - Be open about your life to build trust.
-    - Challenge people directly but with care and empathy.
+  - Be more than _“just professional”_ and bring your rounded self to work.
+  - Be open about your life to build trust.
+  - Challenge people directly but with care and empathy.
 
-- **Be Honest… When It Helps**
+### Be Honest… When It Helps
 
 - While _white lies_ may seem kind, they _don’t help_ people grow or improve.
 
 - **Honest feedback should include:**
 
-- Praise for _what went well_.
-- Clear explanations of _what went wrong_.
-- Actionable suggestions* for improvement*.
-
+  - Praise for _what went well_.
+  - Clear explanations of _what went wrong_.
+  - Actionable suggestions* for improvement*.
   - For example, instead of falsely praising a failed meeting, offer constructive feedback like, “Your answer was unclear, but the idea is strong. Improve your pitch for better results next time.”
 
-  - **In Summary:**
-    - White lies may be well-intended but they don’t help with growth.
-    - Provide honest feedback by recognizing strengths and suggesting clear ways to improve.
+- **In Summary:**
+
+  - White lies may be well-intended but they don’t help with growth.
+  - Provide honest feedback by recognizing strengths and suggesting clear ways to improve.
+
+## 2. Async Communication: Code Reviews
+
+- Change is constant in tech, and code reviews (Pull Requests) are essential _asynchronous tools_. They should not be treated as mere formalities but as _opportunities for deeper understanding_.
+
+### Understanding The Why, Not Just The How
+
+- Focus on **The Why** of a change, not just _the What_ and _How_.
+- Approach code reviews with _curiosity_, not _condescension_, to avoid defensiveness.
+- Assume you might be missing something and ask for _clarification_, _not correction_.
+- Use _open-ended questions_ to give colleagues the space to explain their decisions and provide context.
+
+- **In Summary:**
+
+  - Seek to understand the reason behind changes.
+  - Avoid assuming incompetence or malice.
+  - Use open-ended questions rather than opinionated statements.
+
+### Nitpicks
+
+- **Nitpicks** are _minor_, _non-critical_ comments, often about code style, that don’t need to be addressed before merging code.
+- Clearly label nitpicks (e.g., with a _nitpick:_ prefix) to indicate they are optional suggestions.
+- If you frequently make the same nitpick comments, consider implementing or improving _linting_ tools to handle style-related feedback automatically.
+
+- **In Summary:**
+
+  - Label nitpicks to clarify their importance.
+  - Repeated nitpicks may indicate a need for better tooling.
