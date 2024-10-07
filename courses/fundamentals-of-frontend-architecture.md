@@ -417,3 +417,25 @@
   - The _app_ (Next.js) folder should only handle routing and entry points to modules, with the logic of each module being implemented separately.
   - By separating routing and modules, developers can quickly locate and modify components or features within their respective modules.
   - Hierarchy within modules: Each module can have its own internal structure, such as features and components, maintaining a clear hierarchy of functionality.
+
+### Component Hierarchy & Breakdown
+
+- **Breaking down UIs**
+
+  - Breaking down the UI into components involves _visually segmenting the interface_ and _assigning names to each part_, a technique popularized by React.
+
+- **Simple component hierarchy**
+
+  - The _simple hierarchy_ consists of _screens_, _features_, _components_, and a _shared_ section for elements used across the app.
+  - **Screens** are major entry points within a module, often corresponding to entire pages or tabs within the application.
+  - **Features** are large UI sections made up of multiple **components**, while components are smaller elements like buttons, inputs, or dropdowns.
+  - **Shared components** are UI elements, such as _headers_ or _layouts_, that are reused across multiple modules or screens and are categorized under _"shared"_.
+
+- **Determining features**
+
+  - If a component requires its own folder structure due to internal complexity (e.g., containing many subcomponents), it should be categorized as a feature.
+
+- **Feature-sliced design**
+
+  - For larger projects or teams, the feature-sliced design method provides a more detailed structure with _layers_, _slices_, and _segments_.
+  - It is a more complex hierarchy system with _multiple layers_ and _granular categories_, providing a scalable architecture for large frontend projects.
