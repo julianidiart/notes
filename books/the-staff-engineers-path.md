@@ -86,3 +86,15 @@
 - **How Much Do You Want to Code?**
 
   - Engineers should consider how much coding they need or want to do and balance it with leadership and strategic responsibilities.
+
+#### Aligning on Scope, Shape, and Primary Focus
+
+- **Is That Your Job?**
+
+  - Ultimately, a staff engineer’s job is to make the organization successful, sometimes stepping into unexpected roles or tasks to achieve project goals.
+
+#### To Recap
+
+- **Ambiguity Is Part of the Role**
+- **Leadership without Management**
+- **Clear Scope and Focus**
