@@ -1,8 +1,8 @@
 # The Staff Engineer's Path by Tanya Reilly (2022)
 
-## Part 1: The Big Picture
+## Part I: The Big Picture
 
-### What Would You Say You Do Here?
+### Chapter 1: What Would You Say You Do Here?
 
 > "Staff engineering roles come in a lot of shapes. There are many valid ways to do the job. But some shapes will be a better fit for some situations, and not all organizations will need all kinds of staff engineers"
 
@@ -29,3 +29,36 @@
   - Their influence ensures _better engineering practices_, like testing, code review, and design quality, and they help set the overall tone for behavior and collaboration.
 
   > "If the most senior engineers don’t write tests, you’ll never convince everyone else to do it."
+
+#### Enough Philosophy. What's My Job?
+
+- **You’re Not a Manager, but You Are a Leader**
+
+  - Staff engineers hold _leadership_ roles similar in seniority to line managers, but without direct _reports_.
+  - Engineers in this role are expected to _guide teams_, _collaborate effectively_, and _influence_ decisions without formal managerial authority.
+  - Technical expertise alone isn't enough—staff engineers must develop _collaboration_, _communication_, and _leadership_ skills to influence larger projects.
+
+- **Yes, You Can Be an Introvert. No, You Can’t Be a Jerk.**
+
+  - Leadership can be executed by introverts as long as they maintain _professionalism_ and _collaboration_.
+  - Organizations no longer tolerate difficult engineers who harm team productivity, regardless of their technical skills.
+
+- **You’re in a “Technical” Role**
+
+  - Staff engineers must have a _solid technical foundation_ to provide _high-value input_, _guide teams_, and make _informed decisions_.
+  - Their role may involve less coding and more _architecture_ and _strategic problem-solving_, leaving programming tasks to others.
+  - Depending on the problem, staff engineers may _dive into codebases_, _write technical documents_, or _lead discussions_.
+
+- **You Aim to Be Autonomous**
+
+  - At the staff level, engineers are expected to _identify_ high-impact work rather than wait for assignments.
+  - With autonomy comes the responsibility to _speak up_ if a project could be harmful, ensuring decisions are in the organization’s best interest.
+
+- **You Set Technical Direction**
+
+  - A critical part of the role is ensuring that _sound technical decisions_ are made and _documented_.
+  - The goal is not to dictate all technical decisions but to ensure that the _right decisions are agreed_ upon and implemented across the organization.
+
+- **You Communicate Often and Well**
+
+  - Senior staff engineers must possess strong _communication_ skills as most of their work involves _conveying ideas_, _aligning teams_, and ensuring smooth _collaboration_.
