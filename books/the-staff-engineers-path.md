@@ -4,7 +4,7 @@
 
 ### Chapter 1: What Would You Say You Do Here?
 
-> "Staff engineering roles come in a lot of shapes. There are many valid ways to do the job. But some shapes will be a better fit for some situations, and not all organizations will need all kinds of staff engineers"
+> "Staff engineering roles come in a lot of shapes. There are many valid ways to do the job. But some shapes will be a better fit for some situations, and not all organizations will need all kinds of staff engineers."
 
 #### What Even Is a Staff Engineer?
 
@@ -120,6 +120,10 @@
   - Tuning Out Background Noise.
   - Forgetting the Purpose.
 
+> "The more time you spend absorbed in any domain and learning the nuances of the work at your scope, the richer and more complex it will become for you."
+
+> "If you’ve been working around the same mucky configuration file or broken deploy process for months, you might get so used to it that you stop thinking of it as something you need to fix."
+
 - _Techniques_ for Getting Perspective
 
   - Take an Outsider View.
@@ -135,6 +139,8 @@
   - Good ideas may not gain traction.
   - Surprises may arise without understanding obstacles beforehand.
   - Progress may be slower due to lack of insight into organizational decision-making.
+
+> "Being right about a need for change is less than half the battle. You’ll have to convince other people that you’re right and, even more difficult, convince them to care that you’re right."
 
 - **Understanding Organizational Culture**
 
@@ -166,6 +172,8 @@
   - Teams may struggle with alignment.
   - Short-term focus can hinder long-term achievement and lead to accumulation of technical debt.
 
+> "If the team doesn’t know the big plan, either they’ll go to the wrong place, or every decision will be long, complicated, and full of discussion."
+
 - **Taking a Longer View**
 
   - Understand not just the next step, but the _long-term impact_.
@@ -184,3 +192,7 @@
 - Know the _context_, _culture_, and _goals_ of your organization.
 - Keep the maps up to date and navigate by understanding _how decisions are made_.
 - _Build relationships_, _gather information_, and _connect people_ to help the entire organization move toward its goals.
+
+> "Think of gathering context as a skill to build as part of your job."
+
+> "Think about your own work and what your journey is."
