@@ -102,3 +102,85 @@
 - **Ambiguity Is Part of the Role**
 - **Leadership without Management**
 - **Clear Scope and Focus**
+
+### Chapter 2: Three Maps
+
+#### Uh, Did Anyone Bring a Map?
+
+- **Maps** help to contextualize work and navigate through the organization's structure.
+
+1. **The Locator Map: You Are Here**
+
+- **Purpose**: Understanding your _position_ in the organization.
+- Helps in maintaining _perspective_ about the scale of one's work compared to the wider organization.
+- _Risks_ Without Perspective:
+
+  - Prioritizing Badly.
+  - Losing Empathy.
+  - Tuning Out Background Noise.
+  - Forgetting the Purpose.
+
+- _Techniques_ for Getting Perspective
+
+  - Take an Outsider View.
+  - Escape the Echo Chamber.
+  - Go Beyond Engineering.
+  - Stay Informed.
+
+2. **Topographical Map: Learning the Terrain**
+
+- **Purpose**: Navigate the organization's _internal terrain_ effectively.
+- _Challenges_ Without the Map:
+
+  - Good ideas may not gain traction.
+  - Surprises may arise without understanding obstacles beforehand.
+  - Progress may be slower due to lack of insight into organizational decision-making.
+
+- **Understanding Organizational Culture**
+
+  - **Questions to Ask**:
+
+    - How much information is shared openly?
+    - Are decisions made orally or in writing?
+    - Are initiatives top-down or bottom-up?
+    - Is there a focus on fast or deliberate change?
+    - Are relationships between teams formal or informal?
+
+  - **Cultural Features**:
+
+    - _Gaps_ between different teams or responsibilities.
+    - _Gatekeeping_ individuals or teams.
+    - Areas of shared or _unclear responsibility_.
+    - Established _paths to efficiency_, both documented and undocumented.
+
+- **Keeping Your Topographical Map Up to Date**
+
+  - Join announcement channels, "walk the floor," and talk to people.
+  - Build strong networks, even with non-engineers.
+
+3. **Treasure Map: X Marks the Spot**
+
+- **Purpose**: To clarify the organization's goals and define how to achieve them.
+- Without clear goals:
+
+  - Teams may struggle with alignment.
+  - Short-term focus can hinder long-term achievement and lead to accumulation of technical debt.
+
+- **Taking a Longer View**
+
+  - Understand not just the next step, but the _long-term impact_.
+  - Make sure _everyone_ knows the goal and the steps to get there.
+  - If there's confusion or no existing goal, help create a _new vision_.
+
+#### Your Personal Journey
+
+- _Track_ your work over _months_, _quarters_, and _years_.
+- Understand your goals and progress to frame even small tasks in the context of a _bigger story_.
+- Define your journey clearly.
+
+#### To Recap
+
+- Practice seeing the _bigger picture_ intentionally.
+- Know the _context_, _culture_, and _goals_ of your organization.
+- Keep the maps up to date and navigate by understanding _how decisions are made_.
+- _Build relationships_, _gather information_, and _connect people_ to help the entire organization move toward its goals.
