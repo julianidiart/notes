@@ -34,6 +34,8 @@
   - Individuals should decide what they want to get better at, rather than being pushed into roles they don’t want.
   - It’s important to be deliberate about the skills one develops on the job.
 
+> "Choose deliberately. Choose a role that you'll feel successful and happy and proud to say you do, and that will teach you skills you want."
+
 - **Steps for Making Glue Work Visible and Valuable**
 
   1. Honest discussions about promotion paths and goals are critical.
@@ -46,6 +48,8 @@
   - Stop organizing team events, mentoring, and other glue tasks.
   - Focus instead on coding, designing, or other visible technical contributions.
 
+> "If you’re not getting promoted for glue work… stop doing glue work."
+
 - **Learning and Growth**
 
   - Most skill acquisition happens _during work_. Engineers should:
@@ -53,13 +57,21 @@
     - _Share_ their learning experiences to support junior team members.
   - Even for those excelling at glue work, it's important to keep developing _core technical skills_ to ensure career growth.
 
+> "If you only do glue, you will only get better at glue. You're making your team more effective but you're hurting your future self."
+
 - **Managers and Teams: Allocating Glue Work Fairly**
 
   - Managers should ensure that glue work is _shared equitably_ among team members.
   - Promotion processes should consider glue work as an _essential component of technical leadership_.
+
+> "Managers: If your job ladder doesn't require that your senior people have glue work skills, think about how you're expecting that work to get done."
+
+> "Glue people: push back on requests to do more than your fair share of non-promotable work and put your effort into something you want to get good at."
 
 - **Conclusion: Developing Versatility**
 
   - Glue work is _essential_ for team success, and it needs to be _recognized_ and _rewarded_ appropriately.
   - Engineers should _decide deliberately_ what skills they want to develop and should resist being boxed into roles they don’t aspire to.
   - Everyone can be good at multiple things and should _actively decide_ on a career path that makes them _fulfilled_.
+
+> "Our skills aren't fixed in place. You can be good at lots of things. You can do anything."
