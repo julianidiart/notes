@@ -439,3 +439,23 @@
 
   - For larger projects or teams, the feature-sliced design method provides a more detailed structure with _layers_, _slices_, and _segments_.
   - It is a more complex hierarchy system with _multiple layers_ and _granular categories_, providing a scalable architecture for large frontend projects.
+
+### Implementing Entities
+
+- **Entities as domain building blocks**
+
+  - Entities like restaurants, customers, and menu items form the core of the domain and are used throughout the system, from API endpoints to the frontend.
+
+- **Models**
+
+  - **API responses** often contain _deeply nested or unnecessary data_, which can make it difficult to use directly in frontend components.
+  - Instead of calling API fetch functions directly in components, it's better to create a _model_ as a layer of abstraction to clean up and aggregate the data.
+  - The model can aggregate data from _multiple API sources_ (e.g., restaurant details, categories, reviews) to provide a single, streamlined object for the frontend.
+  - By mapping through deeply nested API responses and removing unnecessary details, the model prepares the entity data in a more _usable_ format.
+  - The model returns a simplified object that conforms to the _expected data structure_, making it easy to pass the entity data to components.
+  - The model function, such as getRestaurant(), can be reused across different components whenever restaurant data is needed, _simplifying_ the component code.
+
+- **Avoiding inefficiencies**
+
+  - Small improvements in how entities are _modeled_ can lead to big gains in efficiency, especially since entities are core to the entire application.
+  - Creating models may seem like a small improvement, but it's a worthwhile investment because it _simplifies_ and _optimizes_ the handling of domain entities across the application.
