@@ -459,3 +459,20 @@
 
   - Small improvements in how entities are _modeled_ can lead to big gains in efficiency, especially since entities are core to the entire application.
   - Creating models may seem like a small improvement, but it's a worthwhile investment because it _simplifies_ and _optimizes_ the handling of domain entities across the application.
+
+### Guardrails and Constraints
+
+- Without **constraints**, a clean architecture can degrade over time as the codebase grows and more developers contribute.
+
+- **Module independence**
+
+  - One key rule is to keep _modules independent_ to avoid unintended coupling, which could lead to errors if one module’s changes affect others.
+
+- **Performance guardrails**
+
+  - Tools like _bundlesize_ and _performance budgets_ help monitor and control the size of bundles, files, and images, ensuring performance requirements are met.
+  - Setting performance budgets or size limits for bundles and images helps ensure that accidental large file imports don't bloat the application, improving load times.
+
+- **Catching issues early**
+
+  - Implementing guardrails and constraints helps catch issues during the development phase rather than later in the project lifecycle when fixing them is more costly.
