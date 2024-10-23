@@ -196,3 +196,47 @@
 > "Think of gathering context as a skill to build as part of your job."
 
 > "Think about your own work and what your journey is."
+
+### Chapter 3: Creating the Big Picture
+
+#### What's a Vision? What's a Strategy?
+
+- When organizations realize they need to solve some of the big underlying problems, the words _vision_ and _strategy_ get thrown around a lot.
+
+#### What's a Technical Vision?
+
+- Describes the _future state_, focusing on solving problems and achieving goals.
+- Helps create a _shared understanding_ of where the organization should go.
+- Can take _different forms_—simple vision statements or detailed plans.
+
+> "A vision creates a shared reality. As a staff engineer, you can probably imagine a better state... The problem is, many of the other senior people around you probably can too."
+
+#### What's a Technical Strategy?
+
+- A plan of action to _achieve goals_, overcoming challenges along the way.
+- Based on a diagnosis of current problems, guiding _policies_, and coherent _actions_.
+
+> A strategy isn’t an aspirational description of what someone else would do in a perfect world. It has to be realistic and acknowledge the constraints of your situation.
+
+#### Do Your Really Need Vision and Strategy Documents?
+
+- If everyone can get _aligned without the document_, you probably don't need it.
+- This document should avoid fragmented or decentralized decision-making, which leads to inefficiencies.
+- A vision or strategy should bring _clarity_ to the group’s goals and _align_ everyone’s efforts.
+- If the problem is small or well understood, you may not need a formal strategy document.
+
+#### The Approach
+
+- Effective strategies often build on _existing ideas_ rather than “brilliant” innovations.
+- If someone is already working on a similar plan, either _join their effort_ or align with it.
+- Secure an _executive sponsor_ to ensure organizational alignment and commitment to your plan.
+
+#### Writing the Document
+
+- Involves _iterative cycles_ of thinking, synthesizing, and interviewing stakeholders.
+- Stay _aligned with leadership_ and be open to changing the scope or direction based on feedback.
+
+#### The Launch
+
+- Ensure the document has _organizational buy-in_.
+- Make it official by getting it endorsed and distributed _widely within the company_.
