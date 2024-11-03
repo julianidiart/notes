@@ -164,3 +164,73 @@
   - **Avoid over-engineering**: Focus on practical, not overly complex, solutions.
   - **Don’t be silent**: Engage continuously rather than thinking in isolation.
   - **Don’t neglect to summarize**: Always wrap up your design with a summary and highlight improvements.
+
+## Chapter 4: Design a Rate Limiter
+
+- **Introduction to Rate Limiter**
+
+  - A **Rate Limiter** controls the rate of traffic sent by a client or service.
+  - Purpose:
+
+    - Prevent resource starvation (e.g., DoS attacks).
+    - Reduce costs by limiting API calls.
+    - Prevent server overload from bots or user misbehavior.
+
+- **Step 1: Understanding the Problem**
+
+  - **Key Questions**:
+
+    - Client-side vs. server-side implementation?
+    - Throttle based on IP, user ID, etc.?
+    - Scale and fault tolerance requirements?
+
+  - **Requirements**:
+
+    - _Accurate_ rate limiting with low latency.
+    - _Distributed_ across multiple servers.
+    - Clear _user feedback_ for throttled requests.
+
+- **Step 2: High-Level Design**
+
+- **Placement**:
+
+  - Server-side is preferred for _reliability_.
+  - Middleware or API gateway for implementation.
+
+- **Algorithms**:
+
+  - **Token Bucket**: Allows burst traffic, easy to implement.
+  - **Leaking Bucket**: Stable processing rate.
+  - **Fixed Window Counter**: Easy but prone to edge-case spikes.
+  - **Sliding Window Log**: Accurate but memory-intensive.
+  - **Sliding Window Counter**: Balances efficiency and accuracy.
+
+- **Step 3: Design Deep Dive**
+
+  - **Rate Limiting Rules**:
+
+    - Configured per domain or action.
+    - Stored in configuration files.
+
+  - **Handling Excess Requests**:
+
+    - Return HTTP 429.
+    - Optional queuing for later processing.
+
+  - **Headers for Clients**:
+
+    - X-Ratelimit-Remaining
+    - X-Ratelimit-Limit
+    - X-Ratelimit-Retry-After
+
+- **Step 4: Distributed Environment**
+
+  - **Challenges**:
+
+    - Race conditions.
+    - Synchronization across servers.
+
+  - **High-Level Architecture**:
+
+    - Counters stored in an in-memory cache (e.g., Redis).
+    - Middleware to check and enforce limits.
