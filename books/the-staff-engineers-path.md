@@ -395,3 +395,119 @@
 - **With Stakeholders**
 
   - Share _concise, accurate updates_ to manage expectations and ensure alignment.
+
+### Chapter 6: Why Have We Stopped?
+
+- Projects can stop for many reasons, such as:
+  - _Blockages_ (e.g., dependencies, decisions)
+  - _Loss of direction_ or organizational support
+  - _Deliberate decisions_ to end the project
+- Leaders should focus on _unblocking_, _regaining momentum_, or recognizing when it's _time to stop_.
+
+#### Getting Blocked
+
+- Projects can stall due to various _types of blockages_:
+  - Dependencies on _other teams_.
+  - Awaiting _decisions_ or _approvals_.
+  - Work blocked by a _single individual_.
+  - _Unassigned work_ or a massive _migration effort_.
+- Common Strategies for Resolving Blockages
+  1. **Understand and Explain**
+  - Investigate the _root cause_ of the blockage.
+  - _Clarify_ requirements and priorities with stakeholders.
+  2. **Make the Work Easier**
+  - _Reduce scope_ or _simplify tasks_.
+  - _Offer assistance_ or take on part of the work.
+  3. **Get Organizational Support**
+  - _Escalate_ the issue respectfully to prioritize work.
+  - _Align_ team priorities to organizational goals.
+  4. **Make Alternative Plans**
+  - _Rescope_, _shift timelines_, or find creative solutions.
+  - _Communicate_ changes transparently with stakeholders.
+
+#### Common Types of Blockages
+
+1. **Blocked by Another Team**
+
+- Often caused by _misunderstandings_, _misalignment_ of priorities, or _unforeseen_ challenges.
+- Solutions include _collaborative problem-solving_ and _clear escalation_.
+
+2. **Blocked by a Decision**
+
+- Decisions delayed by _unclear ownership_ or _conflicting priorities_.
+- Techniques: reframing the problem, mediating conflicts, or guessing and documenting trade-offs.
+
+3. **Blocked by a Single Person**
+
+- Causes include _procrastination_, _intimidation_, or _overcommitment_.
+- Strategies: offer clarity, break tasks down, and pair on work if needed.
+
+4. **Blocked by Unassigned Work**
+
+- _Organizational gaps_ prevent progress.
+- Solutions: advocate for team ownership, mentor volunteers, and escalate gaps to leadership.
+
+5. **Blocked by a Crowd**
+
+- Involving too many teams in migrations can cause _stalls_.
+- Techniques: make changes easy, automate, and secure organizational buy-in.
+
+#### Getting Lost
+
+- Being lost can result from:
+
+  - _Unclear goals_.
+  - _Lack of knowledge or strategy_.
+  - _Uncertainty_ about organizational support.
+
+- Strategies for Regaining Focus
+
+  1. **Clarify Roles and Responsibilities**
+
+  - Define _decision-makers_ and _contributors_ explicitly.
+
+  2. **Choose a Direction**
+
+  - Prioritize solving _one problem_ or pleasing _one stakeholder_.
+
+  3. **Articulate the Problem**
+
+  - _Clearly define_ objectives and constraints.
+
+  4. **Seek Help**
+
+  - _Collaborate_ with stakeholders, mentors, or experts.
+
+#### Declaring Victory Too Early
+
+- _Pitfalls_ include:
+
+  - Declaring a project "done" when it's _incomplete_ or _not usable_.
+  - Failing to ensure _adoption_ or _operational readiness_.
+  - Leaving _unfinished prototypes_ or _technical debt_ behind.
+
+- **Ensuring Real Completion**
+
+  1. **Define “Done”**
+
+  - Include _deployment_, _monitoring_, and _user feedback_ in the definition.
+
+  2. **Celebrate Landings, Not Launches**
+
+  - Focus on _customer satisfaction_ and _outcomes_, not just internal milestones.
+
+  3. **Avoid Temporary Solutions**
+
+  - Push for _sustainable, high-quality foundations_.
+
+#### When to End a Project
+
+- **Deciding to Stop**
+
+  - Consider if further investment is _worth the cost_.
+  - Acknowledge when a project is _no longer viable_.
+
+- **Handling Cancellation**
+
+  - _Communicate reasons_ clearly to the team.
+  - _Document learnings_ and _celebrate progress_, even if incomplete.
