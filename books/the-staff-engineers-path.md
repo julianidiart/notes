@@ -511,3 +511,51 @@
 
   - _Communicate reasons_ clearly to the team.
   - _Document learnings_ and _celebrate progress_, even if incomplete.
+
+### Chapter 7: You're a Role Model Now (Sorry)
+
+- Staff engineers have significant influence; their _words and actions set examples_ for others.
+- Being a role model means shaping _engineering culture_, often passively, through behavior.
+
+#### What Does It Mean to Do a Good Job?
+
+- Role models embody _company values_ in action, not just rhetoric.
+- Behavior _influences_ others: collaboration, thorough reviews, accountability, and constructive feedback.
+
+#### Attributes of a Good Role Model
+
+1. Be Competent
+
+- **Build Knowledge and Skills**: Experience grows through _exposure_, _study_, and solving _real-world problems_.
+  - Technical skills and domain knowledge are foundational.
+- **Stay Up-to-Date**: Avoid outdated practices; continuously _learn and adapt_.
+- **Show Learning**: Share _how_ you learn to encourage others.
+- **Be Self-Aware**: Know what you _excel_ in and where you _need to improve_.
+- **Have High Standards**: Aim for _quality_ in all work and welcome constructive criticism.
+- **Own Mistakes**: Mistakes are normal; how you _respond_ defines leadership.
+- **Be Reliable**: Build a reputation as dependable and consistent.
+
+2. Be Responsible
+
+- **Take Ownership**: Don't deflect blame or avoid _accountability_.
+  - Use good _judgment_ and communicate intent _transparently_.
+- **Make Decisions**: Be _decisive_ and _own_ outcomes, even if they're wrong.
+- **Ask “Obvious” Questions**: Encourage _explicit thinking_ and fill knowledge gaps.
+- **Avoid Delegating Through Neglect**: Handle _“glue work”_ to prevent overburdening juniors.
+- **Take Charge**: _Step up_ during emergencies or when leadership is absent.
+  - _Coordinate_ effectively in crises and ask clarifying questions.
+- **Create Calm**: _De-escalate_ tense situations and avoid amplifying problems.
+
+3. Remember the Goal
+
+- **Adapt to Business Needs**: _Balance_ engineering ideals with business constraints.
+- **Understand Users**: Build for real, not fictional, _users_.
+- **Focus on the Team**: _Empower_ others instead of centralizing all responsibilities.
+
+4. Look Ahead
+
+- **Plan for the Future**: _Anticipate_ needs and leave systems better than you found them.
+- **Tidy Up**: Keep environments _clean and maintainable_.
+- **Create Institutional Memory**: _Document_ decisions, systems, and processes for longevity.
+- **Expect Failure**: Plan for _resilience_ and test _recovery mechanisms_.
+- **Optimize for Maintenance**: Design systems that are _easy_ to maintain, understand, and eventually decommission.
