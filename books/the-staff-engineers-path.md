@@ -285,3 +285,113 @@
 - Assign projects that could be beneficial for _others' growth_.
 - Modify the scope to _align better_ with current priorities and capacity.
 - Saying _No_ to maintain quality work and protect time and energy.
+
+### Chapter 5: Leading Big Projects
+
+- Great _project leadership_ is less about genius and more about:
+
+  - _Perseverance_
+  - _Courage_
+  - Willingness to _engage with others_
+
+- Challenges often stem from _ambiguity_, _interpersonal complexities_, or _legacy systems_.
+
+#### The Life of a Project
+
+- Focus on _multi-team_, _months-long_ projects.
+- Key _responsibilities_ of a technical lead:
+  - _Clarify_ goals and _manage_ inter-team gaps.
+  - Navigate the _complexity_ of the project lifecycle.
+
+#### The Start of a Project
+
+- **Initial Chaos**
+
+  - _Ambiguity_ around roles, goals, and responsibilities.
+  - Navigate _unclear_ mandates and team alignment.
+
+- **Managing Overwhelm**
+
+  - Expect feelings of _discomfort_; it's part of learning.
+  - Strategies:
+    - Create a personal _anchor document_ for notes and plans.
+    - Consult the project sponsor for _clear goals_ and _expectations_.
+    - Identify a _trusted confidant_ for venting and guidance.
+    - Start small to _gain momentum_.
+
+- **Building Context**
+
+  - _Map_ the project using tools like:
+    - Locator map: _Big-picture goals_.
+    - Topographical map: Team _dynamics_ and _decision-making_ processes.
+    - Treasure map: _Milestones_ and _deliverables_.
+
+#### Giving Your Project Structure
+
+- **Defining Roles**
+
+  - Clarify _responsibilities_ among key leaders (technical leads, product managers, engineering managers).
+  - Tools:
+    - _Responsibility tables_.
+    - RACI (_Responsible_, _Accountable_, _Consulted_, _Informed_) matrices.
+
+- **Recruiting the Right People**
+
+  - Look for _complementary skills_ and _strong attitudes_ (e.g., optimism, conflict resolution).
+
+- **Agreeing on Scope**
+
+  - Use _incremental milestones_ for iterative feedback and success measurement.
+  - Avoid overloading teams by setting _realistic priorities_.
+
+- **Setting Up Logistics**
+
+  - Define _meeting cadences_, _communication norms_, and _documentation standards_.
+  - Establish a _"home"_ for project information.
+
+- **Kickoff Meeting**
+
+  - Cover _introductions_, _goals_, _current status_, _plans_, and how to address _questions_.
+
+#### Driving the Project
+
+- **Exploration**
+
+  - _Avoid_ premature design and implementation decisions.
+  - _Align_ team perspectives on goals and approaches.
+
+- **Clarification**
+
+  - Use _analogies_, _naming conventions_, and _visual aids_ to simplify complex ideas.
+
+- **Designing**
+
+  - _Share_ written designs for review and alignment.
+  - Include goals, design, risks, alternatives, and operational plans in _RFCs_ (Request for Comments).
+
+- **Common Pitfalls**
+
+  - _Over-engineering_.
+  - Ignoring _difficult parts_ until later.
+  - Focusing on _trivial decisions_ while ignoring significant ones.
+
+#### Coding
+
+- **Balance Coding as a Lead**
+
+  - Code selectively; focus on _high-leverage or foundational tasks_.
+  - Avoid becoming a _bottleneck_.
+
+- **Empower the Team**
+
+  - Pair programming and delegating critical tasks for _knowledge sharing_.
+
+#### Communicating
+
+- **Within Teams**
+
+  - Foster _regular and informal communication_ to build relationships.
+
+- **With Stakeholders**
+
+  - Share _concise, accurate updates_ to manage expectations and ensure alignment.
