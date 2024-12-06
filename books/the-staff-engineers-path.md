@@ -559,3 +559,61 @@
 - **Create Institutional Memory**: _Document_ decisions, systems, and processes for longevity.
 - **Expect Failure**: Plan for _resilience_ and test _recovery mechanisms_.
 - **Optimize for Maintenance**: Design systems that are _easy_ to maintain, understand, and eventually decommission.
+
+### Chapter 8: Good Influence at Scale
+
+- How do you _raise_ the skills of the people around you?
+- A staff engineer’s role includes _enabling_ others to improve their work and fostering a better engineering culture.
+- **Tiers of Influence**:
+  - **Individual**: Growing _another_ person’s skills.
+  - **Group**: Influencing _multiple_ people simultaneously.
+  - **Catalyst**: Creating _frameworks_ that sustain positive influence without your direct involvement.
+
+#### Mechanisms for Good Influence
+
+1. **Advice**
+
+- Individual Level:
+  - _Share personal experiences_ and help mentees navigate challenges.
+  - Be _approachable_ and offer thorough, proactive insights.
+  - Provide constructive, honest _feedback_ that balances criticism with encouragement.
+- Group Level:
+  - _Share insights_ through tech talks, articles, or documentation.
+  - Organize _mentorship programs_ or group feedback events.
+- Catalyst Level:
+  - Foster peer-to-peer _advice-sharing structures_, such as FAQs or tech talk series.
+
+2. **Teaching**
+
+- Individual Level:
+  - _Teaching Techniques_:
+    - Pair programming, shadowing, and reverse shadowing.
+    - Use reviews (code, design) as opportunities for teaching.
+  - Guide others to develop their own problem-solving skills through _open questions_ and _active listening_.
+- Group Level:
+  - Create _targeted lessons_ with goals and hands-on exercises.
+  - Develop self-paced materials like _codelabs_.
+- Catalyst Level:
+  - Empower others to _deliver and evolve_ your materials.
+  - Integrate _training into onboarding_ and _development paths_.
+
+3. **Guardrails**
+
+- Individual Level:
+  - Offer _constructive criticism_ while ensuring safety and clarity.
+  - Act as a safety net, providing _guidance without taking over_.
+- Group Level:
+  - _Standardize_ best practices through guidelines, checklists, and templates.
+  - Use tools like linters and presubmits to _enforce standards without manual oversight_.
+- Catalyst Level:
+  - Embed best practices into the _organization’s norms_ to ensure lasting impact.
+
+4. **Opportunities**
+
+- Individual Level:
+  - Assign _meaningful, challenging work_ to help colleagues grow.
+  - Actively _promote_ others for opportunities, advocating for their visibility and success.
+- Group Level:
+  - Create _space_ for others to lead and showcase their work.
+- Catalyst Level:
+  - Encourage a _culture_ where opportunities flow naturally, and others adopt inclusive sponsorship practices.
