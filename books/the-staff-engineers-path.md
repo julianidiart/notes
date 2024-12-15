@@ -617,3 +617,120 @@
   - Create _space_ for others to lead and showcase their work.
 - Catalyst Level:
   - Encourage a _culture_ where opportunities flow naturally, and others adopt inclusive sponsorship practices.
+
+### Chapter 9: What’s Next?
+
+#### Your Career
+
+- **Mapping Your Journey**
+
+  - Imagine your career as a _trail map_:
+    - Some paths are clear, others hidden, and some lead away temporarily to ultimately reach your _destination_.
+    - Avoid blindly following marked paths; define your _unique goals_.
+
+- **What's Important to You?**
+
+  - Key _priorities_ that may guide your career:
+    - Financial security
+    - Flexibility
+    - Intellectual growth
+    - Visibility and recognition
+    - Cool projects and challenges
+    - Wealth building
+    - Autonomy
+    - Making a difference
+    - Supporting personal passions (e.g., arts, hobbies)
+
+- **Where Are You Going?**
+
+  - Develop a trail map with _short- and long-term milestones_.
+  - Expand _perspective_ through mentors, networking, conferences, and learning from others’ journeys.
+
+- **What to Invest In**
+
+  - Identify skills, networks, and visibility needed to _reach goals_.
+  - _Everything is learnable_ with time and energy.
+  - Build _relationships_ to uncover hidden opportunities.
+  - Let your work and capabilities shine, both _internally and externally_.
+
+#### Evaluating Your Current Role
+
+- **Metrics for Job Health**
+
+  - Consider these _indicators_:
+    - Growth and learning opportunities
+    - Transferable skills
+    - Confidence and capability
+    - Team recruitment sentiment
+    - Stress levels
+
+- **Role Assessment**
+
+- Identify _what’s working and what’s missing_ in your current job.
+- _Decide_ whether to adapt the role to your needs or move elsewhere.
+
+#### Career Paths
+
+- **Staying in the Same Role**
+
+  - Benefits:
+    - Longevity builds relationships, domain knowledge, and trust.
+    - Stability offers consistent growth and depth.
+
+- **Reasons to Move**
+
+- Gaps in skills, experience, or opportunity.
+- Higher compensation or employability.
+
+- **Path Options**
+
+  1. **Keep Doing What You’re Doing**:
+
+  - _Maintain_ current trajectory but remain adaptable to industry changes.
+
+  2. **Work Toward Promotion**:
+
+  - Seek _broader_ scope, challenges, or influence.
+
+  3. **Work Less**:
+
+  - Consider part-time roles for better _work-life balance_.
+
+  4. **Internal Transfers**:
+
+  - Gain _fresh challenges_ without leaving your organization.
+
+  5. **Build a New Specialty**:
+
+  - Broaden or deepen skills by _exploring_ adjacent or new domains.
+
+  6. **Temporary Rotations**:
+
+  - Experiment with short-term _team changes_ for varied experience.
+
+  7. **Take on Management**:
+
+  - Transition into _leadership_ while committing to growth in that domain.
+
+#### Exploring Advanced Roles
+
+- **Customizing Roles**
+
+  - Carve out niches by aligning company needs with personal strengths.
+  - Proactively design roles with your manager if feasible.
+
+- **Changing Employers**
+
+  - Same Role, New Employer: Gain _varied exposure_ without a step down.
+  - Higher Role: _Pursue promotions_ not accessible internally.
+  - Lower Role: Gain _learning opportunities_ or better work alignment.
+
+- **Starting Fresh**
+
+- Launching _startups_, _consulting_, or switching to _non-technical careers_ (e.g., teaching, policy).
+- Independence requires _networking and entrepreneurial spirit_.
+
+#### Embracing the Responsibility of Seniority
+
+- _Software influences lives deeply_; diligence and ethics are critical.
+- _Level up the industry_ by mentoring, teaching, and building quality systems.
