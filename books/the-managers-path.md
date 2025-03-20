@@ -347,3 +347,241 @@
 - Practice _writing documents_, _blog posts_, and _speaking at meetings_ or meetups.
 - _Listen actively_, repeat back what others say to ensure understanding, and be an effective note-taker.
 - _Communication and listening skills are key_ to career growth in tech.
+
+## Chapter 4. Managing People
+
+- **Management is Not a Promotion**: Successful managers focus on _people_, not just engineering tasks.
+- **Transitioning into Management**: Initial training or past manager role models can help, but _hands-on experience_ is key.
+- **Developing Your Management Style**: A team's success depends on the health and development of _each individual_.
+
+### Starting a New Reporting Relationship Off Right
+
+#### Building Trust and Rapport
+
+- _Ask_ key questions to understand the person's work preferences, feedback style, and career goals.
+- _Learn_ how they like to be praised, their communication style, and what motivates or frustrates them.
+- _Identify_ manager behaviors they dislike to avoid potential conflicts.
+
+#### Creating a 30/60/90-Day Plan
+
+- Set _clear expectations_ for onboarding, including initial tasks and milestones.
+- _Adjust goals_ based on the new hire’s experience level.
+- Use this plan to _identify potential mismatches early_.
+
+#### Encouraging Participation in Onboarding Documentation
+
+- Have new hires update team documentation based on their _onboarding experience_.
+- Ensure processes remain _relevant_ and _up to date_.
+- Assign _onboarding tasks to peers_, mentors, or tech leads as needed.
+
+#### Communicating Your Management Style and Expectations
+
+- _Clarify_ meeting frequency, work review expectations, and communication methods.
+- _Define_ when they should ask for help versus working through challenges independently.
+- _Set expectations_ for reporting progress (e.g., weekly summaries).
+
+#### Getting Feedback from the New Hire
+
+- _Gather insights_ from their fresh perspective on the team and processes.
+- _Be open_ to suggestions but consider their lack of full context.
+- Ensure feedback is _constructive_ without undermining existing team dynamics.
+
+### Communicating with Your Team
+
+#### Importance of Regular 1-1s
+
+- Essential for maintaining _communication_ and preventing unexpected issues.
+
+#### Scheduling 1-1s
+
+- Start with _weekly_ meetings and adjust frequency as needed.
+- _Avoid Mondays and Fridays_ due to potential absences.
+- _Morning meetings_ can help avoid scheduling conflicts but should respect employees' workflow.
+
+#### Adjusting 1-1s Based on Needs
+
+- Consider frequency of _informal interactions_: more frequent casual chats may reduce the need for formal 1-1s.
+- Junior employees may need more _coaching time_, while senior employees may need _support during challenging projects_.
+- Employees who struggle to _communicate updates_ may benefit from more frequent 1-1s.
+- Strong relationships still require _regular attention_, don't neglect top performers.
+- During periods of instability or change, consistent 1-1s help maintain _team morale_ and prevent misinformation.
+
+### Different 1-1 Styles
+
+#### To-Do List Meeting
+
+- Focused on _discussing objectives_ and making _decisions efficiently_.
+- Ensures _productivity_ but can feel impersonal or unnecessary if topics could be handled via email/chat.
+- A _shared document_ for tracking discussion points can help both manager and employee prepare.
+
+#### The Catch-Up
+
+- More _fluid_ and _conversational_, driven by the employee’s concerns.
+- Encourages _open discussions_ but can turn into unproductive venting if not managed.
+- _Balance_ between listening and problem-solving is key.
+
+#### The Feedback Meeting
+
+- Used for _informal coaching_ and _career development_, typically on a quarterly basis.
+- More frequent for employees needing _performance improvement_, with documentation for accountability.
+- Immediate feedback (positive or corrective) should not be saved for 1-1s but given as needed.
+
+#### The Progress Report
+
+- Common when _managing managers_ to review project details.
+- For individual contributors, it should only be used for projects the manager isn't actively overseeing.
+- Avoid using 1-1s for redundant status updates; _encourage broader discussions_.
+
+#### Getting to Know You
+
+- Leave space for _personal connection_, discuss hobbies, career goals, and interests.
+- Show investment in employees’ _long-term growth_ beyond just promotions and skills.
+
+#### Mix It Up
+
+- _Vary meeting formats_, walks, coffee chats, or lunch meetings can help build rapport.
+- Maintain _private_ settings for sensitive discussions.
+- Keep _shared notes_ for each employee to track discussions, feedback, and action items.
+
+### Good Manager, Bad Manager: Micromanager vs. Delegator
+
+- Micromanagement can sometimes be necessary, especially for _junior employees_ or _critical projects_.
+- Habitual micromanagement undermines growth and _team morale_.
+- _Trust and autonomy are crucial_ for keeping employees engaged and motivated.
+- Delegation involves _guidance_, _support_, and _trust_, not just handing off tasks.
+
+### Practical Advice for Delegating Effectively
+
+#### Use Team Goals to Decide When to Dig into Details
+
+- Ask the team how they _measure success_ and _make it visible_.
+- _Wait_ before intervening; only step in if progress is unclear.
+- Ensure _clear goals_ exist for accountability and progress tracking.
+
+#### Gather Information from Systems First, Not People
+
+- Use _version control_, _ticketing systems_, and _monitoring tools_ for updates.
+- Avoid _excessive_ status requests that disrupt productivity.
+- Treat system data as part of the _bigger picture_, not the sole indicator.
+
+#### Adjust Focus Based on Project Stages
+
+- Be more involved in _early planning_ and design stages.
+- Shift focus to progress tracking near _deadlines_.
+- During normal workflow, monitor _high-level progress_, not every detail.
+
+#### Establish Standards for Code and Systems
+
+- Set _clear guidelines_ for unit testing, code reviews, and decision-making.
+- Use _team-wide standards_ to depersonalize feedback and improve consistency.
+- _Help the team understand_ which technical decisions require broader input.
+
+#### Encourage Open Sharing of Information
+
+- _Support_ team members in reporting struggles without fear of punishment.
+- Teach _when and how_ to communicate progress rather than enforcing rigid updates.
+- _Avoid a blame culture_, use mistakes as learning opportunities.
+
+#### Trust Your Team and Manage Your Own Time Wisely
+
+- Over-managing leads to _burnout and inefficiency_.
+- Set time limits on work hours to _prioritize bigger issues_.
+- Focus on _long-term goals_ instead of micromanaging minor details.
+
+### Creating a Culture of Continuous Feedback
+
+- _Continuous Feedback_ is a commitment to regularly sharing both positive and corrective feedback.
+- Encourages _addressing issues_ as they arise instead of saving them for review cycles.
+- **Steps to Effective Continuous Feedback**:
+
+  1. **Know Your People**
+
+  - _Understand_ individual goals, strengths, and weaknesses.
+  - _Review_ past performance and have direct conversations with team members.
+  - Use this knowledge to _frame feedback effectively_.
+
+  2. **Observe Your People**
+
+  - _Pay attention_ to daily work, achievements, and challenges.
+  - Develop a habit of _recognizing_ strengths and identifying areas for improvement.
+  - Aim to provide _positive recognition weekly_.
+
+  3. **Provide Lightweight, Regular Feedback**
+
+  - Start with _positive feedback_ to build trust.
+  - Offer _critical feedback_ promptly when necessary, rather than waiting for formal reviews.
+  - Use _continuous feedback_ to guide performance improvements over time.
+
+### Performance Reviews
+
+- Performance reviews help _synthesize insights_ about an employee’s performance over time.
+
+#### Writing and Delivering a Performance Review
+
+- **Preparation & Writing**
+  - _Start early_: _Allocate time_ to read, process, and summarize feedback.
+  - _Consider the entire year_: _Use notes_ from one-on-one meetings and past emails to get a full picture.
+  - _Use specific examples_: Support feedback with _concrete instances_ from peer reviews.
+  - _Highlight strengths_: _Praise_ accomplishments and strengths before discussing areas for improvement.
+- **Addressing Areas for Improvement**
+  - Focus on _clear themes_ from peer feedback.
+  - _Avoid bias-driven critiques_ and filter out irrelevant or extreme feedback.
+  - If little constructive criticism exists, consider _promotions_ or _skill development opportunities_.
+- **Delivering the Review**
+  - _Avoid surprising employees_, performance concerns should be communicated in advance.
+  - Give employees _time to read_ their review before discussing it.
+  - _Emphasize strengths_ first before moving to areas of improvement.
+  - _Be prepared_ to discuss ratings and _justify_ them with examples.
+
+### Cultivating Careers
+
+- **VP Promotion in Finance**
+
+- Limited public titles in finance: Associate, VP, Managing Director, Partner.
+- VP promotion signals _long-term career potential_.
+- Process involves gathering evidence like _leadership_, _impact beyond the immediate team_.
+- Manager guidance is _crucial_ in successfully navigating promotions.
+
+- **Manager’s Role in Promotions**
+
+- Managers play a _key role_ in advocating for team members' promotions.
+- Promotions often require _committee review_, not just a single decision.
+- Regularly _assess team members’ readiness_ for the next level.
+
+- **Promotion Process in Companies**
+
+- Some companies follow an _"up or out"_ policy for early-career employees.
+  - Example: Engineers hired at level E2 must progress within two years or leave.
+- For junior employees, ensure they _develop skills_ in estimation, execution, and learning.
+
+- **Understanding the Promotion System**
+
+- _Learn_ how promotions work at your company (timelines, criteria, limits).
+- _Be transparent_ with team members about expectations.
+- Assign _stretch projects_ to employees close to promotion.
+
+- **Challenges at Senior Levels**
+
+- _Fewer opportunities_ for promotion as employees advance.
+- Sometimes, _moving_ to another team or company is the best path for growth.
+
+- **Promotion Before Recognition**
+
+- Many companies expect employees to operate _at the next level_ before promotion.
+- If there’s no room for growth, re-evaluate work distribution to _create opportunities_.
+
+### Challenging Situations: Firing Underperformers
+
+- _HR dictates_ much of the process.
+
+- **Managing Underperformance**
+
+- _Avoid surprises_, give early and frequent feedback.
+- _Keep records_ of feedback to justify any decisions.
+- _Be specific_: Define expectations and document shortcomings clearly.
+
+- **Handling Excuses and Delays**
+
+- _Address_ performance issues _early_ to prevent long-term problems.
+- _Balance_ between ignoring excuses and being overly lenient.
+- Maintain fairness and legal protection by keeping _written records_.
