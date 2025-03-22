@@ -938,3 +938,255 @@
 - Laziness isn't about avoiding work but about _achieving the same value in less time_.
 - It’s about using automation and simplifying processes to _avoid unnecessary work_ and _focus on the high-value tasks_.
 - By focusing on _efficiency_, you can help your team scale effectively and sustainably.
+
+## Chapter 7: Managing Managers
+
+- Follow up on _critical functions_: recruiting, coaching, goal-setting, project progress, and postmortems.
+- Don't assume the role is just an extension of previous management tasks, it requires a _shift in approach_.
+- Proactively _seek out problems_ rather than waiting for them to be reported.
+
+### Skip-Level Meetings
+
+- Helps _identify_ when managers are "managing up" well but failing their teams.
+- Provides a _reality check_ by hearing directly from employees.
+- _Prevents surprises_ related to struggling projects, ineffective managers, or disengaged employees.
+
+#### Types of Skip-Level Meetings
+
+- **1-on-1 Meetings (quarterly)**
+
+  - Builds _personal relationships_ and allows employees to ask questions.
+  - Suggested prompts:
+    - What do you like/dislike about your project?
+    - How is your manager doing?
+    - What improvements can we make?
+    - What’s keeping you from doing your best work?
+
+- **Skip-Level Lunches (group setting)**
+
+  - Provides broader _team insights and informal discussions_.
+  - Good for understanding _team dynamics_ but not ideal for sensitive feedback.
+  - Questions to ask:
+    - What can I help your team with?
+    - Are there any collaboration issues with other teams?
+    - Any questions about company strategy?
+
+### Manager Accountability
+
+- **Goal of Managers**
+
+  - Their role is to make your life easier by _handling team success_.
+  - They should allow you to focus on the _bigger picture_, not daily team issues.
+  - If they _repeatedly fail_ to do this, they are failing their job.
+
+- **Common Managerial Challenges & Accountability**
+
+  - **Unstable Product Roadmap**: If shifting priorities impact productivity, the manager must _escalate_ and work with product teams to refocus.
+  - **Errant Tech Lead**: A manager must intervene when a tech lead is stuck in a prolonged design phase, ensuring _progress through collaboration_.
+  - **Full-Time Firefighting**: A manager must create a _plan_ to reduce constant system issues and manage support demands, seeking resources if necessary.
+
+- **Expectations from Managers**
+  - Identify and communicate problems _before they become crises_.
+  - Proactively _find solutions_ or seek help when needed.
+  - Ensure _team health and productivity_ despite external challenges.
+
+### Good Manager, Bad Manager: The People Pleaser
+
+- **Characteristics of a People Pleaser Manager**
+
+  - Prioritizes making everyone _happy_, often _at the cost of productivity_.
+  - Spends excessive time listening to team concerns but _fails to act_ on them.
+  - _Overpromises and underdelivers_, leading to frustration and lack of trust.
+  - _Struggles to say no_, resulting in conflicting messages and overcommitments.
+  - Tries to shield the team from external pressures, unintentionally _delaying progress_.
+
+- **Two Types of People Pleasers**
+
+  - **Team Pleaser**
+
+    - Builds _strong emotional bonds_ with the team.
+    - _Listens_ to everyone’s problems but fails to implement solutions.
+    - _Amplifies drama and negativity_ by engaging too deeply with emotions.
+    - Sets _unrealistic expectations_, leading to team disappointment.
+
+  - **External Pleaser**
+
+    - Focuses on _making upper management and external stakeholders happy_.
+    - _Avoids difficult internal conversations_, leading to unresolved team issues.
+    - _Overcommits_ the team while providing little praise or constructive feedback.
+    - Shields problems from leadership, causing _blind spots_ in management.
+
+- **Negative Impact of People Pleasers**
+
+  - _Delays problem resolution_ by attempting to handle everything personally.
+  - _Reduces_ team accountability and decision-making power.
+  - Creates _confusion_ due to inconsistent communication and false assurances.
+  - Fosters an environment where failure is _not handled constructively_.
+  - Can manipulate conversations to maintain likability, _avoiding real issues_.
+
+- **How to Manage a People Pleaser**
+
+  - Encourage them to _say no and externalize decisions_.
+  - Provide _strong partners_ to share work planning and roadmap decisions.
+  - Implement _structured processes_ for promotions and work allocation.
+  - _Highlight_ their behavior and the downsides, increasing self-awareness.
+  - Reinforce their caring values while _correcting unhealthy tendencies_.
+
+### Managing New Managers
+
+- First-time managers need _coaching_ as management is a career shift.
+- New managers often _emulate past managers_ or learn through _trial and error_.
+- Spending time coaching them upfront leads to _long-term benefits_.
+- People skills alone don’t make someone a great manager, _training is needed_.
+- Lack of management leads to _team dissatisfaction_ and _retention issues_.
+- Use skip-level meetings to _monitor new managers’ effectiveness_.
+- _Overwork is a red flag_, often due to not delegating past responsibilities.
+- Some new managers become _control freaks_, micromanaging or dominating decision-making.
+- Control freaks tend to _hide_ things from their managers and resist accountability.
+- Managers must understand their _responsibility_ for team performance and delivery.
+- Coaching and setting _clear accountability expectations_ are crucial.
+- Not all new managers succeed, wrong fits should be _corrected quickly_.
+- Encouraging _mentorship before full management_ roles can help prepare engineers.
+- _External training_, _HR programs_, and _leadership conferences_ are valuable resources.
+
+### Managing Experienced Managers
+
+- Experienced managers bring skills but must _align with company culture_.
+- Management is culture-specific; hiring the _right culture fit_ is crucial.
+- Managers _create subcultures_ that impact how teams work together.
+- Expertise in a specific product or industry is less valuable than _cultural alignment_.
+- Prioritize managers who align with your _team's development and collaboration style_.
+- Experienced managers may have different management styles, _balance learning and feedback_.
+- They should manage independently but still be _guided on strategic direction_.
+- They require less coaching on fundamentals but may need _support on larger impact areas_.
+- _Delegating strategic responsibilities_ helps them grow and contribute more.
+- Expanding their professional _network_ within and outside the company is beneficial.
+
+### Hiring Managers
+
+- **Evaluating Managerial Skills**
+
+  - **1-1 Role-Playing**: Candidates should _demonstrate_ how they conduct 1-1s with employees.
+  - **Problem-Solving**: Ask candidates how they handle _underperformance_, _late projects_, or _potential resignations_.
+  - **Coaching Ability**: Inquire about their _experience in mentoring_ struggling employees and helping high performers grow.
+  - **Management Philosophy**: Candidates should have a _clear philosophy_ on leadership, delegation, and hands-on involvement.
+  - **Public Speaking & Communication**: Senior managers should be able to _present ideas clearly_ but this shouldn't be overemphasized.
+  - **Technical Credibility**: Ensure candidates can _engage in technical discussions_, _mediate debates_, and explain _architectural trade-offs_.
+
+- **Assessing Cultural Fit**
+
+  - Candidates should align with _company values_, _structure_, and _decision-making norms_.
+  - Some companies value informality, others a strict hierarchy, _misalignment causes friction_.
+  - Ensure their leadership style fits your _team’s expectations_.
+  - Candidates from different environments must adapt to _new work cultures_.
+
+### Debugging Dysfunctional Organizations
+
+- Teams, like systems, have inputs and outputs, but _internal workings can be opaque_.
+- Figuring out dysfunction requires investigating _beyond surface-level symptoms_.
+
+#### Have a Hypothesis
+
+- Identify a _reasonable explanation_ for the dysfunction.
+- Team issues are often _performance-related_ rather than single-point failures.
+
+#### Check the Data
+
+- _Analyze communication_ (chats, emails, code reviews, tickets).
+- Look for _trends_ in production incidents, meetings, or work patterns.
+- _Identify signs_ like vague tickets, excessive meetings, or lack of engagement.
+
+#### Observe the Team
+
+- Attend meetings to _assess engagement and efficiency_.
+- _Identify signs_ of ineffective communication or lack of collaboration.
+- Be mindful that _observation itself may alter team behavior_.
+
+#### Ask Questions
+
+- Ensure the _team understands_ their goals and their impact.
+- Lack of motivation may stem from _poor alignment with business objectives_.
+
+#### Check Team Dynamics
+
+- Look for _collaboration_, _friendliness_, and _organic interactions_.
+- A lack of _social bonds_ may contribute to underperformance.
+
+#### Jump in to Help
+
+- Senior managers should assist struggling managers in _debugging_ team issues.
+- Sometimes, _deeper organizational issues_ exist beyond a manager’s control.
+
+#### Be Curious
+
+- Constantly seek the _“why”_ behind dysfunction to develop patterns for future problem-solving.
+- _Learning_ from organizational issues prevents reliance on luck and charm.
+
+### Setting Expectations and Delivering on Schedule
+
+- Engineering managers often face questions about _project delays_, which become harder to answer at higher levels of management.
+- If a project is truly behind schedule, managers must _understand the issue_ and _provide clear explanations_.
+- Sometimes, leadership questions timelines even when projects are on track, often due to _dissatisfaction with initial estimates_.
+- _Proactively share estimates and_ updates, especially for critical or long-term projects.
+- Software estimation is _challenging but necessary_; engineers often resist long-term estimates beyond agile sprints.
+- Estimates, even if imperfect, _help in planning_, _goal-setting_, and improving _understanding of software complexity_.
+- Engineering teams must _develop estimation habits_ and experiment with different methods.
+- _Learning_ from past estimates helps _refine_ future estimates and communication.
+- Provide _clear definitions of project timelines_ and proactively update them when changes occur.
+- Some delays are beyond an engineering manager’s control; handling stakeholder pressure with _patience and empathy_ is key.
+- _Cutting project scope towards deadlines_ may be necessary to ensure timely delivery.
+- Senior managers should prioritize essential features while being _strategic about trade-offs_.
+
+### Challenging Situations: Roadmap Uncertainty
+
+- Business and product roadmaps frequently change, especially in startups and large companies reacting to _market shifts_.
+- Managers may struggle with _shifting priorities_, feeling powerless when projects are canceled or changed.
+- Technical debt and engineering-focused projects often lack prioritization in product roadmaps, making _planning difficult_.
+
+#### Strategies for Handling Roadmap Uncertainty
+
+- **Anticipate Change**: Recognize _patterns_ in roadmap adjustments and avoid making unrealistic commitments.
+- **Break Down Projects**: Structure large projects into _smaller deliverables_ to retain value even if the full vision isn’t realized.
+- **Avoid Overpromising**: Don’t promise future technical projects without securing a _concrete plan_.
+- **Allocate Sustaining Engineering Time**: Dedicate 20% of the team’s capacity for _refactoring_, _bug fixes_, and _process improvements_.
+- **Assess Engineering Projects’ Importance**:
+  - _Evaluate_ project size, importance, and impact.
+  - Justify technical projects with _clear value propositions_ similar to product initiatives.
+  - Gather _supporting data_ and _communicate benefits_ effectively to nontechnical stakeholders.
+- **Manage Transitions Smoothly**:
+  - Advocate for _time to wrap up_ current work before shifting priorities.
+  - Involve _engineers early in planning_ new projects to foster enthusiasm.
+  - Understand and communicate the _business rationale_ behind changes to maintain team morale.
+- Adaptability is crucial, engineers and managers must _learn to navigate shifting priorities_ effectively.
+
+### Staying Technically Relevant
+
+#### Oversee Technical Investment
+
+- Ensure _continuous improvement_ in languages, frameworks, and infrastructure.
+- _Align_ technical investments with product vision and customer needs.
+- Identify _priority areas_ and allocate resources accordingly.
+
+#### Ask Informed Questions
+
+- _Guide_, rather than dictate, technical investments.
+- _Understand_ project bottlenecks and future system goals.
+- _Identify_ inefficiencies and evaluate proposed technical efforts.
+
+#### Analyze and Explain Engineering-Business Tradeoffs
+
+- Balance _technical feasibility_ with business goals.
+- Raise concerns about _technically complex_ or _risky initiatives_.
+- Ensure engineers consider _business perspectives in decision-making_.
+- Communicate _technical uncertainties_ to non-technical stakeholders.
+
+#### Make Specific Requests
+
+- _Understand technical bottlenecks_ to make actionable requests.
+- Avoid acting as a _mere messenger_ between leadership and teams.
+- Prioritize efforts that align with _business objectives_.
+
+#### Use Experience as a Gut Check
+
+- Stay engaged in _technical challenges_ and trade-offs.
+- Guide teams toward _smarter_ investment of their _time and efforts_.
