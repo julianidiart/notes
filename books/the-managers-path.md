@@ -1426,3 +1426,199 @@
   - Slow performance
 - _Tension_ between different functional areas (e.g., product vs. finance) is healthy as it ensures all risks are considered, not just those relevant to one function.
 - As a leader, you set _True North for your area_ of responsibility.
+
+## Chapter 9: Bootstrapping Culture
+
+- Reframing structure as _learning_ and process as _transparency_ can help overcome resistance.
+- Structure enables _scalability_, _stability_, and _long-term success_ by capturing and sharing lessons learned.
+- Culture-building should be approached _scientifically_, test theories, analyze results, and adapt.
+- Leaders must make _fast decisions_ and _adjust_ when necessary rather than aim for perfection.
+- Avoiding structure can lead to _hidden hierarchies_ and _power imbalances_.
+- Successful unstructured teams share _key traits_:
+  1. **Task-oriented**: Clear, narrow objectives guide decisions.
+  2. **Small and homogeneous**: Shared background prevents miscommunication.
+  3. **High communication**: Frequent interactions ensure information flow.
+  4. **Low skill specialization**: Multiple people can perform key tasks.
+- Structure is necessary for _scaling teams_, _diversifying roles_, and tackling _complex problems_.
+
+### Assessing Your Role
+
+- **Key Factors in Structuring a Company**:
+
+  - **People**
+    - _More people_ require _more structure_ to ensure alignment.
+    - Modern companies _focus on goal setting rather than top-down decision-making_.
+  - **Age of the Company**
+    - Older companies have more _entrenched habits_.
+    - Longevity increases chances of _survival_.
+  - **Size of Existing Infrastructure**
+    - Fewer business rules and infrastructure require _less structure_.
+    - More rules and infrastructure necessitate _clarity_ in handling them.
+  - **Risk Tolerance**
+    - Highly regulated industries require more _structured processes_.
+
+- **Gall’s Law on System Growth**: Companies should evolve structure in response to failures.
+- Failures reveal necessary _structural improvements_.
+- Larger, older companies should improve _efficiency_ through structure but avoid rigidity.
+
+### Creating Your Culture
+
+- Culture dictates _how things get done_ without people thinking about it.
+- It consists of _unspoken rules_ that shape _decision-making_ and _teamwork_.
+- Culture helps teams function _efficiently in uncertain_ and complex environments.
+- Culture is formed by _early employees_, whether intentionally or not.
+- A _well-defined_ culture prevents unintended biases in hiring and decision-making.
+- _Core values_ should be broad and meaningful, not exclusionary (e.g., valuing innovation over specific educational backgrounds).
+- Employees naturally align with _company culture_; those who don’t may experience friction.
+
+### Applying Core Values
+
+1. **Define Your Culture**
+
+- Identify and map company values onto your team’s specific _work style_.
+- Add _relevant values_ (e.g., diversity, learning culture).
+
+2. **Reinforce Your Culture**
+
+- _Reward_ and recognize employees who exemplify company values.
+- Use performance reviews to assess _value alignment_.
+
+3. **Identify Value Conflicts**
+
+- Employees who contradict core values will struggle to fit in.
+- Coaching can help employees adapt to _cultural expectations_.
+
+4. **Incorporate Culture into Hiring**
+
+- Assess candidates for _cultural alignment_ beyond just skills.
+- _Avoid the “friendship test”_ (hiring people you’d enjoy socializing with).
+- Instead, evaluate whether candidates share the _team’s work values_.
+
+### Creating Cultural Policy
+
+- Culture should be _intentional and structured_, not left to chance.
+- Policies like career ladders and compensation structures should be _thoughtfully designed_.
+
+### Writing a Career Ladder
+
+- **Solicit Team Participation**
+
+  - Involve senior managers and engineers for _feedback_ and details.
+  - Encourage _team members to suggest_ edits, additions, and clarifications.
+  - Assign _subgroups_ to work on sections relevant to their expertise.
+
+- **Look for Examples**
+
+  - Gather career ladder examples from _other companies_.
+  - _Use examples_ from well-known organizations for detailed insights.
+
+- **Be Detailed**
+
+  - Ensure the ladder is specific to your _company’s needs_.
+  - Consider the expectations for _each level_ in hiring and promotions.
+
+- **Use Both Long-Form Descriptions & Summaries**
+
+  - Create a spreadsheet version for easy _level comparisons_.
+  - Write a long-form version to provide a _complete role narrative_.
+
+- **Consider How the Ladder Relates to Salary**
+
+  - Align career levels with _salary bands_ to manage pay expectations.
+  - Balance fairness and flexibility with structured _salary progressions_.
+
+- **Provide Early Career Advancement Opportunities**
+
+  - Create _multiple levels_ at the start to allow frequent promotions.
+  - Use _narrow salary bands_ for early-career roles to enable steady raises.
+
+- **Use Wide Salary Bands for Senior Levels**
+
+  - Allows _flexibility_ in compensation for high performers.
+  - Helps _retain talent_ without immediate promotion.
+
+- **Identify Breakpoint Levels**
+
+  - Define the level where employees can remain _indefinitely_.
+  - Typically, the breakpoint is around _senior engineer level_.
+
+- **Recognize Achievement**
+
+  - _Celebrate key promotions_ like Senior Engineer, Staff Engineer, and Director.
+  - Consider keeping _some levels private_ but highlighting keystone promotions.
+
+- **Split Management & Technical Tracks**
+
+  - Allow _career growth in both_ management and individual contributor paths.
+  - Recognize that senior management and technical _roles scale differently_.
+
+- **Encourage Management Skills Mid-Career**
+
+  - Require leadership or mentorship experience for _senior technical roles_.
+  - _Promote leadership_ beyond direct management responsibilities.
+
+- **Consider Years of Experience**
+
+  - Avoid strict experience requirements but use as a _guideline_.
+  - Emphasize _maturity and long-term project execution_ for higher levels.
+
+- **Evolve the Ladder Over Time**
+
+  - _Adjust_ as the company grows and needs change.
+  - Ensure the ladder accounts for _different technical specializations_.
+
+- **Importance of a Career Ladder**
+
+  - Helps in _hiring_, _performance reviews_, and _promotions_.
+  - Should reflect the _team’s collective input_ rather than a single perspective.
+
+### Cross-Functional Teams
+
+- In _small_ companies, _everyone works together_; in _large_ companies, _structures are predefined_.
+- Growing companies need to define _reporting structures_ and _collaboration frameworks_.
+- At Rent the Runway, the product engineering team evolved from _two divisions_ (storefront & warehouse) to frontend and backend.
+- This team included engineers (frontend & backend), product managers, designers, a data analyst, and customer service representatives.
+- The project _eliminated the "us vs. them" mentality_ and improved collaboration.
+- The entire organization later adopted _cross-functional product development groups_ ("pods" or "squads").
+- These teams _improve project focus and communication_.
+- **Conway’s Law**: Organizations design systems that _mirror_ their communication structures.
+- Cross-functional teams _enhance product development efficiency_ but may introduce technological inefficiencies.
+- _Balancing_ business-focused leadership with engineering-focused leadership is crucial.
+
+#### Structuring Cross-Functional Teams
+
+- _Management structures remained unchanged_; engineers reported to engineering managers, product managers to the head of product.
+- Pods determined their _own work based on roadmaps_.
+- Specialized engineers (infrastructure, mobile, data engineering) remained _separate for core systems_.
+- Reserve 20% of engineering time for _tech debt_, _on-call duties_, and _interviews_.
+- Many large companies also use cross-functional teams, often _aligning tech teams with business units_.
+- The leadership focus shifts in product-oriented teams from engineering excellence to _product sense_ and cross-functional collaboration.
+- Organizations should decide whether business sense or engineering complexity is their _priority_ and structure accordingly.
+
+### Developing Engineering Processes
+
+- Processes should _balance control and efficiency_.
+- Engineering processes _manage risk as teams scale_.
+- Overcomplicating processes can slow productivity; essential processes should focus on _risk-prone areas_.
+
+### Practical Advice: Depersonalize Decision Making
+
+#### Code Review
+
+- Standard practice to ensure _stability_ and _quality_.
+- Should be _efficient_ and not hinder productivity.
+- Use _linters_ for code style to prevent nitpicking.
+- _Monitor review backlogs_ to prevent bottlenecks.
+
+#### The Outage Postmortem
+
+- Should focus on _learning, not blaming_ individuals.
+- Identify _contributing factors and process improvements_.
+- Prioritize the most _critical takeaways_ rather than fixing everything.
+
+#### Architecture Review
+
+- Helps _socialize major system changes_ and highlight risks.
+- _Required_ for new languages, frameworks, storage systems, and developer tools.
+- Review board should consist of those _affected by changes_, not just senior engineers.
+- The process should _focus on preparation and risk awareness_ rather than micromanagement.
