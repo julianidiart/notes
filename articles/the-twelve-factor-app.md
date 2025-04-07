@@ -411,3 +411,45 @@
     - Write to local log files
     - Try to parse, format, or store logs manually
     - Depend on logs being stored on-disk by default
+
+## XII. Admin processes
+
+> "Run admin/management tasks as one-off processes"
+
+- Admin and management tasks (like database migrations or scripts) should be run as _one-off processes_, using the same environment, codebase, and config as the regular app.
+
+- Admin processes are one-time or occasional commands used to maintain or manage an app, such as: DB migration, Console / REPL access, Custom scripts.
+
+- **Key Guidelines**
+
+- Admin processes must run against a _specific release_ of the app.
+- They must use:
+  - Same _codebase_
+  - Same _config_
+  - Same _dependencies_
+- Use the _same execution context_ as regular processes.
+- Examples:
+
+  - Ruby: bundle exec rake db:migrate
+  - Python: venv/bin/python manage.py migrate
+
+- **Local vs. Production Execution**
+
+  - _Local_: Run directly in terminal from app directory
+  - _Production_: Use ssh or platform tools (e.g., heroku run, kubectl exec)
+
+- **Why This Matters?**
+
+  - **Avoid sync issues**: Admin code should live in the same repo as the app — not on a personal machine or side script.
+  - **Consistency across environments**: Ensures what works in dev/test also works in production.
+  - **Reusable process model**: Uses the _same infrastructure_ as web/worker processes, maintaining the integrity of the _process formation_.
+
+- **Best Practices**
+  - Do
+    - Ship admin code with app code
+    - Run one-off commands via same tooling (e.g., virtualenv, bundle exec)
+    - Access production with controlled tools (ssh, heroku run, etc.)
+  - Don’t
+    - Use external/manual scripts
+    - Use inconsistent or manually patched environments
+    - Modify production manually or outside the app's process model
