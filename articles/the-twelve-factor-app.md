@@ -306,3 +306,50 @@
     - Rely only on threads or internal async
     - Daemonize inside app code
     - Hard-code process behaviors into a single monolith
+
+## IX. Disposability
+
+> "Maximize robustness with fast startup and graceful shutdown"
+
+- A twelve-factor app’s processes are _disposable_ — they can be started or stopped at any time without affecting overall system stability.
+
+- **Why Disposability Matters?**
+
+  - Enables _rapid scaling_ (spin up/down quickly)
+  - Supports _frequent releases_ and quick deploys
+  - Increases _system robustness_ by tolerating crashes or interruptions
+
+- **Startup: Fast & Reliable**
+
+  - Aim for _minimal startup_ time — ideally just a few seconds.
+  - Benefits:
+    - Fast horizontal scaling
+    - Quick deploy/rollback cycles
+    - Smooth failover and recovery
+
+- **Crash Handling**
+
+  - A twelve-factor app should also handle _non-graceful exits_, such as:
+    - Hardware failure
+    - Unexpected crashes
+  - _Best Practice_: Use a queueing backend that automatically requeues jobs when a worker crashes.
+
+- **"Crash-Only" Design Philosophy**
+
+  - Treats _every process_ as though it may crash at any time.
+  - Emphasizes:
+    - Statelessness
+    - Idempotent behavior
+    - Robust retry logic
+
+- **Checklist**
+  - Do
+    - Minimize startup time
+    - Handle SIGTERM properly
+    - Make jobs reentrant
+    - Use fault-tolerant queues
+  - Don’t
+    - Delay readiness with long inits
+    - Ignore shutdown signals
+    - Assume jobs only run once
+    - Lose jobs on crash
