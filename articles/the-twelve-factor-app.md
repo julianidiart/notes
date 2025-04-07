@@ -151,3 +151,58 @@
   - **Flexibility**: Easily switch between providers or instances.
   - **Resilience**: Quickly recover from failures (e.g., swap DB server).
   - **Environment Agnosticism**: Works across development, staging, and production without code changes.
+
+## V. Build, release, run
+
+> "Strictly separate build and run stages"
+
+- **Three Stages of Deployment**
+
+  0. _Codebase_
+     ↓
+  1. **Build** → Executable Build
+     ↓
+  2. **Release** → Build + Config = Release
+     ↓
+  3. **Run** → App processes launched from release
+
+1. **Build Stage**
+
+- **Purpose**: Turn code into an executable bundle.
+- **Tasks**:
+  - Pull code from a specific commit.
+  - Fetch and vendor dependencies.
+  - Compile code, assets, and binaries.
+- **Triggered by**: A developer during deployment.
+
+2. **Release Stage**
+
+- **Purpose**: Combine build with environment-specific config.
+- **Result**: A _release_ that is:
+
+  - Immutable
+  - Executable
+  - Identified by a unique release ID (e.g., timestamp or version number)
+
+- **Rollbacks**
+  - Releases are _append-only_ and cannot be modified.
+  - Rollbacks are achieved by selecting a previous release (e.g., using tools like Capistrano).
+
+3. **Run Stage**
+
+- **Purpose**: Run the app in its execution environment using a selected release.
+- **Characteristics**:
+
+  - No code changes allowed during runtime.
+  - App is launched by a _process manager_ or _runtime environment_.
+  - Should remain _simple and reliable_, since failures often happen without developer intervention.
+
+- **Best Practices**
+  - Do:
+    - Keep build and release processes _automated and reproducible_.
+    - Use _unique release IDs_ for tracking and rollback.
+    - Ensure run stage is _simple_ to avoid runtime failures.
+  - Don’t:
+    - Modify code or config at runtime.
+    - Couple build logic with runtime behavior.
+    - Allow mutable releases or manual hotfixes in production.
