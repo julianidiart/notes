@@ -206,3 +206,29 @@
     - Modify code or config at runtime.
     - Couple build logic with runtime behavior.
     - Allow mutable releases or manual hotfixes in production.
+
+## VI. Processes
+
+> "Execute the app as one or more stateless processes"
+
+- A twelve-factor app runs as one or more _stateless processes_. Any persistent data must be stored in external backing services (e.g., databases, caches).
+
+- **Stateless & Share-Nothing**
+
+  - Allowed:
+    - Short-lived memory or filesystem use (e.g., temporary cache for a single operation).
+    - Example: Download → Process → Save result to DB.
+  - Not Allowed:
+    - Relying on local state to persist across requests or restarts.
+    - Assuming one process will handle sequential requests from the same user.
+
+- Some apps use _“sticky sessions”_ – binding users to a specific app process.
+
+  - This breaks process statelessness.
+  - Instead, session data should be stored in a _shared, external store_ like Redis.
+
+- **Why Stateless?**
+
+  - **Scalability**: Processes can be added/removed easily without rebalancing
+  - **Reliability**: Restarting a crashed process doesn’t lose application state
+  - **Portability**: Processes can be relocated across environments effortlessly
