@@ -34,3 +34,29 @@
      - A shared vocabulary
      - Conceptual solutions
      - Practical patterns
+
+## I. Codebase
+
+> "One codebase tracked in revision control, many deploys"
+
+- A twelve-factor app has a _single codebase_ that is:
+
+  - Tracked in a _version control system_ (e.g., Git, Mercurial, Subversion).
+  - _Shared_ across all environments: development, staging, production.
+
+- **Key Guidelines**
+
+1. **One App = One Codebase**
+
+   - Every app should have its own unique codebase.
+   - Multiple deploys (instances) use this single codebase.
+
+2. **Multiple Codebases ≠ One App**
+
+   - If multiple codebases are involved, it’s considered a distributed system, not a single app.
+   - Each part of a distributed system should individually comply with the twelve-factor methodology.
+
+3. **No Shared Codebases Between Apps**
+
+   - Sharing a codebase across multiple apps violates the twelve-factor principles.
+   - Instead, extract shared functionality into libraries and include them as dependencies.
