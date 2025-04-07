@@ -87,3 +87,42 @@
   - If needed, these should be:
     - _Vendored_ (included in the app's directory), or
     - Managed explicitly as part of the app’s dependency list.
+
+## III. Config
+
+> "Store config in the environment"
+
+- Configuration should be stored in _environment variables_ (env vars), not in the codebase.
+
+- Configuration includes everything that _varies between deploys_.
+
+- **Violations of Twelve-Factor**
+
+  1. _Hardcoding config as constants in code_.
+  2. _Using config files_ (e.g., config/database.yml) that:
+
+  - May accidentally be committed to version control
+  - Scatter config across locations and formats
+  - Are often _language/framework-specific_
+
+- **Why Environment Variables?**
+
+  - **Benefits**:
+    - Separation of config from code
+    - Easy to modify per deploy without touching code
+    - Less risk of accidentally committing secrets
+    - Standardized across languages and operating systems
+  - **Security Tip**: A proper app should be safe to open-source _without exposing credentials_, thanks to env var-based config.
+
+- **Avoid “Environment Grouping”**
+
+  - Traditional frameworks group config (e.g., "development", "production").
+  - This doesn't scale well — leads to:
+    - Fragile naming patterns (e.g., joes-staging, qa2)
+    - Difficult maintenance and management
+  - **Twelve-Factor Approach**:
+    - Use _individual env vars_, not grouped environments.
+    - Each variable is:
+      - _Independent_
+      - _Granular_
+      - _Easily adjustable per deploy_
