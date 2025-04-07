@@ -60,3 +60,30 @@
 
    - Sharing a codebase across multiple apps violates the twelve-factor principles.
    - Instead, extract shared functionality into libraries and include them as dependencies.
+
+## II. Dependencies
+
+> "Explicitly declare and isolate dependencies"
+
+- A twelve-factor app:
+
+  - _Declares all dependencies explicitly_.
+  - _Isolates dependencies_ to avoid relying on system-wide packages or tools.
+
+- **Key Practices**
+
+  1. **Dependency Declaration**
+
+     - Use a _dependency manifest_ (e.g., Gemfile, requirements.txt) to:
+     - List all libraries the app depends on.
+     - Specify versions explicitly and completely.
+
+  2. **Dependency Isolation**
+
+     - Use tools to _isolate the app’s environment_, preventing accidental use of global/system packages.
+     - Ensures _reliable, repeatable builds_ across all environments (dev, staging, production).
+
+- Do _not_ assume system tools (e.g., curl, ImageMagick) are available.
+  - If needed, these should be:
+    - _Vendored_ (included in the app's directory), or
+    - Managed explicitly as part of the app’s dependency list.
