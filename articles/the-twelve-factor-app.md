@@ -126,3 +126,28 @@
       - _Independent_
       - _Granular_
       - _Easily adjustable per deploy_
+
+## IV. Backing services
+
+> "Treat backing services as attached resources"
+
+- **Core Principles**
+
+  1. **Treat All Services as Attached Resources**
+
+     - No difference between _local_ and _third-party_ services.
+     - Both are accessed via _configuration_ (e.g., URL, credentials).
+     - Swappable without code changes — only the config changes.
+
+  2. **Resources Are Loosely Coupled**
+
+  - Services can be:
+    - _Attached_ (connected via config)
+    - _Detached_ (replaced or removed)
+  - Example: Replacing a local MySQL DB with Amazon RDS _requires no code change_, only an updated connection string.
+
+- **Benefits**
+
+  - **Flexibility**: Easily switch between providers or instances.
+  - **Resilience**: Quickly recover from failures (e.g., swap DB server).
+  - **Environment Agnosticism**: Works across development, staging, and production without code changes.
