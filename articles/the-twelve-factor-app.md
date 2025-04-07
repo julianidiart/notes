@@ -372,3 +372,42 @@
   - **Provisioning**: Chef, Puppet
   - **Environment replicators**: Docker, Vagrant
   - **Cloud dev environments**: GitHub Codespaces, Replit
+
+## XI. Logs
+
+> "Treat logs as event streams"
+
+- A twelve-factor app emits logs as _continuous event streams_ to stdout and leaves log routing and storage to the execution environment.
+
+- **What Are Logs?**
+
+  - Logs = _Time-ordered event streams_
+  - Include:
+    - App events
+    - System messages
+    - Backing service outputs
+  - Usually output as plain text, one event per line
+
+- **Why Treat Logs as Streams?**
+
+  - _Real-time visibility_ (tail in terminal during dev)
+  - _Easy integration_ with external tools
+  - _Scalable log management_ (across multiple services/processes)
+  - _Flexible destinations_ (e.g., storage, analytics, alerting)
+
+- **Use Cases of Log Event Streams**
+
+  - **Real-time monitoring**: Watch logs in a terminal with tail
+  - **Historical debugging**: Search logs for past events and errors
+  - **Trend analysis**: Visualize metrics like requests per minute
+  - **Alerting**: Set alerts based on error thresholds, etc.
+
+- **Best Practices**
+  - Do
+    - Write logs to stdout
+    - Let the platform handle routing
+    - Use tools like Fluentd, Logplex
+  - Don’t
+    - Write to local log files
+    - Try to parse, format, or store logs manually
+    - Depend on logs being stored on-disk by default
