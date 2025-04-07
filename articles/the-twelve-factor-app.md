@@ -232,3 +232,46 @@
   - **Scalability**: Processes can be added/removed easily without rebalancing
   - **Reliability**: Restarting a crashed process doesn’t lose application state
   - **Portability**: Processes can be relocated across environments effortlessly
+
+## VII. Port binding
+
+> "Export services via port binding"
+
+- A twelve-factor app exports services by _binding to a port_, rather than relying on an external web server injected at runtime.
+
+- **Traditional Model vs. Twelve-Factor Model**
+
+  - _Traditional Web App_
+    - Injected into a container server
+    - Example: PHP inside Apache
+    - Server managed by external agent
+  - _Twelve-Factor App_
+    - Self-contained web server in code
+    - Example: Python app with Tornado
+    - App binds to a port itself
+
+- **How Port Binding Works**
+
+  - In _Development_: App listens on a localhost port.
+  - Example: http://localhost:5000/
+  - In _Production_: A routing layer maps public URLs to internal ports.
+  - Example: A load balancer routes requests to web processes bound on internal ports.
+
+- Apps can export _any protocol_ via port binding (not only HTTP).
+
+- **Port Binding Enables**:
+
+  - Easy _local testing_ and development.
+  - Apps acting as _services for other apps_ via config-defined URLs.
+  - Clean _decoupling_ from infrastructure — app expects just a port, not a runtime web server.
+
+- **Best Practices**
+
+  - Do
+    - Use internal webserver libraries (e.g., Jetty, Thin)
+    - Bind to a specific port and serve requests
+    - Use the port-binding model for any service protocol
+  - Don’t
+    - Depend on external containers like Apache or Tomcat
+    - Assume a pre-configured runtime web server
+    - Hardcode environment-specific port logic
