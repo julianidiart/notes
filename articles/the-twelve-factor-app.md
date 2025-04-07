@@ -275,3 +275,34 @@
     - Depend on external containers like Apache or Tomcat
     - Assume a pre-configured runtime web server
     - Hardcode environment-specific port logic
+
+## VIII. Concurrency
+
+> "Scale out via the process model"
+
+- A twelve-factor app _scales horizontally_ by running _multiple stateless processes_. Each process handles a specific type of workload, forming the app’s process formation.
+
+- **Key Concepts**
+
+  - Processes = First-class citizens
+  - Workload types = Process types
+  - Concurrency = Multiple processes of each type
+
+- **The Unix Process Model**
+
+- Inspired by _Unix service daemons_.
+- Encourages clear process responsibility and OS-level management.
+- _No daemonizing_ or PID file writing inside app code.
+
+  - Let tools like systemd, Heroku dynos, or Foreman manage that.
+
+- **Best Practices**
+
+  - Do
+    - Scale via multiple processes
+    - Use OS/cloud tools for process management
+    - Define and manage process types clearly
+  - Don’t
+    - Rely only on threads or internal async
+    - Daemonize inside app code
+    - Hard-code process behaviors into a single monolith
