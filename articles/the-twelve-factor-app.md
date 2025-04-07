@@ -353,3 +353,22 @@
     - Ignore shutdown signals
     - Assume jobs only run once
     - Lose jobs on crash
+
+## X. Dev/prod parity
+
+> "Keep development, staging, and production as similar as possible"
+
+- A twelve-factor app _minimizes differences_ between development, staging, and production to support continuous deployment and system reliability.
+
+- **Dev/Prod Parity in Practice**
+
+  - Fast code promotion from dev → staging → production
+  - Same team writing and deploying the code
+  - Matching environments as closely as possible
+
+- **Tools That Help Maintain Parity**
+
+  - **Package managers**: Homebrew, apt-get
+  - **Provisioning**: Chef, Puppet
+  - **Environment replicators**: Docker, Vagrant
+  - **Cloud dev environments**: GitHub Codespaces, Replit
